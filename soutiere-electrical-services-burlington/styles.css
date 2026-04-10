@@ -816,11 +816,22 @@ section { padding: 9.5rem 3.5rem; }
     overflow: hidden;
     box-shadow: var(--shadow-lg);
     position: relative;
-    background-color: var(--dark);
-    background-image: linear-gradient(135deg, rgba(249,168,37,0.10) 0%, transparent 55%);
+}
+.stats-bar-bg {
+    position: absolute;
+    inset: 0;
+    background-image: url('img/electrician-at-work-tool-belt.jpg');
     background-size: cover;
     background-position: center;
+    z-index: 0;
 }
+.stats-bar-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.80);
+    z-index: 1;
+}
+.stats-bar .stats-grid { position: relative; z-index: 2; }
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -959,11 +970,17 @@ section { padding: 9.5rem 3.5rem; }
     color: rgba(255,255,255,0.72);
     line-height: 1.5;
 }
+.gallery-footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
 
 /* SERVICE AREA CTA */
 .service-area {
     position: relative;
     background-color: var(--dark);
+    background-image: url('img/burlington-vermont-aerial.jpg');
     background-size: cover;
     background-position: center;
     color: white;
@@ -975,7 +992,7 @@ section { padding: 9.5rem 3.5rem; }
     content: '';
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.90);
+    background: rgba(0, 0, 0, 0.85);
     z-index: 0;
 }
 .service-area .container { position: relative; z-index: 1; }
