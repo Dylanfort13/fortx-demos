@@ -13,10 +13,25 @@
 </head>
 <body>
 
+<!-- DEMO POPUP MODAL -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Soutiere Electrical Services. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
 <!-- EMERGENCY BANNER -->
-<div style="background:#F9A825;color:white;text-align:center;padding:0.7rem 1rem;font-size:0.9rem;font-weight:500;">
-    <i class="fa-solid fa-bolt" style="margin-right:0.4rem;"></i> Emergency electrical service available — Call now:&nbsp;
-    <a href="tel:8026580821" style="color:white;font-weight:700;text-decoration:underline;">(802) 658-0821</a>
+<div class="emergency-banner">
+    <i class="fa-solid fa-bolt"></i> Emergency electrical service available 24/7 — Call now:&nbsp;
+    <a href="tel:8026580821">(802) 658-0821</a>
 </div>
 
 <!-- NAVIGATION -->
@@ -33,7 +48,7 @@
             <a href="tel:8026580821" class="phone-link">
                 <i class="fa-solid fa-phone"></i> (802) 658-0821
             </a>
-            <a href="tel:8026580821" class="btn btn-primary">Get a Free Estimate</a>
+            <button class="btn btn-primary demo-trigger">Get a Free Estimate</button>
         </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
             <i class="fa-solid fa-bars"></i>
@@ -43,7 +58,7 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-    <div class="hero-bg" style="background-image:url('img/texture.jpg');"></div>
+    <div class="hero-bg" style="background-image:url('img/hero.jpg');"></div>
     <div class="hero-bg-overlay"></div>
     <div class="hero-content">
         <div class="hero-badge">
@@ -56,7 +71,7 @@
             <a href="tel:8026580821" class="btn btn-primary btn-lg">
                 <i class="fa-solid fa-phone"></i> Call Now — (802) 658-0821
             </a>
-            <a href="#contact" class="btn btn-ghost">Get a Free Estimate</a>
+            <button class="btn btn-ghost btn-lg demo-trigger">Get a Free Estimate</button>
         </div>
         <div class="hero-stats">
             <div class="stat-item">
@@ -172,7 +187,7 @@
             </div>
             <div class="section-header-right">
                 <p>Getting your electrical work done shouldn't be complicated. Here's how Clem and the team make it easy for Burlington homeowners and business owners.</p>
-                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <button class="btn btn-primary demo-trigger">Get Started</button>
             </div>
         </div>
         <div class="process-track">
@@ -213,9 +228,7 @@
         <div class="about-grid">
             <div class="about-image-col fade-up">
                 <div class="about-image-frame">
-                    <div class="about-image-placeholder">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
+                    <img src="img/about.jpg" alt="Clem Soutiere — electrician serving Burlington and greater Chittenden County" class="about-photo">
                     <div class="about-experience-badge">
                         <span class="badge-number-row">
                             <span class="badge-number">69</span>
@@ -347,6 +360,28 @@
     </div>
 </section>
 
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge section-badge-dark"><i class="fa-solid fa-images"></i>&nbsp; Our Work</span>
+            <h2>Recent <span>Projects</span></h2>
+            <p>A look at some of our recent work across Burlington and surrounding Chittenden County.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="img/gallery-1.jpg" alt="Soutiere Electrical Services project — cleanly wired residential basement in Burlington VT">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-2.jpg" alt="Soutiere Electrical Services project — electrical panel installation in a Vermont home">
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-3.jpg" alt="Soutiere Electrical Services project — outdoor electrical service entrance in Burlington">
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- SERVICE AREA CTA -->
 <section class="service-area" id="service-area">
     <div class="container">
@@ -362,9 +397,9 @@
                 <span>Colchester</span>
             </div>
             <p>Soutiere Electrical Service has served the greater Burlington area for nearly seven decades. From historic homes to modern commercial spaces, we bring expert electrical work to properties across Chittenden County.</p>
-            <a href="tel:8026580821" class="btn btn-white btn-lg">
+            <button class="btn btn-white btn-lg demo-trigger">
                 <i class="fa-solid fa-phone"></i> Call (802) 658-0821 — Free Estimate
-            </a>
+            </button>
         </div>
     </div>
 </section>
@@ -377,9 +412,9 @@
                 <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
                 <h2>Common <span>Questions</span></h2>
                 <p>Everything you need to know before getting started. Still have questions? Reach out directly.</p>
-                <a href="tel:8026580821" class="btn btn-primary" style="margin-top:1.5rem;">
+                <button class="btn btn-primary demo-trigger" style="margin-top:1.5rem;">
                     <i class="fa-solid fa-phone"></i> Call Clem
-                </a>
+                </button>
             </div>
             <div class="faq-list">
                 <div class="faq-item">
@@ -570,6 +605,21 @@
 </footer>
 
 <script>
+// Demo modal
+const demoModal = document.getElementById('demoModal');
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
 // Navbar scroll effect + scroll cue fade
 const navbar    = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
