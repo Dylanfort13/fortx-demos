@@ -51,7 +51,7 @@ body {
 .emergency-banner i { margin-right: 0.2rem; }
 .emergency-banner a { color: white; font-weight: 700; text-decoration: underline; }
 @media (max-width: 600px) {
-    .emergency-banner { font-size: 0.78rem; padding: 0.55rem 0.75rem; flex-direction: column; gap: 0.2rem; }
+    .emergency-banner { font-size: 0.72rem; padding: 0.45rem 0.75rem; flex-direction: row; gap: 0.3rem; }
 }
 
 /* DEMO MODAL */
@@ -1374,17 +1374,33 @@ footer {
     .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
 }
 @media (max-width: 768px) {
+    body { padding-top: 0 !important; }
     .emergency-banner { position: sticky; top: 0; z-index: 998; }
     .navbar {
         position: sticky;
         top: 0;
-        padding: 0.75rem 1rem;
+        padding: 0.6rem 1rem;
         z-index: 999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(26,26,26,0.95);
+        backdrop-filter: blur(16px);
     }
     .navbar.scrolled {
         position: sticky;
         top: 0;
-        padding: 0.75rem 1rem;
+        padding: 0.6rem 1rem;
+    }
+    .navbar-inner {
+        border-radius: 0 !important;
+        padding: 0 !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+    .logo-text {
+        font-size: 1.05rem;
+        white-space: nowrap;
     }
     .nav-links {
         display: none;
@@ -1401,10 +1417,20 @@ footer {
     .nav-links.active { display: flex; }
     .nav-links a { color: white !important; font-size: 1.25rem; }
     .nav-cta { display: none; }
-    .mobile-menu-btn { display: flex; }
+    .mobile-menu-btn {
+        display: flex;
+        color: white;
+        width: 36px;
+        height: 36px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        font-size: 1.2rem;
+    }
     section { padding: 4.5rem 1.5rem; }
-    .hero-content { padding: 6rem 1.5rem 3rem; }
-    .hero h1 { font-size: 2.4rem; }
+    .hero-content { padding: 5rem 1.5rem 3rem; }
+    .hero h1 { font-size: 2.2rem; }
+    .hero > .hero-content > p { font-size: 0.92rem; line-height: 1.6; }
     .hero-stats { gap: 1.5rem; }
     .stat-item h3 { font-size: 1.8rem; }
     .services-grid { grid-template-columns: 1fr; }
@@ -1419,18 +1445,19 @@ footer {
     .trust-bar-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
     .form-row { grid-template-columns: 1fr; }
     .gallery-grid { grid-template-columns: 1fr; }
-    .logo-text { font-size: 1.15rem; }
-    .btn-lg { padding: 0.875rem 1.5rem; font-size: 0.85rem; }
-    .hero-buttons .btn-lg { white-space: normal; text-align: center; justify-content: center; }
+    .btn-lg { padding: 0.75rem 1.25rem; font-size: 0.82rem; }
+    .hero-buttons { flex-direction: column; gap: 0.75rem; }
+    .hero-buttons .btn { justify-content: center; width: 100%; }
 }
 @media (max-width: 480px) {
-    .hero h1 { font-size: 2rem; }
-    .hero-buttons { flex-direction: column; }
-    .hero-buttons .btn { justify-content: center; white-space: nowrap; }
+    .hero h1 { font-size: 1.9rem; }
+    .hero > .hero-content > p { font-size: 0.88rem; }
+    .hero-buttons { flex-direction: column; gap: 0.6rem; }
     .hero-stats { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .stat-divider { width: 40px; height: 1px; }
     .stats-grid { grid-template-columns: 1fr 1fr; }
-    .logo-text { font-size: 1rem; }
-    .gallery-footer .btn { white-space: nowrap; }
+    .logo-text { font-size: 0.95rem; white-space: nowrap; }
+    .gallery-footer .btn { white-space: nowrap; font-size: 0.8rem; }
     .area-content .btn-lg { white-space: normal; }
+    .emergency-banner { font-size: 0.68rem; }
 }
