@@ -1374,7 +1374,18 @@ footer {
     .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
 }
 @media (max-width: 768px) {
-    .navbar { padding: 0.75rem 1rem; }
+    .emergency-banner { position: sticky; top: 0; z-index: 998; }
+    .navbar {
+        position: sticky;
+        top: 0;
+        padding: 0.75rem 1rem;
+        z-index: 999;
+    }
+    .navbar.scrolled {
+        position: sticky;
+        top: 0;
+        padding: 0.75rem 1rem;
+    }
     .nav-links {
         display: none;
         position: fixed;
@@ -1408,12 +1419,18 @@ footer {
     .trust-bar-item { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
     .form-row { grid-template-columns: 1fr; }
     .gallery-grid { grid-template-columns: 1fr; }
+    .logo-text { font-size: 1.15rem; }
+    .btn-lg { padding: 0.875rem 1.5rem; font-size: 0.85rem; }
+    .hero-buttons .btn-lg { white-space: normal; text-align: center; justify-content: center; }
 }
 @media (max-width: 480px) {
     .hero h1 { font-size: 2rem; }
     .hero-buttons { flex-direction: column; }
-    .hero-buttons .btn { justify-content: center; }
+    .hero-buttons .btn { justify-content: center; white-space: nowrap; }
     .hero-stats { flex-direction: column; align-items: flex-start; gap: 1rem; }
     .stat-divider { width: 40px; height: 1px; }
     .stats-grid { grid-template-columns: 1fr 1fr; }
+    .logo-text { font-size: 1rem; }
+    .gallery-footer .btn { white-space: nowrap; }
+    .area-content .btn-lg { white-space: normal; }
 }
