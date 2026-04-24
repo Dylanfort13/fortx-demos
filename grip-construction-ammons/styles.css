@@ -33,6 +33,21 @@ body {
 }
 
 /* ═══════════════════════════════════════
+   HERO ENTRANCE ANIMATION
+   ═══════════════════════════════════════ */
+.hero-badge { animation: heroFadeUp 0.7s 0.2s both; }
+.hero h1 { animation: heroFadeUp 0.7s 0.4s both; }
+.hero-left > p { animation: heroFadeUp 0.7s 0.6s both; }
+.hero-buttons { animation: heroFadeUp 0.7s 0.8s both; }
+.hero-stats { animation: heroFadeUp 0.7s 1s both; }
+.hero-right { animation: heroFadeUp 0.9s 0.5s both; }
+.hero-scroll-cue { animation: heroFadeUp 0.7s 1.2s both; }
+@keyframes heroFadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════
    SCROLL ANIMATIONS (Item 10)
    ═══════════════════════════════════════ */
 .fade-up {
