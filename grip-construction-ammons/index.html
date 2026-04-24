@@ -743,8 +743,7 @@ demoModal.addEventListener('click', (e) => {
     if (e.target === demoModal) demoModal.classList.remove('visible');
 });
 
-// Scroll animations — observe everything with fade-up
-const fadeEls = document.querySelectorAll('.fade-up');
+// Scroll animations — animate everything when it first appears
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -752,15 +751,23 @@ const observer = new IntersectionObserver((entries) => {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.12 });
-fadeEls.forEach(el => observer.observe(el));
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-// Stagger grid children
+// Observe all fade-up elements already in HTML
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Animate section headers
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+// Stagger grid children with sequential delays
 document.querySelectorAll(
-    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid'
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns'
 ).forEach(grid => {
     grid.querySelectorAll(
-        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item'
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span'
     ).forEach((card, i) => {
         card.classList.add('fade-up');
         card.style.transitionDelay = (i * 0.08) + 's';
