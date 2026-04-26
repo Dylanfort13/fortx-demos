@@ -1596,9 +1596,7 @@ footer {
         display: none;
         position: fixed;
         top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(255,255,255,0.97);
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px);
+        background: white;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
