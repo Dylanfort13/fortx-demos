@@ -294,7 +294,7 @@ body {
     top: 0; left: 0; right: 0;
     z-index: 1000;
     padding: 1rem 2rem;
-    transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+    transition: padding 0.35s cubic-bezier(0.4,0,0.2,1), background 0.35s cubic-bezier(0.4,0,0.2,1), box-shadow 0.35s cubic-bezier(0.4,0,0.2,1);
 }
 .navbar.scrolled {
     padding: 0;
@@ -1588,7 +1588,7 @@ footer {
         color: var(--dark);
         background: none;
     }
-    .mobile-menu-btn.active {
+    .navbar.menu-open .mobile-menu-btn {
         color: var(--dark) !important;
         background: none !important;
     }
