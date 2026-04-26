@@ -770,12 +770,14 @@ mobileBtn.addEventListener('click', () => {
     mobileBtn.innerHTML = isOpen
         ? '<i class="fa-solid fa-xmark"></i>'
         : '<i class="fa-solid fa-bars"></i>';
+    navbar.classList.toggle('menu-open', isOpen);
 });
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
         mobileBtn.removeAttribute('active');
         mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        navbar.classList.remove('menu-open');
     });
 });
 
@@ -807,6 +809,7 @@ document.querySelectorAll('.page-link').forEach(link => {
         navLinks.classList.remove('active');
         mobileBtn.removeAttribute('active');
         mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        navbar.classList.remove('menu-open');
     });
 });
 pageModalClose.addEventListener('click', () => {
