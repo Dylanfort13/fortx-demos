@@ -1560,10 +1560,13 @@ footer {
 @media (max-width: 768px) {
     .navbar { padding: 0.75rem 1rem; }
     .navbar.scrolled {
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 1rem 0.75rem;
     }
     .navbar-inner {
         padding: 0.65rem 0.75rem;
+    }
+    .navbar.scrolled .navbar-inner {
+        padding: 0.65rem 0.75rem 0.75rem;
     }
     .nav-logo, .logo-text { left: 1rem; }
     .nav-logo img { height: 38px; }
