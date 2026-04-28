@@ -133,6 +133,17 @@ body {
     width: auto;
     transition: all 0.3s;
 }
+.navbar.scrolled .nav-logo img {
+    height: 40px;
+}
+@media (max-width: 768px) {
+    .nav-logo img {
+        height: 36px;
+    }
+    .navbar.scrolled .nav-logo img {
+        height: 32px;
+    }
+}
 .nav-logo-light { display: block; }
 .nav-logo-dark { display: none; }
 .navbar.scrolled .nav-logo-light { display: none; }
@@ -798,7 +809,8 @@ section { padding: 7rem 3.5rem; }
     position: relative;
     background-size: cover;
     background-position: center;
-    background: var(--dark);
+    background-repeat: no-repeat;
+    background-color: var(--dark);
 }
 .stats-bar-overlay {
     position: absolute;
