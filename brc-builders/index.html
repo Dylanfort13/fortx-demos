@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRC Builders — Exterior Construction in Idaho Falls, Idaho</title>
+    <meta name="description" content="BRC Builders — roofing, siding, windows, doors, and full exterior renovations in Idaho Falls and East Idaho. Done right the first time.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for BRC Builders. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="nav-logo">
+            <img src="img/logo-white.png" alt="BRC Builders" class="nav-logo-light">
+            <img src="img/logo-dark.png" alt="BRC Builders" class="nav-logo-dark">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+12086810204" class="phone-link"><i class="fa-solid fa-phone"></i> (208) 681-0204</a>
+            <a href="#contact" class="btn btn-primary demo-trigger">Free Estimate</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('img/hero-bg.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                <span class="badge-full">Exterior Construction — Idaho Falls, Idaho</span>
+                <span class="badge-short">Idaho Falls, Idaho</span>
+            </div>
+            <h1>Done <em>Right</em> the First Time</h1>
+            <p>Roofing, siding, windows, doors, and full exterior renovations for residential and commercial properties across East Idaho.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get a Free Estimate</a>
+                <a href="#services" class="btn btn-ghost btn-lg">Our Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>100<span class="stat-plus">+</span></h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>Same</h3>
+                    <p>Day Emergency</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="img/trailer.png" alt="BRC Builders trailer" class="hero-trailer">
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- Trust Bar -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                Licensed & Insured
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-house-chimney"></i>
+                Residential & Commercial
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-clock"></i>
+                Same-Day Emergency Service
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                Free Estimates
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>From roof repairs to full exterior transformations, we handle every detail so your property looks its best and stands up to Idaho weather.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" style="background-image: url('img/service-roofing.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Roofing</h3>
+                        <p>Complete roof replacement, shingle repair, and storm damage restoration. Same-day emergency service available for wind and hail damage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-siding.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Siding</h3>
+                        <p>Vinyl, board & batten, stone veneer, and custom siding installations. Transform your home's curb appeal with durable, weather-resistant materials.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-windows.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-door-open"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Windows & Doors</h3>
+                        <p>Energy-efficient window replacements and entry door installations. Improve comfort, security, and value with professional fit and finish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-renovation.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Full Exterior Renovations</h3>
+                        <p>Complete exterior transformations from framing to final finish. We manage the entire project — roofing, siding, trim, and detailing — start to finish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-chimney.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Chimney Chase</h3>
+                        <p>Custom chimney chase construction built around your existing stove pipe. Professional framing, sheathing, and exterior finish for a clean, code-compliant look.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-fascia.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Fascia & Trim Repairs</h3>
+                        <p>Rotted, damaged, or missing fascia and trim replaced with precision. We match existing profiles and ensure proper sealing against the elements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Process Steps -->
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; How It Works</span>
+            <h2>Your Project, <span>Step by Step</span></h2>
+            <p class="process-subtitle">We keep it straightforward — from your first call to the final walkthrough.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card fade-up">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3>Call or Message</h3>
+                <p>Reach out by phone or through our form. Tell us what you need — we'll respond within 24 hours.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h3>Free On-Site Estimate</h3>
+                <p>We visit your property, assess the scope, and provide a detailed, no-obligation estimate.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-hammer"></i>
+                </div>
+                <h3>Expert Installation</h3>
+                <p>Our crew handles every detail — materials, labor, cleanup. You get quality workmanship, done right the first time.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3>Final Walkthrough</h3>
+                <p>We walk through the completed work with you, answer questions, and make sure you're 100% satisfied.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Start Your Project</a>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="BRC Builders crew on the job" class="about-photo">
+                    <div class="about-experience-badge">
+                        <span class="badge-number">5<span class="badge-plus">+</span></span>
+                        <span class="badge-label">Years Serving<br>East Idaho</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Built on <em>Reliability</em></h2>
+                <p class="about-lead">BRC Builders is a locally owned and operated exterior construction company based in East Idaho. We specialize in roofing, siding, windows, doors, and complete exterior renovations for both residential and commercial properties.</p>
+                <p>Owner Skylar started BRC Builders with a simple promise: do the job right the first time. From emergency roof repairs after a storm to full exterior transformations, every project gets the same hands-on attention and quality craftsmanship.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Locally owned and operated in East Idaho</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Residential and commercial clients</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Same-day emergency roof repair</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Free estimates on every project</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Completed project for MorningStar Senior Living</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-white demo-trigger"><i class="fa-solid fa-paper-plane"></i> Request a Free Estimate</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Us -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>BRC Builders</span> Difference</h2>
+            <p>We don't cut corners. Every project gets the full treatment — quality materials, skilled workmanship, and honest communication from start to finish.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-bolt"></i>
+                </div>
+                <h3>Same-Day Emergency Service</h3>
+                <p>Storm damage doesn't wait — neither do we. Call in the morning, and we'll have a crew on your roof the same day to stop further damage.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h3>Owner-Operated</h3>
+                <p>Skylar is on every job site. No subcontractors, no runaround — you deal directly with the person responsible for your project from start to finish.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Licensed & Insured</h3>
+                <p>Full general contractor licensing and comprehensive insurance. Your property and investment are fully protected on every project we take on.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </div>
+                <h3>Complete Exterior Solutions</h3>
+                <p>From framing to final finish, we handle the entire exterior — roofing, siding, windows, doors, chimney chase, fascia. One crew, one call.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <h3>Commercial Experience</h3>
+                <p>We've completed work for commercial clients including MorningStar Senior Living. Large or small, we deliver the same quality and attention to detail.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <h3>Free Estimates</h3>
+                <p>No charge, no pressure. We visit your property, assess the work, and give you an honest, detailed estimate so you can make an informed decision.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/stats-bg.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>100+</h4>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="stat-box">
+                    <h4>5+</h4>
+                    <p>Years in Business</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>Owner-Operated</p>
+                </div>
+                <div class="stat-box">
+                    <h4>24hr</h4>
+                    <p>Response Time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Trust Section -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-certificate"></i>&nbsp; Our Commitment</span>
+            <h2>Built on <span>Trust</span></h2>
+            <p>Our reputation is built one project at a time. Here's what you can count on when you hire BRC Builders.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h3>Detailed Estimates</h3>
+                <p>No surprises. Every estimate includes a clear breakdown of materials, labor, and timeline so you know exactly what to expect before work begins.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon">
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+                <h3>Clean Job Sites</h3>
+                <p>We treat your property like our own. Daily cleanup, organized materials, and a spotless finish when the job is done.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3>Open Communication</h3>
+                <p>You'll hear from us throughout your project — progress updates, timeline changes, and honest answers to every question.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-images"></i>&nbsp; Our Work</span>
+            <h2>Recent <span>Projects</span></h2>
+            <p>Real work, real results. Browse our recent exterior construction projects across East Idaho.</p>
+        </div>
+        <div class="gallery-grid gallery-grid-6">
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-1.jpg" alt="Residential exterior renovation by BRC Builders" loading="lazy">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Residential Exterior</div>
+                    <div class="gallery-item-sub">Complete siding and trim installation</div>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-2.jpg" alt="BRC Builders job site" loading="lazy">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Job Site Ready</div>
+                    <div class="gallery-item-sub">Professional setup and equipment</div>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-3.jpg" alt="Exterior siding detail work" loading="lazy">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Siding Detail</div>
+                    <div class="gallery-item-sub">Precision installation, clean finish</div>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-4.jpg" alt="Full exterior renovation project" loading="lazy">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Exterior Renovation</div>
+                    <div class="gallery-item-sub">Full siding and trim transformation</div>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-5.jpg" alt="Corner siding detail" loading="lazy">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Corner Detail</div>
+                    <div class="gallery-item-sub">Proper flashing and weatherproofing</div>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-6.jpg" alt="Commercial exterior project" loading="lazy">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Commercial Project</div>
+                    <div class="gallery-item-sub">Large-scale exterior construction</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Area -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/hero-bg.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Serving East Idaho</h2>
+            <div class="area-towns">
+                <span>Idaho Falls</span>
+                <span>Blackfoot</span>
+                <span>Ammon</span>
+                <span>Shelley</span>
+                <span>Firth</span>
+                <span>Rexburg</span>
+                <span>Chubbuck</span>
+                <span>Pocatello</span>
+            </div>
+            <p>Don't see your town? Give us a call — we serve communities throughout East Idaho.</p>
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get Your Free Estimate</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Let's Talk About Your Project</h2>
+                <p>Whether you need an emergency repair or are planning a full renovation, we're here to help. Reach out for a free, no-obligation estimate.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+12086810204">(208) 681-0204</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:BRC.Builders2019@gmail.com">BRC.Builders2019@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Idaho Falls, Idaho</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Hours</h4>
+                            <p>Mon–Fri: 7 AM – 6 PM<br>Emergency: Same-day available</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Idaho Falls, Blackfoot, Ammon, and surrounding East Idaho communities</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Estimate</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="roofing">Roofing</option>
+                                <option value="siding">Siding</option>
+                                <option value="windows-doors">Windows &amp; Doors</option>
+                                <option value="full-exterior">Full Exterior Renovation</option>
+                                <option value="chimney-chase">Chimney Chase</option>
+                                <option value="fascia-repair">Fascia &amp; Trim Repair</option>
+                                <option value="emergency">Emergency Roof Repair</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Map -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92328.47785943859!2d-112.116!3d43.491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5354594c5a5b5c67%3A0x6e7b1c8e7b1c5b67!2sIdaho%20Falls%2C%20ID!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="BRC Builders location — Idaho Falls, Idaho">
+        </iframe>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="img/logo-white.png" alt="BRC Builders">
+                </div>
+                <p>Locally owned exterior construction serving Idaho Falls and East Idaho. Roofing, siding, windows, doors, and full renovations.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Done Right the First Time</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li>Roofing</li>
+                    <li>Siding</li>
+                    <li>Windows &amp; Doors</li>
+                    <li>Full Exterior Renovations</li>
+                    <li>Chimney Chase</li>
+                    <li>Fascia &amp; Trim Repair</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+12086810204">(208) 681-0204</a></li>
+                    <li><a href="mailto:BRC.Builders2019@gmail.com">BRC.Builders2019@gmail.com</a></li>
+                    <li>Idaho Falls, Idaho</li>
+                    <li>Mon–Fri: 7 AM – 6 PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 BRC Builders. All rights reserved.</span>
+            <span>Serving Idaho Falls, Idaho &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+// Contact form → demo modal
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+// Demo modal — all CTA buttons trigger it
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
