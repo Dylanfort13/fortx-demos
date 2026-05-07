@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivergum Carpentry — Carpenter in Wantirna South, Victoria</title>
+    <meta name="description" content="Rivergum Carpentry — professional carpenter in Wantirna South, Victoria. 5.0-star rated. Free estimates. Residential carpentry, doors, decks & more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Rivergum Carpentry. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#hero" class="logo-text">Rivergum <span>Carpentry</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+61421678274" class="phone-link">
+                <i class="fa-solid fa-phone"></i> 0421 678 274
+            </a>
+            <a href="tel:+61421678274" class="btn btn-primary">Get a Free Estimate</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('img/hero.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Carpenter — Wantirna South, Victoria
+            </div>
+            <h1>Melbourne's Finest <em>Craftsmanship</em></h1>
+            <p>Precision carpentry for homes across Melbourne's eastern suburbs. From custom builds to expert repairs — Scott delivers quality you can see and feel.</p>
+            <div class="hero-buttons">
+                <a href="tel:+61421678274" class="btn btn-primary btn-lg demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call Now — 0421 678 274
+                </a>
+                <a href="#contact" class="btn btn-ghost demo-trigger">Get a Free Estimate</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>5.0<span class="stat-plus">★</span></h3>
+                    <p>Google Rating</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>Free</h3>
+                    <p>Estimates</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>Same Day</h3>
+                    <p>Call-Backs</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item"><i class="fa-solid fa-star"></i> 5.0★ Google Rated</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Licensed &amp; Insured</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-clock"></i> Free Estimates</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-map-pin"></i> Melbourne's Eastern Suburbs</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-handshake"></i> Owner-Operated by Scott</div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>From custom builds to expert repairs — comprehensive carpentry services for Wantirna South homeowners and beyond.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-door-open"></i>
+                </div>
+                <div class="service-card-body">
+                    <h3>Door Installation &amp; Repair</h3>
+                    <p>Expert door fitting, replacement, and jamb repair. Internal and external doors installed with precision for a perfect fit every time.</p>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <span class="service-card-tag">Most Popular</span>
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-hammer"></i>
+                </div>
+                <div class="service-card-body">
+                    <h3>Custom Carpentry</h3>
+                    <p>Bespoke woodwork tailored to your home. Built-in shelving, custom joinery, and handcrafted pieces designed to fit your space perfectly.</p>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-stairs"></i>
+                </div>
+                <div class="service-card-body">
+                    <h3>Decks &amp; Outdoor Structures</h3>
+                    <p>Beautiful timber decks, pergolas, and outdoor living spaces built to withstand the Australian climate and last for decades.</p>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                </div>
+                <div class="service-card-body">
+                    <h3>Residential Framing</h3>
+                    <p>Structural framing and timber work for renovations and new builds. Accurate, code-compliant, and built to last.</p>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-archway"></i>
+                </div>
+                <div class="service-card-body">
+                    <h3>Home Renovations</h3>
+                    <p>Full carpentry support for renovation projects — from removing old structures to building new ones. One tradesman, start to finish.</p>
+                </div>
+            </div>
+            <div class="service-card fade-up">
+                <div class="service-icon-wrap">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <div class="service-card-body">
+                    <h3>Repairs &amp; Maintenance</h3>
+                    <p>Timber repairs, rot replacement, and general woodwork maintenance to keep your home in top condition year-round.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS STEPS
+     ═══════════════════════════════════════ -->
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; How It Works</span>
+            <h2>Our <span>Simple Process</span></h2>
+            <p class="process-subtitle">From first call to finished project — Scott makes every step smooth and stress-free.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card fade-up">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-phone"></i></div>
+                <h3>Free Consultation</h3>
+                <p>Call Scott or fill out the form. He'll discuss your project, answer questions, and arrange a convenient time to visit.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-clipboard-list"></i></div>
+                <h3>Detailed Quote</h3>
+                <p>Scott visits your home, assesses the job, and provides a clear, written quote — no hidden costs, no surprises.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-hammer"></i></div>
+                <h3>Expert Build</h3>
+                <p>Work begins on schedule with quality materials and craftsmanship. Scott keeps you informed at every stage of the build.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>Final Walkthrough</h3>
+                <p>Walk through the finished work together. Scott ensures everything meets your expectations before considering the job done.</p>
+            </div>
+        </div>
+        <div class="process-cta fade-up">
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Get Started</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="Rivergum Carpentry fine woodwork detail" class="about-photo">
+                    <div class="about-experience-badge">
+                        <span class="badge-number">5.0</span>
+                        <span class="badge-plus">★</span>
+                        <span class="badge-label">Google Rated</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Crafted by Hand. <em>Built to Last.</em></h2>
+                <p class="about-lead">Rivergum Carpentry is owned and operated by Scott, a resourceful and experienced tradesman who takes great pride in his workmanship. Based in Wantirna South, Scott serves homeowners across Melbourne's eastern and outer-eastern suburbs with honest, reliable carpentry.</p>
+                <p>Every job gets the same careful attention — whether it's a front door replacement or a full custom build. Scott's 5.0-star rating across 40+ Google reviews speaks to a consistency that's rare in the trades.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5.0★ Google Rating — 40+ Verified Reviews</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Licensed &amp; Insured Carpenter</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-handshake"></i>
+                        <span>Owner-Operated — Scott on Every Job</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Serving Wantirna South &amp; Melbourne's Eastern Suburbs</span>
+                    </div>
+                </div>
+                <a href="tel:+61421678274" class="btn btn-primary demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call 0421 678 274
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>Rivergum</span> Difference</h2>
+            <p>What sets Scott apart from every other carpenter in Melbourne's eastern suburbs.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-star"></i></div>
+                <h3>Perfect 5.0★ Google Rating</h3>
+                <p>Every single Google review is five stars — that's not luck, that's consistency. Forty-plus homeowners can't be wrong.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h3>Owner on Every Job</h3>
+                <p>Scott personally handles every project from start to finish. No subcontractors, no runaround — just one tradesman who cares.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-tag"></i></div>
+                <h3>Fair, Transparent Pricing</h3>
+                <p>Customers consistently mention Scott's reasonable pricing. Clear quotes upfront — no hidden costs or surprise additions.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Licensed &amp; Insured</h3>
+                <p>Fully licensed and insured for your peace of mind. Every job meets Australian building standards and local regulations.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-comments"></i></div>
+                <h3>Clear Communication</h3>
+                <p>Customers praise Scott's communication and reliability — a refreshing change from tradies who go quiet or leave you waiting.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>Pride in Workmanship</h3>
+                <p>Scott takes great pride in every cut, joint, and finish. The result is carpentry that looks beautiful and stands the test of time.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/stats-bar-bg.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>40+</h4>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="stat-box">
+                    <h4>6 AM</h4>
+                    <p>Early Start Times</p>
+                </div>
+                <div class="stat-box">
+                    <h4>15+</h4>
+                    <p>Suburbs Served</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>5-Star Reviews</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST SECTION (no real reviews available)
+     ═══════════════════════════════════════ -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Why Trust Us</span>
+            <h2>Built on <span>Reputation</span></h2>
+            <p>The values that guide every project we take on in Wantirna South.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>Perfect 5.0 Rating</h3>
+                <p>A flawless Google rating across 40+ reviews speaks louder than any sales pitch. Every job done right, every client satisfied — that's the Rivergum standard.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Trade-Quality Craftsmanship</h3>
+                <p>Proper joinery, clean finishes, and materials built for Australian conditions. We don't cut corners — we cut timber, precisely.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
+                <h3>Fully Licensed &amp; Insured</h3>
+                <p>Victorian trade licence and full public liability insurance. Your home is protected, your build is compliant, and you can rest easy from day one.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Common <span>Questions</span></h2>
+                <p>Everything you need to know before getting started. Still have questions? Reach out directly.</p>
+                <a href="tel:+61421678274" class="btn btn-primary demo-trigger"><i class="fa-solid fa-phone"></i> Call Scott</a>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Do you offer free estimates?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — we provide free, no-obligation quotes for all carpentry projects in Wantirna South and surrounding suburbs. Scott will visit your home, assess the scope, and deliver an itemised quote.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What areas do you serve?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We're based in Wantirna South and serve Melbourne's eastern suburbs including Knoxfield, Rowville, Wheelers Hill, Glen Waverley, Boronia, and Lysterfield. For larger projects, we travel further — just ask.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Are you licensed and insured?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes. Rivergum Carpentry holds a current Victorian trade licence and carries full public liability insurance. All work is compliant with Australian building standards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What types of timber do you work with?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We work with a full range of Australian timbers — treated pine for framing, hardwoods like Merbau and Spotted Gum for decks, and premium species for custom joinery. We'll recommend the right timber for your project and budget.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        How long does a typical deck build take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>A standard merbau deck (around 20m²) typically takes 3–5 working days. Larger or more complex builds with stairs, pergolas, or custom features will take longer. We'll give you a clear timeline in the quote.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Proudly Serving Melbourne's Eastern Suburbs</h2>
+            <div class="area-towns">
+                <span>Wantirna South</span>
+                <span>Glen Waverley</span>
+                <span>Yarra Junction</span>
+                <span>Knoxfield</span>
+                <span>Wantirna</span>
+                <span>Vermont</span>
+                <span>Boronia</span>
+                <span>Rowville</span>
+            </div>
+            <p>Based in Wantirna South, Scott travels across Melbourne's eastern and outer-eastern suburbs. Not sure if we cover your area? Give us a call.</p>
+            <a href="tel:+61421678274" class="btn btn-white btn-lg demo-trigger">
+                <i class="fa-solid fa-phone"></i> Call 0421 678 274 — Free Estimate
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Ready to Get Started?</h2>
+                <p>Give us a call or fill out the form — Scott will get back to you the same day with a free, no-obligation estimate.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+61421678274">0421 678 274</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Wantirna South VIC 3152</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="info-content">
+                            <h4>Hours</h4>
+                            <p>Mon–Wed 6:00–5:30 · Thu–Fri 6:30–5:30 · Sat 7:00–3:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Wantirna South, Glen Waverley, Yarra Junction, Knoxfield, Wantirna, Vermont, Boronia, Rowville, and surrounding areas.</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Estimate</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="04XX XXX XXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="door-installation">Door Installation &amp; Repair</option>
+                                <option value="custom-carpentry">Custom Carpentry</option>
+                                <option value="decks-outdoor">Decks &amp; Outdoor Structures</option>
+                                <option value="framing">Residential Framing</option>
+                                <option value="renovations">Home Renovations</option>
+                                <option value="repairs">Repairs &amp; Maintenance</option>
+                                <option value="other">Other / Not Sure Yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Wantirna+South+Victoria+Australia&output=embed"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Rivergum Carpentry location — Wantirna South, Victoria">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="#hero" class="footer-logo-text">Rivergum <span>Carpentry</span></a>
+                </div>
+                <p>Professional residential carpentry in Wantirna South and across Melbourne's eastern suburbs. Quality workmanship, fair pricing, and a perfect 5.0-star reputation.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Built for Melbourne. Built to Last.</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Door Installation &amp; Repair</a></li>
+                    <li><a href="#services">Custom Carpentry</a></li>
+                    <li><a href="#services">Decks &amp; Outdoor Structures</a></li>
+                    <li><a href="#services">Residential Framing</a></li>
+                    <li><a href="#services">Home Renovations</a></li>
+                    <li><a href="#services">Repairs &amp; Maintenance</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Free Estimate</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+61421678274">0421 678 274</a></li>
+                    <li>Wantirna South VIC 3152</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Rivergum Carpentry. All rights reserved.</span>
+            <span>Serving Wantirna South, Victoria &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+// Contact form → demo modal (not success message)
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+// Demo modal — all CTA buttons trigger it
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+// Scroll animations — IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Animate section headers
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+// Stagger grid children with sequential delays
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
