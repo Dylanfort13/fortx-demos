@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echelon Built — Contractor in Melbourne, Victoria</title>
+    <meta name="description" content="Echelon Built — Fix, improve, and build across Melbourne's eastern and northern suburbs. Repairs, tiling, decks, custom builds, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Echelon Built. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="nav-logo">
+            <img src="img/logo-white.png" alt="Echelon Built" class="nav-logo-light">
+            <img src="img/logo-dark.png" alt="Echelon Built" class="nav-logo-dark">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why-us">Why Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+61411826684" class="phone-link demo-trigger"><i class="fa-solid fa-phone"></i> +61 411 826 684</a>
+            <a href="#contact" class="btn btn-primary demo-trigger">Free Estimate</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('img/hero.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Contractor — Melbourne, Victoria
+            </div>
+            <h1>Fix. Improve. <em>Build.</em></h1>
+            <p>The home problems that fall between trades — broken gates, tired decks, custom builds nobody else wants to touch. We find the real cause, and we make it hold.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get a Free Estimate</a>
+                <a href="#services" class="btn btn-ghost btn-lg">See Our Work</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>5<span class="stat-plus">★</span></h3>
+                    <p>Customer Rating</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>3</h3>
+                    <p>Service Categories</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>25<span class="stat-plus">+</span></h3>
+                    <p>Melbourne Suburbs</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="img/logo-white.png" alt="Echelon Built" class="hero-logo">
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-star"></i> 5★ Rated
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-shield-halved"></i> Fully Insured
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-screwdriver-wrench"></i> Multi-Trade Expertise
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-location-dot"></i> Eastern &amp; Northern Melbourne
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-clock"></i> Responsive Communication
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>Most trades are built around one skill. We're built around one thing: solving the home problems that fall between them.</p>
+        </div>
+        <div class="services-grid">
+
+            <!-- FIX -->
+            <div class="service-card" style="background-image: url('img/gallery-3.jpg');">
+                <div class="service-card-overlay"></div>
+                <span class="service-card-tag">Fix</span>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-wrench"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Repairs &amp; Fixes</h3>
+                        <p>Broken gates, damaged fence palings, crumbling brickwork, rotted floorboards, shifted garden steps, safety fencing. We find the actual cause so the repair holds.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- IMPROVE -->
+            <div class="service-card" style="background-image: url('img/gallery-5.jpg');">
+                <div class="service-card-overlay"></div>
+                <span class="service-card-tag">Improve</span>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Restoration &amp; Upgrades</h3>
+                        <p>Deck sanding and recoating, fascia restoration, floor tiling, wall tiling in awkward spaces, skirting board fitting with tight mitred corners — the detail work that shows.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUILD — Custom Additions -->
+            <div class="service-card" style="background-image: url('img/gallery-1.jpg');">
+                <div class="service-card-overlay"></div>
+                <span class="service-card-tag">Build</span>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Custom Builds &amp; Additions</h3>
+                        <p>Glass partitions, timber entry landings, fire pit walls, outdoor sinks, storage sheds, cat enclosures, alfresco conversions, and bespoke letterbox systems.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUILD — Interior -->
+            <div class="service-card" style="background-image: url('img/gallery-4.jpg');">
+                <div class="service-card-overlay"></div>
+                <span class="service-card-tag">Build</span>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-door-open"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Interior Fit-Outs</h3>
+                        <p>Flat pack kitchen assembly, oven cavity build-outs, new door hanging, lock and hardware upgrades, wardrobe doors, and natural stone fireplace facing.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS
+     ═══════════════════════════════════════ -->
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; How It Works</span>
+            <h2>From <span>Problem</span> to Solution</h2>
+            <p class="process-subtitle">We don't just show up and patch. We diagnose, plan, and build it right the first time.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3>Tell Us the Problem</h3>
+                <p>Call, email, or fill in the form. Winnie will respond promptly — no runaround, no waiting days for a callback.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h3>Diagnose &amp; Quote</h3>
+                <p>Nick visits, finds the real cause (not just the symptom), and provides a clear quote. No surprises, no hidden costs.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h3>We Fix, Improve, or Build</h3>
+                <p>The work gets done properly — with the right materials, the right method, and communication at every stage.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3>It Holds</h3>
+                <p>We don't do band-aid fixes. The repair holds, the build lasts, and you know exactly what was done and why.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get Started</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="Echelon Built — precision joinery and craftsmanship" class="about-photo">
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Built Around the Way It <em>Should</em> Have Always Been</h2>
+                <p class="about-lead">Nick grew up on a farm where if something broke, you fixed it or you did without. That upbringing built a rare diagnostic depth across bricklaying, carpentry, water leakage, and much more. He never says "no" — only "how."</p>
+                <p>Winnie comes from healthcare, where keeping people informed and nothing falling through the cracks isn't optional — it's the job. When you work with us, you know what's happening, why it's happening, and what it costs — at every step.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Cross-trade diagnostic depth — not just one skill</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Dedicated client care contact (Winnie) — always reachable</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Principled Prosperity — honest pricing, no surprises</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>We fix the cause, not just the symptom</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get a Free Estimate</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>Echelon</span> Difference</h2>
+            <p>Not a handyman. Not a single-trade specialist. The right fit for the jobs that fall between them.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-stethoscope"></i>
+                </div>
+                <h3>Diagnostic Approach</h3>
+                <p>We find the real cause — not just the visible symptom. A patch that lasts, not a patch that comes back.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-handshake"></i>
+                </div>
+                <h3>Clear Communication</h3>
+                <p>You know what's happening, why, and what it costs. Winnie keeps you informed at every stage — no runaround.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+                <h3>Multi-Trade Depth</h3>
+                <p>Bricklaying, carpentry, tiling, water leakage — one call covers the jobs that don't fit neatly into one trade.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                </div>
+                <h3>Honest Pricing</h3>
+                <p>Principled Prosperity is our foundation. We're not the cheapest — we're the ones you can trust.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3>Fully Insured</h3>
+                <p>Complete peace of mind on every job. Proper coverage, proper documentation, no grey areas.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-paw"></i>
+                </div>
+                <h3>Pet-Friendly Homes</h3>
+                <p>We understand homes are for the whole family — including the four-legged members. Our own pets remind us daily.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/stats-bg.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>5★</h4>
+                    <p>Customer Rating</p>
+                </div>
+                <div class="stat-box">
+                    <h4>3</h4>
+                    <p>Service Categories</p>
+                </div>
+                <div class="stat-box">
+                    <h4>25+</h4>
+                    <p>Suburbs Served</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>Transparent Pricing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST SECTION (instead of reviews — no verified review text)
+     ═══════════════════════════════════════ -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-certificate"></i>&nbsp; Our Promise</span>
+            <h2>Why Homeowners <span>Trust</span> Us</h2>
+            <p>We built this business from a genuine concern — too many homeowners let down by trades that didn't deliver on their promises.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-card-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3>Always Reachable</h3>
+                <p>Winnie isn't on the tools — she's dedicated to client care. You'll never be left wondering what's happening with your job.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-card-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <h3>Root Cause Diagnosis</h3>
+                <p>We don't patch over problems. Nick's farm upbringing means he finds the real cause — and fixes it so it stays fixed.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-card-icon">
+                    <i class="fa-solid fa-receipt"></i>
+                </div>
+                <h3>No Hidden Costs</h3>
+                <p>The quote is the price. If anything changes, you'll know before the work does. Principled Prosperity isn't just a motto.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     GALLERY
+     ═══════════════════════════════════════ -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-images"></i>&nbsp; Our Work</span>
+            <h2>Recent <span>Projects</span></h2>
+            <p>A selection of repairs, restorations, and custom builds across Melbourne.</p>
+        </div>
+        <div class="gallery-grid gallery-grid-6">
+            <div class="gallery-item">
+                <img src="img/gallery-1.jpg" alt="Deck with pergola">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Deck &amp; Pergola</div>
+                    <div class="gallery-item-sub">Custom outdoor living space</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-2.jpg" alt="Cedar gazebo">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Cedar Gazebo</div>
+                    <div class="gallery-item-sub">Bespoke garden structure</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-3.jpg" alt="Cedar deck">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Cedar Decking</div>
+                    <div class="gallery-item-sub">Sanded, sealed, and built to last</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-4.jpg" alt="Custom built-in">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Custom Built-In</div>
+                    <div class="gallery-item-sub">Precision cabinetry and fit-out</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-5.jpg" alt="Finish trim work">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Finish &amp; Trim</div>
+                    <div class="gallery-item-sub">Detail work that shows craftsmanship</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-6.jpg" alt="Wraparound porch">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Wraparound Porch</div>
+                    <div class="gallery-item-sub">Full exterior restoration</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/stats-bg.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Serving Melbourne's Eastern &amp; Northern Suburbs</h2>
+            <div class="area-towns">
+                <span>Heidelberg</span>
+                <span>Ivanhoe</span>
+                <span>Eaglemont</span>
+                <span>Rosanna</span>
+                <span>Viewbank</span>
+                <span>Kew</span>
+                <span>Balwyn</span>
+                <span>Camberwell</span>
+                <span>Canterbury</span>
+                <span>Surrey Hills</span>
+                <span>Mont Albert</span>
+                <span>Mount Waverley</span>
+                <span>Doncaster</span>
+                <span>Templestowe</span>
+                <span>Eltham</span>
+                <span>Montmorency</span>
+                <span>Bulleen</span>
+                <span>Greensborough</span>
+                <span>Park Orchards</span>
+                <span>&amp; Surrounds</span>
+            </div>
+            <p>Not sure if we cover your area? Just ask — we're happy to check.</p>
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get in Touch</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col fade-up">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Common <span>Questions</span></h2>
+                <p>Answers to the things homeowners ask us most often.</p>
+            </div>
+            <div class="faq-list fade-up">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What kind of jobs do you take on?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Anything that falls between a handyman job and a specialist trade. Gate repairs, deck restoration, custom builds, tiling, brickwork, door installation — if you're not sure who to call, that's probably us.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Do you charge for quotes?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>No. Estimates are free. Nick will visit, diagnose the real issue, and provide a clear quote with no obligation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What areas do you service?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We serve Melbourne's eastern and northern suburbs — from Heidelberg and Ivanhoe through to Kew, Balwyn, Doncaster, Templestowe, Eltham, and surrounding areas. If you're nearby but not listed, just ask.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        How quickly can you start?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>It depends on our current schedule, but Winnie will let you know upfront when we can get to you. We don't overbook and we don't leave you waiting.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Are you insured?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes, fully insured. Proper coverage for all work we carry out. No grey areas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Let's Fix, Improve, or Build</h2>
+                <p>Tell us what's going on — we'll let you know if it's something we can help with. No pressure, no jargon.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+61411826684" class="demo-trigger">+61 411 826 684</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@echelonbuilt.com" class="demo-trigger">info@echelonbuilt.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Response Time</h4>
+                            <p>Within 24 hours</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Melbourne's eastern &amp; northern suburbs — Heidelberg, Ivanhoe, Kew, Balwyn, Doncaster, Templestowe, Eltham &amp; surrounds</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Estimate</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="+61 400 000 000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="fix">Fix — Repairs &amp; Fixes</option>
+                                <option value="improve">Improve — Restoration &amp; Upgrades</option>
+                                <option value="build">Build — Custom Build or Addition</option>
+                                <option value="other">Not sure — just need advice</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100859.419798!2d145.0!3d-37.8136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4e57%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Echelon Built location — Melbourne, Victoria">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="img/logo-white.png" alt="Echelon Built">
+                </div>
+                <p>Fix, improve, and build — the home problems that fall between trades. Serving Melbourne's eastern and northern suburbs.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Principled Prosperity</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li>Repairs &amp; Fixes</li>
+                    <li>Restoration &amp; Upgrades</li>
+                    <li>Custom Builds</li>
+                    <li>Interior Fit-Outs</li>
+                    <li>Deck Restoration</li>
+                    <li>Tiling &amp; Finishing</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+61411826684" class="demo-trigger">+61 411 826 684</a></li>
+                    <li><a href="mailto:info@echelonbuilt.com" class="demo-trigger">info@echelonbuilt.com</a></li>
+                    <li>Melbourne, Victoria</li>
+                    <li>Eastern &amp; Northern Suburbs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Echelon Built. All rights reserved.</span>
+            <span>Serving Melbourne, Victoria &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+// Contact form → demo modal
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+// Demo modal — all CTA buttons trigger it
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+// Scroll animations
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
