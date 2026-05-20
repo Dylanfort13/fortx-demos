@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delmor Enterprises — Construction Company in Melbourne, Victoria</title>
+    <meta name="description" content="Delmor Enterprises — trusted construction and plumbing company in Melbourne, VIC. Over 23 years experience. 5-star rated. Free estimates.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Delmor Enterprises. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#hero" class="logo-text">Delmor <span>Enterprises</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#process">Our Process</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+61481463966" class="phone-link">
+                <i class="fa-solid fa-phone"></i> +61 481 463 966
+            </a>
+            <a href="tel:+61481463966" class="btn btn-primary demo-trigger">Get a Free Quote</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('img/hero.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Construction Company — Melbourne, Victoria
+            </div>
+            <h1>Melbourne's Trusted <em>Construction</em> Experts</h1>
+            <p>Over 23 years delivering quality construction and plumbing services across Melbourne's northern suburbs. From renovations to new builds — Delmor Enterprises gets it done right.</p>
+            <div class="hero-buttons">
+                <a href="tel:+61481463966" class="btn btn-primary btn-lg demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call Antonio — +61 481 463 966
+                </a>
+                <a href="#contact" class="btn btn-ghost">Get a Free Quote</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>23<span class="stat-plus">+</span></h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>5<span class="stat-plus">★</span></h3>
+                    <p>Google Rated</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>25</h3>
+                    <p>Five-Star Reviews</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item"><i class="fa-solid fa-hard-hat"></i> Licensed Builder</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Fully Insured</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-star"></i> 5★ Google · 25 Reviews</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-clock"></i> Est. 2002</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-faucet-drip"></i> Plumbing + Construction</div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>Full-service construction and plumbing for Melbourne homeowners — from the ground up.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up" style="background-image: url('img/gallery-1.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <span class="service-card-tag">Core Service</span>
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Residential Construction</h3>
+                        <p>New builds, extensions, and structural work — delivered with over two decades of experience in Melbourne's northern suburbs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-2.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <span class="service-card-tag">Core Service</span>
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Plumbing Services</h3>
+                        <p>General plumbing repairs, maintenance, and new installations. Licensed plumbing work backed by our construction expertise.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-3.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Renovations &amp; Extensions</h3>
+                        <p>Transform your home with professional renovations. Kitchen, bathroom, and living space upgrades built to last.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-4.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-fire-burner"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Hot Water Systems</h3>
+                        <p>Installation and repair of hot water systems. We supply, fit, and maintain all major brands for Melbourne homes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS
+     ═══════════════════════════════════════ -->
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; How It Works</span>
+            <h2>Our <span>Process</span></h2>
+            <p class="process-subtitle">From first call to finished project — here's how Delmor Enterprises delivers quality every step of the way.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card fade-up">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <h3>Get in Touch</h3>
+                <p>Call Antonio or fill out our form. Tell us about your project — we'll listen and ask the right questions.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                </div>
+                <h3>Free On-Site Quote</h3>
+                <p>We visit your property, assess the scope, and provide a detailed, no-obligation quote — no surprises.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                </div>
+                <h3>Expert Execution</h3>
+                <p>Our experienced team handles every detail — construction, plumbing, and finishing — with care and precision.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3>Final Handover</h3>
+                <p>We walk you through the completed work, make sure everything meets your expectations, and leave your home spotless.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="tel:+61481463966" class="btn btn-primary btn-lg demo-trigger">
+                <i class="fa-solid fa-phone"></i> Get Your Free Quote
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="Delmor Enterprises construction work" class="about-photo">
+                    <div class="about-experience-badge">
+                        <span class="badge-number">23</span>
+                        <span class="badge-plus">+</span>
+                        <span class="badge-label">Years in Business</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Built on Trust. <em>Delivered with Pride.</em></h2>
+                <p class="about-lead">Delmor Enterprises has been serving Melbourne's northern suburbs since 2002. Founded by Antonio, we combine construction expertise with licensed plumbing — giving homeowners a single, reliable team for the entire project.</p>
+                <p>Over 23 years, we've built a reputation for honest quoting, quality workmanship, and finishing on time. Every job, big or small, gets the same careful attention.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>Perfect 5-Star Google Rating from 25 Reviews</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                        <span>Dual Trade: Construction + Licensed Plumbing</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Fully Licensed &amp; Insured (ABN 65 102 939 328)</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Melbourne Northern Suburbs — Local Since 2002</span>
+                    </div>
+                </div>
+                <a href="tel:+61481463966" class="btn btn-primary demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call Antonio — +61 481 463 966
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>Delmor</span> Difference</h2>
+            <p>What sets us apart from every other construction company in Melbourne's north.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-user-check"></i></div>
+                <h3>Owner-Operated by Antonio</h3>
+                <p>Antonio personally oversees every project. You deal directly with the decision-maker — not a project manager who's juggling ten other jobs.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-faucet-drip"></i></div>
+                <h3>Construction + Plumbing</h3>
+                <p>Two trades, one team. No need to hire separate contractors — we handle the build and the plumbing, saving you time and coordination headaches.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Licensed &amp; Insured</h3>
+                <p>Fully registered company (ACN 102 939 328), GST registered, and completely insured. Your project is in professional hands.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h3>Upfront, Honest Quotes</h3>
+                <p>No hidden costs, no vague estimates. We provide detailed quotes before we start so you know exactly what to expect.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3>23+ Years Experience</h3>
+                <p>Since 2002, we've been delivering quality construction and plumbing across Melbourne. That experience shows in every project we complete.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-map-pin"></i></div>
+                <h3>Northern Suburbs Local</h3>
+                <p>Born and based in Melbourne's north. We know the area, the homes, the councils, and the local requirements inside out.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/gallery-5.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>23+</h4>
+                    <p>Years in Business</p>
+                </div>
+                <div class="stat-box">
+                    <h4>5★</h4>
+                    <p>Google Rating</p>
+                </div>
+                <div class="stat-box">
+                    <h4>2</h4>
+                    <p>Trades in One</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Free</h4>
+                    <p>On-Site Quotes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST SECTION
+     ═══════════════════════════════════════ -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Why Trust Us</span>
+            <h2>Built on <span>Reputation</span></h2>
+            <p>The values that have earned us 25 perfect reviews and two decades of repeat business.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>Perfect Track Record</h3>
+                <p>25 five-star Google reviews — every single one is perfect. That doesn't happen by accident. It comes from consistent, quality work on every job.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
+                <h3>Registered &amp; Compliant</h3>
+                <p>Fully registered Australian company with ACN and ABN. GST registered. All construction and plumbing work meets Victorian standards and regulations.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Craftsmanship Guarantee</h3>
+                <p>Over 23 years of refining our craft. We don't cut corners, we don't rush, and we never compromise on materials or workmanship.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/hero.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Serving Melbourne's Northern Suburbs</h2>
+            <div class="area-towns">
+                <span>Glenroy</span>
+                <span>Broadmeadows</span>
+                <span>Coburg</span>
+                <span>Pascoe Vale</span>
+                <span>Essendon</span>
+                <span>Moonee Ponds</span>
+                <span>Brunswick</span>
+                <span>Preston</span>
+                <span>Reservoir</span>
+                <span>Melbourne Metro</span>
+            </div>
+            <p>Outside our usual area? Give us a call — we take on projects across greater Melbourne.</p>
+            <a href="tel:+61481463966" class="btn btn-white btn-lg demo-trigger">
+                <i class="fa-solid fa-phone"></i> Call +61 481 463 966 — Free Quote
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Common <span>Questions</span></h2>
+                <p>Everything you need to know before getting started. Still have questions? Reach out directly.</p>
+                <a href="tel:+61481463966" class="btn btn-primary demo-trigger" style="margin-top:1.5rem;"><i class="fa-solid fa-phone"></i> Call Antonio</a>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Do you offer free quotes?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — we provide free, no-obligation on-site quotes for all construction and plumbing projects in the Melbourne area. Antonio will visit your property, assess the scope, and provide a detailed written quote.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What areas do you serve?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We're based in Melbourne's northern suburbs and regularly serve Glenroy, Broadmeadows, Coburg, Pascoe Vale, Essendon, Moonee Ponds, Brunswick, and surrounding areas. We also take on projects across greater Melbourne.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Are you licensed for both construction and plumbing?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes. Delmor Enterprises is a registered company (ABN 65 102 939 328) licensed for both construction and plumbing work. This means one team handles your entire project — no separate contractors needed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        How long have you been in business?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Delmor Enterprises has been operating since 2002 — over 23 years. We've built our reputation through consistent quality work and honest business practices.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What types of projects do you handle?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We handle residential construction (new builds, extensions, renovations), general plumbing (repairs, installations, maintenance), hot water system installation and repair, and drain clearing. If you're not sure whether we cover it, just ask.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Ready to Start Your Project?</h2>
+                <p>Call Antonio directly or fill out the form — we'll get back to you within 24 hours with a free quote.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+61481463966">+61 481 463 966</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:delmorplumbing@hotmail.com">delmorplumbing@hotmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Melbourne Northern Suburbs, VIC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Glenroy, Broadmeadows, Coburg, Pascoe Vale, Essendon, Moonee Ponds, Brunswick, and greater Melbourne.</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Quote</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="+61 400 000 000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="construction">Residential Construction</option>
+                                <option value="plumbing">Plumbing Services</option>
+                                <option value="renovations">Renovations &amp; Extensions</option>
+                                <option value="hot-water">Hot Water Systems</option>
+                                <option value="drains">Drain Clearing &amp; Repair</option>
+                                <option value="other">Other / Not Sure Yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Glenroy+Victoria+Australia&output=embed"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Delmor Enterprises location — Melbourne Northern Suburbs, Victoria">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="#hero" class="footer-logo-text">Delmor <span>Enterprises</span></a>
+                </div>
+                <p>Melbourne's trusted construction and plumbing company since 2002. Two trades, one team, quality guaranteed.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-hammer"></i>
+                    <span>Construction &amp; Plumbing Since 2002</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Residential Construction</a></li>
+                    <li><a href="#services">Plumbing Services</a></li>
+                    <li><a href="#services">Renovations &amp; Extensions</a></li>
+                    <li><a href="#services">Hot Water Systems</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#process">Our Process</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Free Quote</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+61481463966">+61 481 463 966</a></li>
+                    <li><a href="mailto:delmorplumbing@hotmail.com">delmorplumbing@hotmail.com</a></li>
+                    <li>Melbourne Northern Suburbs, VIC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Delmor Enterprises Pty Ltd. All rights reserved.</span>
+            <span>Serving Melbourne Northern Suburbs, VIC &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
