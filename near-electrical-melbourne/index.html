@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Near Electrical — Electrician in Melbourne, Victoria</title>
+    <meta name="description" content="Near Electrical — professional electrician in Melbourne, VIC. Free estimates. 5-star rated local service.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Near Electrical. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- Emergency Banner -->
+<div class="emergency-banner">
+    <div class="container">
+        <span class="emergency-pulse"></span>
+        <i class="fa-solid fa-bolt"></i>
+        <strong>Electrical Emergency?</strong> Call Lewis now — <a href="tel:+61420417071">+61 420 417 071</a>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#hero" class="logo-text">Near <span>Electrical</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Our Work</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+61420417071" class="phone-link">
+                <i class="fa-solid fa-phone"></i> +61 420 417 071
+            </a>
+            <a href="tel:+61420417071" class="btn btn-primary demo-trigger">Get a Free Estimate</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('img/hero.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Electrician — Melbourne, Victoria
+            </div>
+            <h1>Melbourne's Trusted <em>Electrician</em></h1>
+            <p>Lewis and the Near Electrical team deliver reliable residential electrical services across Melbourne — from switchboard upgrades to full lighting installations.</p>
+            <div class="hero-buttons">
+                <a href="tel:+61420417071" class="btn btn-primary btn-lg demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call Now — +61 420 417 071
+                </a>
+                <a href="#contact" class="btn btn-ghost">Get a Free Estimate</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>Free</h3>
+                    <p>Estimates</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>5<span class="stat-plus">★</span></h3>
+                    <p>Google Rated</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>Locally</h3>
+                    <p>Owned &amp; Operated</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item"><i class="fa-solid fa-bolt"></i> Licensed Electrician</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Fully Insured</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-star"></i> 5★ Google Rated</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-clock"></i> Free Estimates</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-map-pin"></i> Serving Melbourne Metro</div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-bolt"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>Reliable residential electrical services for Melbourne homeowners — from quick fixes to full installations.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up" style="background-image: url('img/gallery-2.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <span class="service-card-tag">Most Popular</span>
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Switchboard Upgrades</h3>
+                        <p>Old fuse box? We upgrade outdated switchboards to modern safety switches — protecting your home and family.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-4.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-lightbulb"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Lighting Installations</h3>
+                        <p>Downlights, pendant lights, outdoor lighting — we design and install lighting that transforms your home.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-6.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Power Points &amp; Outlets</h3>
+                        <p>Need more power points? We install additional outlets, USB chargers, and outdoor power where you need it.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-1.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Electrical Repairs</h3>
+                        <p>Flickering lights, tripping breakers, faulty wiring — we diagnose and fix electrical issues fast and safely.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="Near Electrical team at work" class="about-photo">
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Powering Melbourne Homes. <em>Done Right.</em></h2>
+                <p class="about-lead">Near Electrical is a locally owned and operated electrical business run by Lewis, serving Melbourne homeowners with honest, reliable service. Every job is done to the highest standard — no shortcuts, no surprises.</p>
+                <p>From simple repairs to complete rewiring, Lewis handles every project personally with the care and attention your home deserves.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Licensed &amp; Insured Electrical Contractor</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5-Star Google Rating from Melbourne Customers</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Serving Melbourne Metro &amp; Surrounding Suburbs</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Free, No-Obligation Estimates on Every Job</span>
+                    </div>
+                </div>
+                <a href="tel:+61420417071" class="btn btn-primary demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call +61 420 417 071
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>Near Electrical</span> Difference</h2>
+            <p>What sets Lewis apart from every other electrician in the Melbourne area.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-user-check"></i></div>
+                <h3>Owner-Operated by Lewis</h3>
+                <p>When you hire Near Electrical, Lewis handles your job personally — not a subcontractor or apprentice you've never met.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-certificate"></i></div>
+                <h3>Licensed &amp; Certified</h3>
+                <p>Fully licensed electrical contractor in Victoria. All work meets Australian standards and local compliance requirements.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Fully Insured</h3>
+                <p>Complete insurance coverage on every job. Your home and property are protected from start to finish.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-bolt"></i></div>
+                <h3>Emergency Service</h3>
+                <p>Electrical emergencies don't wait — and neither do we. Call Lewis directly for urgent electrical issues.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-file-contract"></i></div>
+                <h3>Upfront Pricing</h3>
+                <p>Free estimates before we start. No hidden fees, no surprise charges — you'll know the cost before any work begins.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-map-pin"></i></div>
+                <h3>Melbourne Local</h3>
+                <p>Born and based in Melbourne. Lewis knows the area, the homes, and the electrical requirements specific to Victoria.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/gallery-5.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>5★</h4>
+                    <p>Google Rating</p>
+                </div>
+                <div class="stat-box">
+                    <h4>24hr</h4>
+                    <p>Emergency Response</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>AU Standards Compliant</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Free</h4>
+                    <p>Estimates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST SECTION (no verifiable reviews)
+     ═══════════════════════════════════════ -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Why Trust Us</span>
+            <h2>Built on <span>Reputation</span></h2>
+            <p>The values that guide every project we take on in Melbourne.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>5-Star Track Record</h3>
+                <p>Every Google review is a perfect five stars. Near Electrical has earned that rating through consistent, quality work on every single job.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Craftsmanship First</h3>
+                <p>Neat wiring, clean installations, and careful attention to detail. Lewis treats every home like his own — no messy work, no cut corners.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
+                <h3>Compliance Guaranteed</h3>
+                <p>All work meets Victorian electrical safety standards and is fully certified. Your Certificate of Electrical Safety is always provided.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     GALLERY
+     ═══════════════════════════════════════ -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge section-badge-dark"><i class="fa-solid fa-images"></i>&nbsp; Our Work</span>
+            <h2>Recent <span>Projects</span></h2>
+            <p>A look at some of our recent electrical work across Melbourne and surrounding areas.</p>
+        </div>
+        <div class="gallery-grid gallery-grid-6">
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-1.jpg" alt="Near Electrical project — basement wiring">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Basement Rewiring</span>
+                    <span class="gallery-item-sub">Full electrical rewiring — Melbourne</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-2.jpg" alt="Near Electrical project — panel installation">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Panel Upgrade</span>
+                    <span class="gallery-item-sub">New switchboard installation — Melbourne</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-3.jpg" alt="Near Electrical project — outdoor electrical">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Outdoor Service Entry</span>
+                    <span class="gallery-item-sub">Meter base &amp; conduit — Melbourne</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-4.jpg" alt="Near Electrical project — lighting installation">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Recessed Lighting</span>
+                    <span class="gallery-item-sub">LED downlight installation — Melbourne</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-5.jpg" alt="Near Electrical project — commercial panel">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Commercial Panel</span>
+                    <span class="gallery-item-sub">Panel board installation — Melbourne</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-6.jpg" alt="Near Electrical project — outlet installation">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Outlet &amp; Switch Upgrade</span>
+                    <span class="gallery-item-sub">Kitchen power &amp; dimmer — Melbourne</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/hero.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Proudly Serving Melbourne and Beyond</h2>
+            <div class="area-towns">
+                <span>Melbourne CBD</span>
+                <span>South Yarra</span>
+                <span>Prahran</span>
+                <span>Richmond</span>
+                <span>Collingwood</span>
+                <span>Fitzroy</span>
+                <span>Brunswick</span>
+                <span>Coburg</span>
+                <span>Preston</span>
+                <span>Hawthorn</span>
+            </div>
+            <p>Traveling further? Give us a call — we may cover your area too.</p>
+            <a href="tel:+61420417071" class="btn btn-white btn-lg demo-trigger">
+                <i class="fa-solid fa-phone"></i> Call +61 420 417 071 — Free Estimate
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Common <span>Questions</span></h2>
+                <p>Everything you need to know before getting started. Still have questions? Reach out directly.</p>
+                <a href="tel:+61420417071" class="btn btn-primary demo-trigger" style="margin-top:1.5rem;"><i class="fa-solid fa-phone"></i> Call Lewis</a>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Do you offer free estimates?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — we always provide free, no-obligation estimates for projects in Melbourne and surrounding suburbs. Contact us and we'll schedule a time that works for you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What areas do you serve?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We serve Melbourne metro and surrounding suburbs including South Yarra, Prahran, Richmond, Fitzroy, Brunswick, Hawthorn, and more. If you're unsure whether we cover your area, just ask.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Are you licensed and insured?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes. Near Electrical is a fully licensed electrical contractor in Victoria and carries complete insurance coverage on every job. All work is certified and compliant with Australian standards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        How quickly can you respond to an emergency?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>For electrical emergencies — power outages, sparking, exposed wiring — call Lewis directly. We prioritize emergency calls and aim to respond as quickly as possible.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Do you provide a Certificate of Electrical Safety?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Absolutely. Victorian law requires a Certificate of Electrical Safety for all electrical work, and we provide one for every job — no exceptions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Ready to Get Started?</h2>
+                <p>Give us a call or fill out the form — we'll get back to you the same day.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+61420417071">+61 420 417 071</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Melbourne, Victoria</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Melbourne, South Yarra, Prahran, Richmond, Fitzroy, Brunswick, Hawthorn, and surrounding Melbourne metro suburbs.</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Estimate</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="+61 400 000 000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="switchboard-upgrade">Switchboard Upgrade</option>
+                                <option value="lighting">Lighting Installation</option>
+                                <option value="power-points">Power Points &amp; Outlets</option>
+                                <option value="electrical-repairs">Electrical Repairs</option>
+                                <option value="emergency">Emergency Electrical</option>
+                                <option value="other">Other / Not Sure Yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Melbourne,+Victoria&output=embed"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Near Electrical location — Melbourne, Victoria">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="#hero" class="footer-logo-text">Near <span>Electrical</span></a>
+                </div>
+                <p>Locally owned and operated electrical services for Melbourne homeowners. Honest, reliable, and always up to standard.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Melbourne's Trusted Electrician</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Switchboard Upgrades</a></li>
+                    <li><a href="#services">Lighting Installation</a></li>
+                    <li><a href="#services">Power Points &amp; Outlets</a></li>
+                    <li><a href="#services">Electrical Repairs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Free Estimate</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+61420417071">+61 420 417 071</a></li>
+                    <li>Melbourne, Victoria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Near Electrical. All rights reserved.</span>
+            <span>Serving Melbourne, Victoria &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+const emergencyBanner = document.querySelector('.emergency-banner');
+window.addEventListener('scroll', () => {
+    const scrolled = window.scrollY > 60;
+    navbar.classList.toggle('scrolled', scrolled);
+    if (emergencyBanner) emergencyBanner.classList.toggle('hidden', scrolled);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+// Contact form → demo modal (not success message)
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+// Demo modal — all CTA buttons trigger it
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+// Scroll animations — IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Animate section headers
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+// Stagger grid children with sequential delays
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
