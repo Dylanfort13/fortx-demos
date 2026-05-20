@@ -1313,26 +1313,70 @@ footer {
 
 /* Navbar hidden on desktop until scroll past VSL; always visible on mobile */
 .navbar {
-    position: absolute;
+    position: absolute !important;
     top: 0; left: 0; right: 0;
+    z-index: 1000 !important;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
+    padding: 1rem 2rem !important;
+}
+.navbar-inner {
+    min-height: 56px !important;
 }
 .navbar.scrolled {
-    position: fixed;
+    position: fixed !important;
     opacity: 1;
     pointer-events: auto;
+    padding: 0 !important;
+    background: rgba(255,255,255,0.97);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 1px 20px rgba(0,0,0,0.06);
 }
 @media (max-width: 768px) {
     .navbar {
         opacity: 1 !important;
         pointer-events: auto !important;
         position: fixed !important;
+        z-index: 1000 !important;
         background: rgba(255,255,255,0.97) !important;
         backdrop-filter: blur(20px) !important;
         -webkit-backdrop-filter: blur(20px) !important;
         box-shadow: 0 1px 20px rgba(0,0,0,0.06) !important;
+        padding: 0.75rem 1rem !important;
+    }
+    .mobile-menu-btn {
+        display: flex !important;
+        position: absolute !important;
+        right: 1rem !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        z-index: 1001 !important;
+        color: var(--dark) !important;
+        font-size: 1.5rem !important;
+    }
+    .nav-links {
+        display: none;
+        position: fixed !important;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding-top: 6rem;
+        gap: 1.75rem;
+        z-index: 999 !important;
+    }
+    .nav-links.active {
+        display: flex !important;
+    }
+    .nav-links a {
+        color: var(--dark) !important;
+        font-size: 1.2rem !important;
+        font-weight: 600 !important;
     }
 }
 
