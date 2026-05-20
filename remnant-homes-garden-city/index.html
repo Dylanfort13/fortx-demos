@@ -43,6 +43,28 @@
     </div>
 </div>
 
+
+<!-- ═══════════════════════════════════════
+     VSL WELCOME SECTION
+     ═══════════════════════════════════════ -->
+<section class="vsl-welcome" id="vslWelcome">
+    <div class="vsl-welcome-inner">
+        <h2 class="vsl-title">Welcome on your free demo</h2>
+        <p class="vsl-step"><span class="vsl-step-num">Step 1:</span> Watch the video</p>
+        <div class="vsl-video-wrap">
+            <iframe src="https://www.youtube.com/embed/C1PNgdLFEWs" title="FortX Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="vsl-buttons">
+            <a href="https://www.fortxweb.com/start" class="vsl-btn vsl-btn-primary" target="_blank" rel="noopener">START NOW</a>
+            <a href="https://www.fortxweb.com/copy-of-how-it-works" class="vsl-btn vsl-btn-glass" target="_blank" rel="noopener">How It Works</a>
+        </div>
+        <div class="vsl-step2">
+            <p class="vsl-step-bigger"><span class="vsl-step-num">Step 2:</span> Explore your demo</p>
+            <div class="vsl-scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+    </div>
+</section>
+
 <!-- ═══════════════════════════════════════
      NAVIGATION
      ═══════════════════════════════════════ -->
@@ -758,7 +780,8 @@
 const navbar = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    const vslH = document.getElementById('vslWelcome')?.offsetHeight || 0;
+    navbar.classList.toggle('scrolled', window.scrollY > vslH - 60);
     if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
 });
 

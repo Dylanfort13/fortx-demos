@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GRIP Construction — Epoxy Coatings & Basement Finishing in Ammon, ID</title>
-    <meta name="description" content="GRIP Construction — where tough meets clean. Epoxy resin coatings, basement finishing, and full construction services across SE Idaho. 12+ years experience.">
+    <title>{{BUSINESS_NAME}} — {{CATEGORY}} in {{CITY}}, {{STATE}}</title>
+    <meta name="description" content="{{HERO_SUBTITLE}}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
@@ -13,42 +13,42 @@
 </head>
 <body>
 
-<!-- Demo popup modal -->
-<div class="demo-modal" id="demoModal">
-    <div class="demo-modal-content">
-        <button class="demo-modal-close" id="demoModalClose">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="demo-modal-icon">
-            <i class="fa-solid fa-globe"></i>
+
+<!-- ═══════════════════════════════════════
+     VSL WELCOME SECTION
+     ═══════════════════════════════════════ -->
+<section class="vsl-welcome" id="vslWelcome">
+    <div class="vsl-welcome-inner">
+        <h2 class="vsl-title">Welcome on your free demo</h2>
+        <p class="vsl-step"><span class="vsl-step-num">Step 1:</span> Watch the video</p>
+        <div class="vsl-video-wrap">
+            <iframe src="https://www.youtube.com/embed/C1PNgdLFEWs" title="FortX Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-        <h3>This is a Demo Website</h3>
-        <p>This site has been built as a free preview for GRIP Construction. It's not their official website — yet.</p>
-        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+        <div class="vsl-buttons">
+            <a href="https://www.fortxweb.com/start" class="vsl-btn vsl-btn-primary" target="_blank" rel="noopener">START NOW</a>
+            <a href="https://www.fortxweb.com/copy-of-how-it-works" class="vsl-btn vsl-btn-glass" target="_blank" rel="noopener">How It Works</a>
+        </div>
+        <div class="vsl-step2">
+            <p class="vsl-step-bigger"><span class="vsl-step-num">Step 2:</span> Explore your demo</p>
+            <div class="vsl-scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
     </div>
-</div>
+</section>
 
 <!-- ═══════════════════════════════════════
      NAVIGATION
      ═══════════════════════════════════════ -->
 <nav class="navbar" id="navbar">
     <div class="navbar-inner">
-        <a href="#hero" class="nav-logo">
-            <img src="img/logo-white.png" alt="GRIP Construction" class="nav-logo-light">
-            <img src="img/logo-dark.png" alt="GRIP Construction" class="nav-logo-dark">
-        </a>
+        {{LOGO_HTML}}
         <ul class="nav-links" id="navLinks">
             <li><a href="#services">Services</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#why-us">Why Us</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="nav-cta">
-            <a href="tel:2083516218" class="phone-link">
-                <i class="fa-solid fa-phone"></i> 208-351-6218
-            </a>
-            <a href="#contact" class="btn btn-primary demo-trigger">Free Estimate</a>
+            {{NAVBAR_CTA}}
         </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
             <i class="fa-solid fa-bars"></i>
@@ -60,42 +60,19 @@
      HERO
      ═══════════════════════════════════════ -->
 <section class="hero" id="hero">
-    <div class="hero-bg" style="background-image: url('img/hero.jpg');"></div>
+    <div class="hero-bg" {{HERO_IMAGE_STYLE}}></div>
     <div class="hero-bg-overlay"></div>
     <div class="hero-content">
-        <div class="hero-left">
-            <div class="hero-badge">
-                <i class="fa-solid fa-location-dot"></i>
-                Epoxy & Construction — SE Idaho
-            </div>
-            <h1>Where Tough Meets <em>Clean</em></h1>
-            <p>Epoxy resin coatings, full basement finishes, and complete construction — trusted for 12+ years by homeowners across southeast Idaho.</p>
-            <div class="hero-buttons">
-                <a href="tel:2083516218" class="btn btn-primary btn-lg">
-                    <i class="fa-solid fa-phone"></i> Call 208-351-6218
-                </a>
-                <a href="#contact" class="btn btn-ghost btn-lg demo-trigger">Get a Free Estimate</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <h3>12<span class="stat-plus">+</span></h3>
-                    <p>Years Experience</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <h3>5+</h3>
-                    <p>Cities Served</p>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <h3>Free</h3>
-                    <p>Estimates</p>
-                </div>
-            </div>
+        <div class="hero-badge">
+            <i class="fa-solid fa-location-dot"></i>
+            {{CATEGORY}} &mdash; {{CITY}}, {{STATE}}
         </div>
-        <div class="hero-right">
-            <img src="img/logo-white.png" alt="GRIP Construction" class="hero-logo">
+        <h1>{{TAGLINE_HTML}}</h1>
+        <p>{{HERO_SUBTITLE}}</p>
+        <div class="hero-buttons">
+            {{HERO_CTA_BUTTONS}}
         </div>
+        {{HERO_STATS}}
     </div>
     <div class="hero-scroll-cue">
         <i class="fa-solid fa-chevron-down"></i>
@@ -109,11 +86,7 @@
 <div class="trust-bar">
     <div class="container">
         <div class="trust-bar-grid">
-            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Licensed &amp; Insured</div>
-            <div class="trust-bar-item"><i class="fa-solid fa-clock"></i> Free Estimates</div>
-            <div class="trust-bar-item"><i class="fa-solid fa-medal"></i> 12+ Years Experience</div>
-            <div class="trust-bar-item"><i class="fa-solid fa-map-pin"></i> Serving SE Idaho</div>
-            <div class="trust-bar-item"><i class="fa-solid fa-hammer"></i> Design-Build</div>
+            {{TRUST_BAR_ITEMS}}
         </div>
     </div>
 </div>
@@ -126,106 +99,20 @@
         <div class="section-header">
             <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
             <h2>Our <span>Services</span></h2>
-            <p>From epoxy floors to full basement builds — every project handled with precision and care for homeowners across SE Idaho.</p>
+            <p>Every project handled with care, skill, and the experience that comes from years of working in {{CITY}} and the surrounding area.</p>
         </div>
         <div class="services-grid">
-            <div class="service-card fade-up" style="background-image: url('img/service-epoxy.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon-wrap">
-                        <i class="fa-solid fa-droplet"></i>
-                    </div>
-                    <div class="service-card-body">
-                        <h3>Epoxy Resin Coatings</h3>
-                        <p>Durable, stunning epoxy floor coatings for garages, basements, and commercial spaces. Built to handle tough use and look great doing it.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="service-card fade-up" style="background-image: url('img/service-basement.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <span class="service-card-tag">Most Popular</span>
-                    <div class="service-icon-wrap">
-                        <i class="fa-solid fa-house-chimney"></i>
-                    </div>
-                    <div class="service-card-body">
-                        <h3>Basement Finishing</h3>
-                        <p>Complete basement finishing from framing to final hardware. Transform your unfinished space into living area you'll use every day.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="service-card fade-up" style="background-image: url('img/service-construction.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon-wrap">
-                        <i class="fa-solid fa-building"></i>
-                    </div>
-                    <div class="service-card-body">
-                        <h3>Full Construction</h3>
-                        <p>Design-build construction — we oversee every phase to keep things on schedule and on budget. No costly gaps between trades.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="service-card fade-up" style="background-image: url('img/service-remodels.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon-wrap">
-                        <i class="fa-solid fa-screwdriver-wrench"></i>
-                    </div>
-                    <div class="service-card-body">
-                        <h3>Remodels &amp; Additions</h3>
-                        <p>Kitchen remodels, bathroom updates, room additions — bringing your vision to life with expert craft and attention to detail.</p>
-                    </div>
-                </div>
-            </div>
+            {{SERVICES}}
         </div>
     </div>
 </section>
 
 <!-- ═══════════════════════════════════════
-     PROCESS
+     PROCESS SECTION
+     (Copy from templates/sections/process-steps.html if included,
+      or replace this entire block with empty string if skipped)
      ═══════════════════════════════════════ -->
-<section class="process-section" id="process">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; How It Works</span>
-            <h2>Our <span>Process</span></h2>
-            <p class="process-subtitle">From first call to finished project — we make every step smooth and stress-free.</p>
-        </div>
-        <div class="process-track">
-            <div class="process-step-card fade-up">
-                <div class="process-number">01</div>
-                <div class="process-icon-ring"><i class="fa-solid fa-phone"></i></div>
-                <h3>Free Consultation</h3>
-                <p>Call Colton at 208-351-6218. We'll discuss your project, understand your goals, and answer your questions.</p>
-            </div>
-            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="process-step-card fade-up">
-                <div class="process-number">02</div>
-                <div class="process-icon-ring"><i class="fa-solid fa-clipboard-list"></i></div>
-                <h3>Design &amp; Proposal</h3>
-                <p>We assess your space, walk through material options, and create a detailed proposal tailored to your needs and budget.</p>
-            </div>
-            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="process-step-card fade-up">
-                <div class="process-number">03</div>
-                <div class="process-icon-ring"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                <h3>Expert Installation</h3>
-                <p>Our team handles every phase — surface prep, epoxy application or framing through to finishing. No gaps, no surprises.</p>
-            </div>
-            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
-            <div class="process-step-card fade-up">
-                <div class="process-number">04</div>
-                <div class="process-icon-ring"><i class="fa-solid fa-circle-check"></i></div>
-                <h3>Final Walkthrough</h3>
-                <p>We walk through the completed work together, make any adjustments, and leave you with a space built to last.</p>
-            </div>
-        </div>
-        <div class="process-cta fade-up">
-            <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Get Started</a>
-        </div>
-    </div>
-</section>
+{{PROCESS_STEPS}}
 
 <!-- ═══════════════════════════════════════
      ABOUT
@@ -235,97 +122,19 @@
         <div class="about-grid">
             <div class="about-image-col fade-up">
                 <div class="about-image-frame">
-                    <img src="img/about.jpg" alt="Basement framing under construction" style="width:100%;height:480px;object-fit:cover;border-radius:20px;" />
-                    <div class="about-experience-badge">
-                        <span class="badge-number">12</span>
-                        <span class="badge-plus">+</span>
-                        <span class="badge-label">Years in<br>Business</span>
-                    </div>
+                    {{ABOUT_IMAGE_HTML}}
+                    {{ABOUT_EXPERIENCE_BADGE}}
                 </div>
             </div>
             <div class="about-content fade-up">
                 <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
-                <h2>Built by Hand. <em>Built to Last.</em></h2>
-                <p class="about-lead">Steve brings 30 years of project management experience to every GRIP project. We work alongside Kat from Studio Topkat Design Group to create interiors that transform houses into dream homes.</p>
-                <p>As a licensed Idaho General Contractor (License #6671650), we provide design-build services that keep every project on schedule and within budget — from concept to completion.</p>
+                <h2>{{ABOUT_HEADING}}</h2>
+                <p class="about-lead">{{ABOUT_LEAD}}</p>
+                <p>{{ABOUT_BODY}}</p>
                 <div class="about-highlights">
-                    <div class="highlight-item">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <span>ID General Contractor — License #6671650</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fa-solid fa-medal"></i>
-                        <span>12+ years serving SE Idaho homeowners</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fa-solid fa-pencil"></i>
-                        <span>Design partnership with Studio Topkat</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="fa-solid fa-map-pin"></i>
-                        <span>Ammon, Idaho Falls, Rexburg, Jackson &amp; more</span>
-                    </div>
+                    {{ABOUT_HIGHLIGHTS}}
                 </div>
-                <a href="tel:2083516218" class="btn btn-primary">
-                    <i class="fa-solid fa-phone"></i> Call 208-351-6218
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════
-     GALLERY
-     ═══════════════════════════════════════ -->
-<section class="gallery" id="gallery">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-images"></i>&nbsp; Our Work</span>
-            <h2>Recent <span>Projects</span></h2>
-            <p>A look at some of our recent epoxy, basement, and construction projects across SE Idaho.</p>
-        </div>
-        <div class="gallery-grid gallery-grid-6">
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-1.jpg" alt="Metallic epoxy garage floor">
-                <div class="gallery-item-overlay">
-                    <span class="gallery-item-title">Metallic Epoxy Garage Floor</span>
-                    <span class="gallery-item-sub">Speckled charcoal finish — Ammon, ID</span>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-2.jpg" alt="Dark metallic epoxy floor">
-                <div class="gallery-item-overlay">
-                    <span class="gallery-item-title">Dark Metallic Epoxy</span>
-                    <span class="gallery-item-sub">Full garage coating — Idaho Falls</span>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-3.jpg" alt="Kitchen remodel with white cabinets">
-                <div class="gallery-item-overlay">
-                    <span class="gallery-item-title">Kitchen Remodel</span>
-                    <span class="gallery-item-sub">White shaker cabinets &amp; quartz — Ammon</span>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-4.jpg" alt="Kitchen and dining area remodel">
-                <div class="gallery-item-overlay">
-                    <span class="gallery-item-title">Open Concept Kitchen</span>
-                    <span class="gallery-item-sub">Full kitchen &amp; dining renovation — Ammon</span>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-5.jpg" alt="Bathroom remodel">
-                <div class="gallery-item-overlay">
-                    <span class="gallery-item-title">Bathroom Remodel</span>
-                    <span class="gallery-item-sub">Modern vanity &amp; tile — Idaho Falls</span>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-6.jpg" alt="Finished basement with bar area">
-                <div class="gallery-item-overlay">
-                    <span class="gallery-item-title">Finished Basement Bar</span>
-                    <span class="gallery-item-sub">Complete basement buildout — Ammon</span>
-                </div>
+                {{ABOUT_CTA}}
             </div>
         </div>
     </div>
@@ -338,186 +147,68 @@
     <div class="container">
         <div class="section-header">
             <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
-            <h2>The <span>GRIP</span> Difference</h2>
-            <p>We don't just complete projects — we build lasting relationships with homeowners across SE Idaho.</p>
+            <h2>The {{BUSINESS_NAME}} <span>Difference</span></h2>
+            <p>We don't just complete projects — we build lasting relationships with homeowners across {{CITY}} who know they can count on us.</p>
         </div>
         <div class="reasons-grid">
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <h3>ID Licensed Contractor</h3>
-                <p>Registered General Contractor (#6671650). Every project fully compliant and built to code.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-medal"></i></div>
-                <h3>12+ Years of Trust</h3>
-                <p>Over a decade serving SE Idaho homeowners — built our reputation one project at a time.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-user"></i></div>
-                <h3>Direct Access to Colton</h3>
-                <p>Call 208-351-6218 and talk directly to the owner. No runaround, no middlemen.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-pencil"></i></div>
-                <h3>Design-Build Under One Roof</h3>
-                <p>Concept through completion — no gaps between designers and contractors. Cohesive results every time.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-chart-line"></i></div>
-                <h3>BuildZoom Score: 90</h3>
-                <p>Verified as a licensed, reputable contractor — top 53% of licensed contractors in Idaho.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-truck"></i></div>
-                <h3>Travel-Ready</h3>
-                <p>Based in Ammon but serving Teton, Rexburg, Idaho Falls, Jackson, and beyond.</p>
-            </div>
+            {{WHY_US_CARDS}}
         </div>
-        <div class="stats-bar" style="background-image: url('img/stats-bg.jpg');">
-            <div class="stats-bar-overlay"></div>
+        <div class="stats-bar">
             <div class="stats-grid">
-                <div class="stat-box">
-                    <h4>12+</h4>
-                    <p>Years Experience</p>
-                </div>
-                <div class="stat-box">
-                    <h4>5+</h4>
-                    <p>Cities Served</p>
-                </div>
-                <div class="stat-box">
-                    <h4>90</h4>
-                    <p>BuildZoom Score</p>
-                </div>
-                <div class="stat-box">
-                    <h4>Free</h4>
-                    <p>Estimates</p>
-                </div>
+                {{STATS_BAR}}
             </div>
         </div>
     </div>
 </section>
 
 <!-- ═══════════════════════════════════════
-     TRUST SECTION
+     MATERIALS SECTION (optional)
+     Either a full <section class="materials-section"> block
+     or an empty string if not applicable to this trade.
      ═══════════════════════════════════════ -->
-<section class="trust-section" id="trust">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Why Trust Us</span>
-            <h2>Built on <span>Reputation</span></h2>
-            <p>The values that guide every project in Ammon, Idaho Falls, and across SE Idaho.</p>
-        </div>
-        <div class="trust-grid">
-            <div class="trust-card fade-up">
-                <div class="trust-card-icon"><i class="fa-solid fa-medal"></i></div>
-                <h3>Experience That Shows</h3>
-                <p>Steve's 30 years of project management — including companies of 85 employees and $30M+ budgets — means your project is in capable hands.</p>
-            </div>
-            <div class="trust-card fade-up">
-                <div class="trust-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-                <h3>Craft That Lasts</h3>
-                <p>Every epoxy coating and basement finish is completed with attention to detail from 12+ years perfecting our process.</p>
-            </div>
-            <div class="trust-card fade-up">
-                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
-                <h3>Licensed &amp; Accountable</h3>
-                <p>ID General Contractor #6671650. Fully insured, permits handled properly on every project.</p>
-            </div>
-        </div>
-    </div>
-</section>
+{{MATERIALS_SECTION}}
 
 <!-- ═══════════════════════════════════════
-     SERVICE AREA
+     REVIEWS OR TRUST SECTION
+     Builder inserts ONE of:
+       <section class="reviews section-dark" id="reviews"> — if HAS_REAL_REVIEWS=true
+       <section class="trust-section" id="trust">         — if HAS_REAL_REVIEWS=false
+     NEVER both. NEVER fabricated quotes.
+     ═══════════════════════════════════════ -->
+{{REVIEWS_OR_TRUST_SECTION}}
+
+<!-- ═══════════════════════════════════════
+     GALLERY (optional)
+     Full <section class="gallery"> block or empty string.
+     Only include if all 3 gallery images exist in demo/img/.
+     ═══════════════════════════════════════ -->
+{{GALLERY_SECTION}}
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA CTA
      ═══════════════════════════════════════ -->
 <section class="service-area" id="service-area">
-    <div class="service-area-bg" style="background-image: url('img/service-area-bg.jpg');"></div>
-    <div class="service-area-overlay"></div>
     <div class="container">
         <div class="area-content">
             <div class="area-icon">
                 <i class="fa-solid fa-map-location-dot"></i>
             </div>
-            <h2>Proudly Serving SE Idaho &amp; Beyond</h2>
+            <h2>{{SERVICE_AREA_HEADING}}</h2>
             <div class="area-towns">
-                <span>Ammon</span>
-                <span>Idaho Falls</span>
-                <span>Rexburg</span>
-                <span>Jackson</span>
-                <span>Teton</span>
+                {{SERVICE_AREA_TOWNS}}
             </div>
-            <p>Based in Ammon, ID — travel-ready to surrounding towns across southeast Idaho and western Wyoming.</p>
-            <a href="#contact" class="btn btn-white btn-lg demo-trigger">
-                <i class="fa-solid fa-phone"></i> Call for Free Estimate
-            </a>
+            <p>{{SERVICE_AREA_TEXT}}</p>
+            {{SERVICE_AREA_CTA_BTN}}
         </div>
     </div>
 </section>
 
 <!-- ═══════════════════════════════════════
-     FAQ
+     FAQ (optional)
+     Full <section class="faq-section"> block or empty string.
+     Only include for high-consideration trades.
      ═══════════════════════════════════════ -->
-<section class="faq-section" id="faq">
-    <div class="container">
-        <div class="faq-layout">
-            <div class="faq-header-col">
-                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
-                <h2>Common <span>Questions</span></h2>
-                <p>Everything you need to know before getting started.</p>
-                <a href="#contact" class="btn btn-dark demo-trigger" style="margin-top:1.5rem;">
-                    <i class="fa-solid fa-phone"></i> Call Colton
-                </a>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-q">
-                        Do you offer free estimates?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-a">
-                        <p>Yes — always free, no-obligation estimates for projects across SE Idaho. Call Colton at 208-351-6218 or fill out the form below.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q">
-                        What areas do you serve?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-a">
-                        <p>Based in Ammon, ID — we serve a wide radius including Idaho Falls, Rexburg, Jackson, and Teton. Contact us to confirm coverage in your area.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q">
-                        Are you licensed and insured?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-a">
-                        <p>Absolutely. GRIP Construction is a registered Idaho General Contractor (License #6671650) and carries full insurance. Permits handled properly on every job.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q">
-                        How long does an epoxy floor take?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-a">
-                        <p>Most residential epoxy installations take 2–4 days depending on space size and concrete condition. We'll give you a precise timeline during your consultation.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-q">
-                        What does basement finishing include?
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-a">
-                        <p>Full scope — framing, electrical, insulation, drywall, trim, paint, and finishing hardware. One team from start to finish, no subcontractor headaches.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+{{FAQ_SECTION}}
 
 <!-- ═══════════════════════════════════════
      CONTACT
@@ -527,40 +218,20 @@
         <div class="contact-grid">
             <div class="contact-info">
                 <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
-                <h2>Ready to Start?</h2>
-                <p>Give us a call or fill out the form — we'll get back to you within 24 hours.</p>
+                <h2>{{CONTACT_HEADING}}</h2>
+                <p>{{CONTACT_SUBTEXT}}</p>
                 <div class="contact-details">
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div class="info-content">
-                            <h4>Phone</h4>
-                            <a href="tel:2083516218">208-351-6218</a>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <div class="info-content">
-                            <h4>Location</h4>
-                            <p>Ammon, ID</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div class="info-content">
-                            <h4>Email</h4>
-                            <a href="mailto:idahogrip@gmail.com">idahogrip@gmail.com</a>
-                        </div>
-                    </div>
+                    {{CONTACT_INFO_ITEMS}}
                 </div>
                 <div class="contact-serving">
                     <i class="fa-solid fa-map-pin"></i>
-                    <span>Serving Ammon, Idaho Falls, Rexburg, Jackson, Teton, and surrounding SE Idaho communities.</span>
+                    <span>{{CONTACT_SERVING}}</span>
                 </div>
             </div>
             <div class="contact-form-wrap">
                 <div class="contact-form">
                     <h3>Request a Free Estimate</h3>
-                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <p class="form-subline">Tell us about your project — we'll get back to you within 24 hours.</p>
                     <form id="contactForm" novalidate>
                         <div class="form-row">
                             <div class="form-group">
@@ -569,7 +240,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="fphone">Phone Number</label>
-                                <input type="tel" id="fphone" name="phone" placeholder="(208) 000-0000">
+                                <input type="tel" id="fphone" name="phone" placeholder="(802) 555-0000">
                             </div>
                         </div>
                         <div class="form-group">
@@ -580,19 +251,15 @@
                             <label for="fservice">Service Type</label>
                             <select id="fservice" name="service">
                                 <option value="" disabled selected>Select a service...</option>
-                                <option value="epoxy">Epoxy Resin Coatings</option>
-                                <option value="basement">Basement Finishing</option>
-                                <option value="construction">Full Construction</option>
-                                <option value="remodels">Remodels &amp; Additions</option>
-                                <option value="other">Other / Not Sure</option>
+                                {{CONTACT_SELECT_OPTIONS}}
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="fmessage">Tell Us About Your Project</label>
                             <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
-                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        <button type="submit" class="btn btn-primary btn-full btn-lg">
+                            <i class="fa-solid fa-paper-plane"></i> Send My Request
                         </button>
                     </form>
                     <div class="form-success" id="formSuccess">
@@ -609,83 +276,58 @@
 </section>
 
 <!-- ═══════════════════════════════════════
-     MAP
-     ═══════════════════════════════════════ -->
-<section class="map-section" id="map">
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46343.0701!2d-111.977!3d43.475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x535459c5e0f6d3f3%3A0x9e92e4c5b5e4e0f6!2sAmmon%2C%20ID!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-            width="100%" 
-            height="400" 
-            style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            title="GRIP Construction location — Ammon, Idaho">
-        </iframe>
-    </div>
-</section>
-
-<!-- ═══════════════════════════════════════
      FOOTER
      ═══════════════════════════════════════ -->
 <footer>
     <div class="container">
         <div class="footer-grid">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <img src="img/logo-white.png" alt="GRIP Construction">
-                </div>
-                <p>Epoxy resin coatings, basement finishing, and full construction services across southeast Idaho and western Wyoming.</p>
+                {{FOOTER_LOGO_HTML}}
+                <p>{{FOOTER_BRAND_TEXT}}</p>
                 <div class="footer-tagline">
-                    <i class="fa-solid fa-droplet"></i>
-                    <span>Where tough meets clean.</span>
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>{{FOOTER_TAGLINE}}</span>
                 </div>
             </div>
             <div class="footer-links">
                 <h4>Services</h4>
                 <ul>
-                    <li><a href="#services">Epoxy Coatings</a></li>
-                    <li><a href="#services">Basement Finishing</a></li>
-                    <li><a href="#services">Full Construction</a></li>
-                    <li><a href="#services">Remodels</a></li>
+                    {{FOOTER_SERVICES_LIST}}
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#why-us">Why Choose Us</a></li>
-                    <li><a href="#contact">Free Estimate</a></li>
-                    <li><a href="#faq">FAQ</a></li>
+                    {{FOOTER_LINKS_LIST}}
                 </ul>
             </div>
             <div class="footer-links">
                 <h4>Contact</h4>
                 <ul>
-                    <li><a href="tel:2083516218">208-351-6218</a></li>
-                    <li>Ammon, ID</li>
-                    <li><a href="mailto:idahogrip@gmail.com">idahogrip@gmail.com</a></li>
+                    {{FOOTER_CONTACT_ITEMS}}
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>&copy; 2026 GRIP Construction. All rights reserved.</span>
-            <span>Serving Ammon, ID &amp; surrounding areas</span>
+            <span>&copy; {{YEAR}} {{BUSINESS_NAME}}. All rights reserved.</span>
+            <span class="footer-credit">Serving {{CITY}}, {{STATE}} &amp; surrounding areas</span>
         </div>
     </div>
 </footer>
 
 <script>
-const navbar = document.getElementById('navbar');
+// ─── Navbar scroll effect + scroll cue fade ─────────────────
+const navbar    = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    const vslH = document.getElementById('vslWelcome')?.offsetHeight || 0;
+    navbar.classList.toggle('scrolled', window.scrollY > vslH - 60);
     if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
 });
 
+// ─── Mobile menu toggle ─────────────────────────────────────
 const mobileBtn = document.getElementById('mobileMenuBtn');
-const navLinks = document.getElementById('navLinks');
+const navLinks  = document.getElementById('navLinks');
 mobileBtn.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('active');
     mobileBtn.classList.toggle('active', isOpen);
@@ -701,6 +343,7 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
+// ─── FAQ accordion ──────────────────────────────────────────
 document.querySelectorAll('.faq-q').forEach(btn => {
     btn.addEventListener('click', () => {
         const item = btn.closest('.faq-item');
@@ -718,32 +361,19 @@ document.querySelectorAll('.faq-q').forEach(btn => {
     });
 });
 
-const form = document.getElementById('contactForm');
+// ─── Contact form success state ─────────────────────────────
+const form        = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 if (form) {
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        demoModal.classList.add('visible');
+        form.style.display = 'none';
+        formSuccess.classList.add('visible');
     });
 }
 
-// Demo modal
-const demoModal = document.getElementById('demoModal');
-const demoModalClose = document.getElementById('demoModalClose');
-document.querySelectorAll('.demo-trigger').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        demoModal.classList.add('visible');
-    });
-});
-demoModalClose.addEventListener('click', () => {
-    demoModal.classList.remove('visible');
-});
-demoModal.addEventListener('click', (e) => {
-    if (e.target === demoModal) demoModal.classList.remove('visible');
-});
-
-// Scroll animations — animate everything when it first appears
+// ─── Fade-up scroll animation ───────────────────────────────
+const fadeEls = document.querySelectorAll('.fade-up');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -751,23 +381,15 @@ const observer = new IntersectionObserver((entries) => {
             observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+}, { threshold: 0.12 });
+fadeEls.forEach(el => observer.observe(el));
 
-// Observe all fade-up elements already in HTML
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-
-// Animate section headers
-document.querySelectorAll('.section-header').forEach(el => {
-    el.classList.add('fade-up');
-    observer.observe(el);
-});
-
-// Stagger grid children with sequential delays
+// ─── Stagger fade-up for grid children ──────────────────────
 document.querySelectorAll(
-    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns'
+    '.services-grid, .reasons-grid, .trust-grid, .reviews-grid, .process-track, .materials-cards, .gallery-grid'
 ).forEach(grid => {
     grid.querySelectorAll(
-        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span'
+        '.service-card, .reason-card, .trust-card, .review-card, .process-step-card, .material-card, .gallery-item'
     ).forEach((card, i) => {
         card.classList.add('fade-up');
         card.style.transitionDelay = (i * 0.08) + 's';
