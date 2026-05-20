@@ -1697,6 +1697,21 @@ footer {
 /* ═══════════════════════════════════════
    VSL WELCOME SECTION
    ═══════════════════════════════════════ */
+
+/* Navbar starts hidden, appears after VSL */
+.navbar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled {
+    position: fixed;
+    opacity: 1;
+    pointer-events: auto;
+}
+
 .vsl-welcome {
     background-color: #f1f3f7;
     background-image:
@@ -1705,10 +1720,15 @@ footer {
     background-size: 40px 40px;
     padding: 80px 24px 64px;
     text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .vsl-welcome-inner {
     max-width: 720px;
     margin: 0 auto;
+    width: 100%;
 }
 .vsl-title {
     font-family: var(--font-display);
@@ -1732,7 +1752,7 @@ footer {
     position: relative;
     width: 100%;
     padding-bottom: 56.25%; /* 16:9 */
-    margin: 16px 0 24px;
+    margin: 16px 0 28px;
     border-radius: var(--radius);
     overflow: hidden;
     box-shadow: var(--shadow-lg);
@@ -1748,7 +1768,7 @@ footer {
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 8px;
+    margin-top: 4px;
 }
 .vsl-btn {
     display: inline-flex;
@@ -1786,7 +1806,28 @@ footer {
     transform: translateY(-1px);
     box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
+.vsl-step2 {
+    margin-top: 36px;
+}
+.vsl-step-bigger {
+    font-family: var(--font-body);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--dark);
+}
+.vsl-scroll-arrow {
+    margin-top: 12px;
+    font-size: 1.6rem;
+    color: var(--gray-medium);
+    animation: vslBounce 2s infinite;
+}
+@keyframes vslBounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(10px); }
+    60% { transform: translateY(5px); }
+}
 @media (max-width: 600px) {
     .vsl-welcome { padding: 60px 16px 48px; }
     .vsl-btn { padding: 12px 28px; font-size: 0.95rem; }
+    .vsl-step-bigger { font-size: 1.15rem; }
 }
