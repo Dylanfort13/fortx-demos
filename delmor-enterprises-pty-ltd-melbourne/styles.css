@@ -1372,7 +1372,7 @@ footer {
    VSL WELCOME SECTION
    ═══════════════════════════════════════ */
 
-/* Navbar hidden on desktop until scroll past VSL; always visible on mobile */
+/* Navbar hidden until scroll past VSL (same on mobile & desktop) */
 .navbar {
     position: absolute !important;
     top: 0; left: 0; right: 0;
@@ -1397,14 +1397,6 @@ footer {
 }
 @media (max-width: 768px) {
     .navbar {
-        opacity: 1 !important;
-        pointer-events: auto !important;
-        position: fixed !important;
-        z-index: 1000 !important;
-        background: rgba(255,255,255,0.97) !important;
-        backdrop-filter: blur(20px) !important;
-        -webkit-backdrop-filter: blur(20px) !important;
-        box-shadow: 0 1px 20px rgba(0,0,0,0.06) !important;
         padding: 0.75rem 1rem !important;
     }
     .mobile-menu-btn {
