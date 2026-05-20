@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanoscale Construction — Home Builder in Melbourne, Victoria</title>
+    <meta name="description" content="Nanoscale Construction — quality home builder in Melbourne, VIC. New builds, renovations & extensions. 5-star rated. Free estimates.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Nanoscale Construction. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#hero" class="logo-text">Nanoscale <span>Construction</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+61433694166" class="phone-link">
+                <i class="fa-solid fa-phone"></i> +61 433 694 166
+            </a>
+            <a href="tel:+61433694166" class="btn btn-primary demo-trigger">Get a Free Estimate</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image:url('img/hero.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Home Builder — Melbourne, Victoria
+            </div>
+            <h1>Precision-Built <em>Homes</em> in Melbourne</h1>
+            <p>Nanoscale Construction delivers quality home building, renovations, and extensions across Melbourne — with the attention to detail your project deserves.</p>
+            <div class="hero-buttons">
+                <a href="tel:+61433694166" class="btn btn-primary btn-lg demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call George — +61 433 694 166
+                </a>
+                <a href="#contact" class="btn btn-ghost">Get a Free Estimate</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>Free</h3>
+                    <p>Estimates</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>5<span class="stat-plus">★</span></h3>
+                    <p>Google Rated</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>Melbourne</h3>
+                    <p>Based &amp; Local</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item"><i class="fa-solid fa-hard-hat"></i> Registered Builder</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Fully Insured</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-star"></i> 5★ Google Rated</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-clock"></i> Free Estimates</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-map-pin"></i> Serving Melbourne Metro</div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>Quality home building services for Melbourne homeowners — from new builds to renovations.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up" style="background-image: url('img/hero.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <span class="service-card-tag">Core Service</span>
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-home"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>New Home Construction</h3>
+                        <p>Custom-built homes designed for your lifestyle and your block. We manage every stage — from site preparation to handover.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-2.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Home Renovations</h3>
+                        <p>Transform your existing home with expert renovations. Kitchen, bathroom, and living space upgrades built to the highest standard.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-1.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Home Extensions</h3>
+                        <p>Need more space? We design and build home extensions that blend seamlessly with your existing home — inside and out.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-3.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Knockdown Rebuilds</h3>
+                        <p>Love your location but not your home? We handle the full knockdown rebuild process — demolish the old, build the new.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="Nanoscale Construction — quality home building in Melbourne" class="about-photo">
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Built with Precision. <em>Finished with Care.</em></h2>
+                <p class="about-lead">Nanoscale Construction is a Melbourne-based home builder run by George. The name says it all — we believe precision at every scale is what separates a good build from a great one.</p>
+                <p>From new homes to renovations and extensions, George oversees every project personally to ensure the quality and attention to detail that Melbourne homeowners deserve.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Registered Builder &amp; Fully Insured</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-star"></i>
+                        <span>5-Star Google Rating from Satisfied Clients</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Melbourne-Based — Local Knowledge &amp; Experience</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-clock"></i>
+                        <span>Free, No-Obligation Estimates on Every Job</span>
+                    </div>
+                </div>
+                <a href="tel:+61433694166" class="btn btn-primary demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Call +61 433 694 166
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>Nanoscale</span> Difference</h2>
+            <p>What sets George apart from every other home builder in Melbourne.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-user-check"></i></div>
+                <h3>Owner-Operated by George</h3>
+                <p>When you hire Nanoscale Construction, George personally oversees your project — not a project manager juggling a dozen other builds.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                <h3>Precision at Every Scale</h3>
+                <p>Our name reflects our approach. We sweat the details — from structural integrity to finish quality — because precision is what makes a home exceptional.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Licensed &amp; Insured</h3>
+                <p>Registered builder in Victoria with full insurance coverage on every project. Your investment is protected from start to finish.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h3>Transparent Pricing</h3>
+                <p>Free estimates with no hidden fees. You'll know the cost before we start, and there are no surprises along the way.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-hard-hat"></i></div>
+                <h3>Full-Service Building</h3>
+                <p>New builds, renovations, extensions, and knockdown rebuilds — we handle the full scope so you don't need multiple contractors.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-map-pin"></i></div>
+                <h3>Melbourne Local</h3>
+                <p>Born and based in Melbourne. We know the local building regulations, soil conditions, and council requirements inside out.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/stats-bar-bg.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>5★</h4>
+                    <p>Google Rating</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Full</h4>
+                    <p>Service Builder</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>AU Standards</p>
+                </div>
+                <div class="stat-box">
+                    <h4>Free</h4>
+                    <p>Estimates</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST SECTION
+     ═══════════════════════════════════════ -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Why Trust Us</span>
+            <h2>Built on <span>Reputation</span></h2>
+            <p>The values that guide every project we take on in Melbourne.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>Perfect 5-Star Rating</h3>
+                <p>Every Google review is a perfect five stars. Nanoscale Construction has earned that through consistent quality and client satisfaction on every job.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Craftsmanship First</h3>
+                <p>Precision at every scale means we don't cut corners. Every detail — from the frame to the finish — is done right the first time.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
+                <h3>Compliance Guaranteed</h3>
+                <p>All work meets Victorian building standards and regulations. Your project is fully certified and compliant — no exceptions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/service-area-bg.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Proudly Serving Melbourne and Beyond</h2>
+            <div class="area-towns">
+                <span>Melbourne CBD</span>
+                <span>South Yarra</span>
+                <span>Prahran</span>
+                <span>Richmond</span>
+                <span>Hawthorn</span>
+                <span>Brunswick</span>
+                <span>Coburg</span>
+                <span>Preston</span>
+                <span>Essendon</span>
+                <span>Camberwell</span>
+            </div>
+            <p>Building further out? Give us a call — we cover projects across greater Melbourne.</p>
+            <a href="tel:+61433694166" class="btn btn-white btn-lg demo-trigger">
+                <i class="fa-solid fa-phone"></i> Call +61 433 694 166 — Free Estimate
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Common <span>Questions</span></h2>
+                <p>Everything you need to know before starting your building project. Still have questions? Reach out directly.</p>
+                <a href="tel:+61433694166" class="btn btn-primary demo-trigger" style="margin-top:1.5rem;"><i class="fa-solid fa-phone"></i> Call George</a>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Do you offer free estimates?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes — we provide free, no-obligation estimates for all building projects in the Melbourne area. Contact us and we'll arrange a site visit at a time that suits you.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What areas do you serve?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We serve Melbourne metro and surrounding suburbs including South Yarra, Prahran, Richmond, Hawthorn, Brunswick, and more. For projects further out, get in touch — we may still be able to help.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Are you a registered builder?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Yes. Nanoscale Construction is a registered builder in Victoria and carries full insurance coverage on every project. All work meets Australian building standards and local compliance requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        What types of projects do you handle?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>We specialise in new home construction, home renovations, extensions, and knockdown rebuilds across Melbourne. Whether you're building from scratch or upgrading your current home, we can help.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        How long does a new build take?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Timelines vary depending on the size and complexity of the project. A typical single-storey new build takes 6–12 months from permit to handover. We provide a detailed timeline during the estimation process.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Ready to Build?</h2>
+                <p>Give George a call or fill out the form — we'll get back to you the same day.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:+61433694166">+61 433 694 166</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <a href="mailto:george@nanoscaleconstruction.com.au">george@nanoscaleconstruction.com.au</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Melbourne, Victoria</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Melbourne, South Yarra, Prahran, Richmond, Hawthorn, Brunswick, and surrounding Melbourne metro suburbs.</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Estimate</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="+61 400 000 000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Project Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a project type...</option>
+                                <option value="new-home">New Home Construction</option>
+                                <option value="renovation">Home Renovation</option>
+                                <option value="extension">Home Extension</option>
+                                <option value="knockdown-rebuild">Knockdown Rebuild</option>
+                                <option value="other">Other / Not Sure Yet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps?q=Melbourne,+Victoria&output=embed"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Nanoscale Construction — Melbourne, Victoria">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="#hero" class="footer-logo-text">Nanoscale <span>Construction</span></a>
+                </div>
+                <p>Melbourne's precision-focused home builder. New builds, renovations, and extensions — built with care and attention to detail.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <span>Precision at Every Scale</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">New Home Construction</a></li>
+                    <li><a href="#services">Home Renovations</a></li>
+                    <li><a href="#services">Home Extensions</a></li>
+                    <li><a href="#services">Knockdown Rebuilds</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Free Estimate</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+61433694166">+61 433 694 166</a></li>
+                    <li>Melbourne, Victoria</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Nanoscale Construction. All rights reserved.</span>
+            <span>Serving Melbourne, Victoria &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
