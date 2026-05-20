@@ -626,8 +626,13 @@
 const navbar = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
 window.addEventListener('scroll', () => {
-    const vslH = document.getElementById('vslWelcome')?.offsetHeight || 0;
-    navbar.classList.toggle('scrolled', window.scrollY > vslH - 60);
+    const isMobile = window.innerWidth <= 768;
+    if (isMobile) {
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
+    } else {
+        const vslH = document.getElementById('vslWelcome')?.offsetHeight || 0;
+        navbar.classList.toggle('scrolled', window.scrollY > vslH - 60);
+    }
     if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
 });
 
