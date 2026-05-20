@@ -28,14 +28,24 @@
     </div>
 </div>
 
-<!-- Emergency Banner -->
-<div class="emergency-banner">
-    <div class="container">
-        <span class="emergency-pulse"></span>
-        <i class="fa-solid fa-bolt"></i>
-        <strong>Electrical Emergency?</strong> Call Lewis now — <a href="tel:+61420417071">+61 420 417 071</a>
+
+<!-- ═══════════════════════════════════════
+     VSL WELCOME SECTION
+     ═══════════════════════════════════════ -->
+<section class="vsl-welcome" id="vslWelcome">
+    <div class="vsl-welcome-inner">
+        <h2 class="vsl-title">Welcome on your free demo</h2>
+        <p class="vsl-step"><span class="vsl-step-num">Step 1:</span> Watch the video</p>
+        <div class="vsl-video-wrap">
+            <iframe src="https://www.youtube.com/embed/C1PNgdLFEWs" title="FortX Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <p class="vsl-step"><span class="vsl-step-num">Step 2:</span> Explore your demo</p>
+        <div class="vsl-buttons">
+            <a href="https://www.fortxweb.com/start" class="vsl-btn vsl-btn-primary" target="_blank" rel="noopener">START NOW</a>
+            <a href="https://www.fortxweb.com/copy-of-how-it-works" class="vsl-btn vsl-btn-glass" target="_blank" rel="noopener">How It Works</a>
+        </div>
     </div>
-</div>
+</section>
 
 <!-- ═══════════════════════════════════════
      NAVIGATION
@@ -627,11 +637,9 @@
 <script>
 const navbar = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
-const emergencyBanner = document.querySelector('.emergency-banner');
 window.addEventListener('scroll', () => {
     const scrolled = window.scrollY > 60;
     navbar.classList.toggle('scrolled', scrolled);
-    if (emergencyBanner) emergencyBanner.classList.toggle('hidden', scrolled);
     if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
 });
 
