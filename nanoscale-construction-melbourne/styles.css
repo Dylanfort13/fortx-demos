@@ -71,6 +71,9 @@ body {
     z-index: 1000;
     padding: 1rem 2rem;
     transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+    /* VSL: hide until scroll */
+    opacity: 0;
+    pointer-events: none;
 }
 .navbar.scrolled {
     padding: 0;
@@ -78,6 +81,9 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: 0 1px 20px rgba(0,0,0,0.06);
+    /* VSL: show on scroll */
+    opacity: 1;
+    pointer-events: auto;
 }
 .navbar-inner {
     max-width: 1200px;
@@ -87,6 +93,7 @@ body {
     justify-content: center;
     padding: 0.85rem 1.5rem;
     position: relative;
+    min-height: 60px;
 }
 .logo-text {
     font-family: var(--font-display);
@@ -1311,7 +1318,8 @@ footer {
     .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
 }
 @media (max-width: 768px) {
-    .navbar { padding: 0.75rem 1rem; }
+    .navbar { padding: 0.75rem 1rem; min-height: 60px; }
+    .navbar.scrolled { padding: 0.5rem 1rem; min-height: 56px; }
     .logo-text { left: 1rem; }
     .mobile-menu-btn { 
         display: flex; 
@@ -1369,66 +1377,7 @@ footer {
    VSL WELCOME SECTION
    ═══════════════════════════════════════ */
 
-/* Navbar hidden until scroll past VSL (same on mobile & desktop) */
-.navbar {
-    position: absolute !important;
-    top: 0; left: 0; right: 0;
-    z-index: 1000 !important;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
-    padding: 1rem 2rem !important;
-}
-.navbar-inner {
-    min-height: 56px !important;
-}
-.navbar.scrolled {
-    position: fixed !important;
-    opacity: 1;
-    pointer-events: auto;
-    padding: 0 !important;
-    background: rgba(255,255,255,0.97);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    box-shadow: 0 1px 20px rgba(0,0,0,0.06);
-}
-@media (max-width: 768px) {
-    .navbar {
-        padding: 0.75rem 1rem !important;
-    }
-    .mobile-menu-btn {
-        display: flex !important;
-        position: absolute !important;
-        right: 1rem !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        z-index: 1001 !important;
-        color: var(--dark) !important;
-        font-size: 1.5rem !important;
-    }
-    .nav-links {
-        display: none;
-        position: fixed !important;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(255,255,255,0.95);
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px);
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding-top: 6rem;
-        gap: 1.75rem;
-        z-index: 999 !important;
-    }
-    .nav-links.active {
-        display: flex !important;
-    }
-    .nav-links a {
-        color: var(--dark) !important;
-        font-size: 1.2rem !important;
-        font-weight: 600 !important;
-    }
-}
+
 
 .vsl-welcome {
     background-color: #f1f3f7;
