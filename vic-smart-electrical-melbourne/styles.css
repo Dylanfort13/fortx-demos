@@ -26,8 +26,8 @@
     --primary: #F9A825;
     --primary-dark: #F57F17;
     --primary-light: #FFF176;
-    --primary-glow: rgba(249,168,37,0.4);
-    --dark: #1A1A1A;
+    --primary-glow: rgba(249,168,37,0.25);
+    --dark: #1C1C1C;
     --dark-2: #252527;
     --white: #ffffff;
     --off-white: #fafafa;
@@ -42,7 +42,7 @@
     --shadow-lg: 0 20px 48px rgba(0,0,0,0.12);
     --font-display: 'DM Serif Display', Georgia, serif;
     --font-body: 'DM Sans', system-ui, sans-serif;
-    --texture: url('img/hero-bg-texture.jpg');
+    --texture: url('img/texture.jpg');
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
