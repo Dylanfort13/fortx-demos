@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excellence Contracting — General Contracting in Melbourne, Victoria</title>
+    <meta name="description" content="Excellence Contracting — Quality general contracting services in Melbourne, Victoria. Residential and commercial projects delivered on time and on budget.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<style>
+:root {
+    --primary: #E65100;
+    --primary-dark: #BF360C;
+    --primary-light: #FF8A65;
+    --primary-glow: rgba(230,81,0,0.3);
+    --dark: #1A1A1A;
+    --dark-2: #252527;
+    --white: #ffffff;
+    --off-white: #fafafa;
+    --gray: #f5f5f5;
+    --gray-medium: #6b7280;
+    --gray-dark: #1a1a1a;
+    --border: rgba(0,0,0,0.06);
+    --radius: 16px;
+    --radius-sm: 10px;
+    --shadow-sm: 0 2px 12px rgba(0,0,0,0.05);
+    --shadow-md: 0 8px 32px rgba(0,0,0,0.08);
+    --font-display: 'DM Serif Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: var(--font-body); line-height: 1.7; color: var(--gray-medium); overflow-x: hidden; background: var(--white); -webkit-font-smoothing: antialiased; }
+.hero-badge { animation: heroFadeUp 0.7s 0.2s both; }
+.hero h1 { animation: heroFadeUp 0.7s 0.4s both; }
+.hero-left > p { animation: heroFadeUp 0.7s 0.6s both; }
+.hero-buttons { animation: heroFadeUp 0.7s 0.8s both; }
+.hero-stats { animation: heroFadeUp 0.7s 1s both; }
+.hero-scroll-cue { animation: heroFadeUp 0.7s 1.2s both; }
+@keyframes heroFadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+.fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.7s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2rem; transition: all 0.35s cubic-bezier(0.4,0,0.2,1); }
+.navbar.scrolled { padding: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
+.navbar-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; padding: 0.85rem 1.5rem; position: relative; }
+.logo-text { font-family: var(--font-display); font-size: 1.5rem; color: white; text-decoration: none; transition: color 0.3s; letter-spacing: -0.02em; position: absolute; left: 1.5rem; }
+.logo-text span { color: var(--primary-light); }
+.navbar.scrolled .logo-text { color: var(--dark); }
+.navbar.scrolled .logo-text span { color: var(--primary); }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; justify-content: center; }
+.nav-links a { text-decoration: none; color: rgba(255,255,255,0.65); font-weight: 500; font-size: 0.85rem; transition: color 0.3s; }
+.navbar.scrolled .nav-links a { color: var(--gray-medium); }
+.nav-links a:hover { color: var(--primary-light); }
+.navbar.scrolled .nav-links a:hover { color: var(--primary); }
+.nav-cta { display: flex; align-items: center; gap: 1.25rem; position: absolute; right: 1.5rem; }
+.nav-cta .btn { padding: 0.45rem 1.1rem; font-size: 0.8rem; }
+.mobile-menu-btn { display: none; background: none; border: none; color: white; font-size: 1.3rem; cursor: pointer; width: 40px; height: 40px; align-items: center; justify-content: center; z-index: 1001; }
+.navbar.scrolled .mobile-menu-btn { color: var(--dark); }
+.btn { padding: 0.75rem 1.75rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 0.88rem; font-family: var(--font-body); transition: all 0.25s ease; border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.5rem; }
+.btn-primary { background: var(--primary); color: white; }
+.btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); box-shadow: 0 6px 20px var(--primary-glow); }
+.btn-ghost { background: transparent; color: white; border: 1.5px solid rgba(255,255,255,0.3); }
+.btn-ghost:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.5); }
+.btn-white { background: white; color: var(--dark); font-weight: 700; }
+.btn-white:hover { transform: translateY(-1px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+.btn-dark { background: var(--dark); color: white; }
+.btn-dark:hover { background: #222; transform: translateY(-1px); }
+.btn-lg { padding: 1rem 2.25rem; font-size: 0.95rem; }
+.btn-full { width: 100%; justify-content: center; }
+.hero { min-height: 100vh; position: relative; display: flex; align-items: center; overflow: hidden; background: var(--dark); }
+.hero-bg { position: absolute; inset: 0; z-index: 0; background: linear-gradient(135deg, #BF360C 0%, #E65100 40%, #F4511E 70%, #BF360C 100%); }
+.hero-bg-overlay { position: absolute; inset: 0; z-index: 1; background: rgba(0, 0, 0, 0.85); }
+.hero-content { position: relative; z-index: 10; max-width: 1200px; margin: 0 auto; padding: 7rem 3.5rem 4rem; width: 100%; }
+.hero-badge { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.45rem 1rem; background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.12); border-radius: 50px; color: var(--primary-light); font-size: 0.75rem; margin-bottom: 2rem; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600; }
+.hero h1 { font-family: var(--font-display); font-size: clamp(3rem, 6vw, 5rem); font-weight: 400; color: white; line-height: 1.05; margin-bottom: 1.5rem; max-width: 750px; letter-spacing: -0.03em; }
+.hero h1 em { font-style: italic; color: var(--primary-light); }
+.hero-left > p { font-size: 1.15rem; color: rgba(255,255,255,0.55); max-width: 520px; margin-top: 0.75rem; margin-bottom: 3rem; line-height: 1.8; }
+.hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; }
+.hero-stats { display: flex; align-items: center; gap: 3.5rem; padding-top: 2.5rem; border-top: 1px solid rgba(255,255,255,0.06); max-width: 550px; }
+.stat-item { text-align: left; }
+.stat-item h3 { font-family: var(--font-display); font-size: 2.2rem; font-weight: 400; color: white; line-height: 1; margin-bottom: 0.3rem; }
+.stat-plus { color: var(--primary-light); font-size: 1.5rem; }
+.stat-item p { font-size: 0.72rem; color: rgba(255,255,255,0.35); margin: 0; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+.stat-divider { width: 1px; height: 40px; background: rgba(255,255,255,0.06); }
+.hero-scroll-cue { position: absolute; bottom: 2rem; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 0.5rem; color: rgba(255,255,255,0.2); font-size: 0.65rem; letter-spacing: 0.12em; text-transform: uppercase; z-index: 10; animation: scrollBounce 2s ease-in-out infinite; }
+@keyframes scrollBounce { 0%, 100% { transform: translateX(-50%) translateY(0); } 50% { transform: translateX(-50%) translateY(6px); } }
+.trust-bar { background: var(--white); border-bottom: 1px solid var(--border); }
+.trust-bar-grid { display: flex; align-items: stretch; }
+.trust-bar-item { display: flex; align-items: center; gap: 0.6rem; padding: 1.1rem 1.75rem; color: var(--dark); font-size: 0.82rem; font-weight: 600; border-right: 1px solid var(--border); flex: 1; justify-content: center; }
+.trust-bar-item:last-child { border-right: none; }
+.trust-bar-item i { color: var(--primary); font-size: 0.9rem; }
+section { padding: 7rem 3.5rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+.section-header { text-align: center; margin-bottom: 4rem; }
+.section-badge { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.35rem 0.85rem; background: rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.08); border-radius: 50px; color: var(--primary); font-size: 0.72rem; font-weight: 700; margin-bottom: 1.25rem; letter-spacing: 0.06em; text-transform: uppercase; }
+.section-badge-dark { background: rgba(255,255,255,0.07); border-color: rgba(255,255,255,0.15); color: var(--primary-light); }
+.section-header h2 { font-family: var(--font-display); font-size: clamp(2.2rem, 4vw, 3.2rem); font-weight: 400; color: var(--dark); margin-bottom: 1rem; letter-spacing: -0.02em; line-height: 1.15; }
+.section-header h2 span { background: linear-gradient(135deg, var(--primary), var(--primary-light)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.section-header p { color: var(--gray-medium); max-width: 540px; margin: 0 auto; line-height: 1.75; font-size: 1.05rem; }
+.services { background: var(--white); }
+.services-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.service-card { position: relative; border-radius: var(--radius); transition: all 0.3s ease; overflow: hidden; display: flex; flex-direction: column; min-height: 280px; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.25); }
+.service-card-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.80); z-index: 1; }
+.service-card-content { position: relative; z-index: 2; display: flex; flex-direction: column; flex: 1; }
+.service-icon-wrap { width: 52px; height: 52px; background: var(--primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: white; margin: 1.75rem 1.75rem 0; flex-shrink: 0; }
+.service-card-body { padding: 1.25rem 1.75rem 1.75rem; flex: 1; }
+.service-card-body h3 { font-size: 1.1rem; font-weight: 700; color: white; margin-bottom: 0.5rem; }
+.service-card-body p { font-size: 0.88rem; color: rgba(255,255,255,0.5); line-height: 1.7; }
+.section-dark { background-color: var(--dark); color: white; }
+.about-grid { display: grid; grid-template-columns: 1fr 1.15fr; gap: 5rem; align-items: center; }
+.about-image-col { position: relative; }
+.about-image-frame { position: relative; border-radius: 20px; overflow: visible; }
+.about-image-placeholder { width: 100%; height: 440px; border-radius: 20px; background: linear-gradient(135deg, var(--dark-2) 0%, var(--primary-dark) 100%); display: flex; align-items: center; justify-content: center; box-shadow: 0 30px 80px rgba(0,0,0,0.4); }
+.about-image-placeholder i { font-size: 5rem; color: rgba(255,255,255,0.12); }
+.about-experience-badge { position: absolute; bottom: -1.5rem; right: -1.5rem; background: var(--primary); color: white; border-radius: 16px; padding: 1.25rem 1.5rem; text-align: center; box-shadow: 0 8px 24px var(--primary-glow); display: flex; flex-direction: column; align-items: center; min-width: 130px; }
+.badge-number { font-family: var(--font-display); font-size: 2.2rem; font-weight: 400; line-height: 1; }
+.badge-plus { font-size: 1.4rem; color: rgba(255,255,255,0.7); }
+.badge-label { font-size: 0.7rem; font-weight: 700; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.05em; margin-top: 0.15rem; }
+.about-content h2 { font-family: var(--font-display); font-size: clamp(2rem, 3.5vw, 2.8rem); font-weight: 400; color: white; line-height: 1.15; margin-bottom: 1.5rem; margin-top: 1rem; }
+.about-content h2 em { font-style: italic; color: var(--primary-light); }
+.about-lead { font-size: 1rem; color: rgba(255,255,255,0.7); margin-bottom: 1.25rem; line-height: 1.8; }
+.about-content > p:not(.about-lead) { font-size: 0.92rem; color: rgba(255,255,255,0.45); line-height: 1.8; }
+.about-highlights { display: flex; flex-direction: column; gap: 0.75rem; margin: 1.75rem 0 2rem; }
+.highlight-item { display: flex; align-items: center; gap: 0.75rem; font-size: 0.9rem; color: rgba(255,255,255,0.6); }
+.highlight-item i { color: var(--primary-light); font-size: 0.85rem; flex-shrink: 0; width: 20px; text-align: center; }
+.why-us { background: var(--white); }
+.reasons-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 3.5rem; }
+.reason-card { background: var(--gray); border-radius: var(--radius); padding: 2rem; transition: all 0.3s ease; border: 1px solid var(--border); }
+.reason-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); background: white; }
+.reason-icon { width: 48px; height: 48px; background: var(--primary); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: white; margin-bottom: 1.25rem; }
+.reason-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
+.reason-card p { font-size: 0.85rem; color: var(--gray-medium); line-height: 1.7; }
+.stats-bar { border-radius: var(--radius); overflow: hidden; position: relative; background-image: url('img/stats.jpg'); background-size: cover; background-position: center; }
+.stats-bar-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.80); z-index: 1; }
+.stats-grid { position: relative; z-index: 2; display: grid; grid-template-columns: repeat(4, 1fr); }
+.stat-box { padding: 2.25rem 1.5rem; text-align: center; border-right: 1px solid rgba(255,255,255,0.05); }
+.stat-box:last-child { border-right: none; }
+.stat-box h4 { font-family: var(--font-display); font-size: 2rem; font-weight: 400; color: white; margin-bottom: 0.3rem; }
+.stat-box p { font-size: 0.72rem; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 600; }
+.process-section { background: var(--gray); }
+.process-track { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr; align-items: stretch; }
+.process-step-card { background: white; border-radius: var(--radius); padding: 2rem; text-align: center; transition: all 0.3s ease; border: 1px solid var(--border); display: flex; flex-direction: column; min-height: 100%; }
+.process-step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.process-number { font-family: var(--font-display); font-size: 3rem; font-weight: 400; color: rgba(0,0,0,0.04); line-height: 1; margin-bottom: 0.75rem; }
+.process-icon-ring { width: 56px; height: 56px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.15rem; color: white; }
+.process-step-card h3 { font-size: 1rem; font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; }
+.process-step-card p { font-size: 0.84rem; color: var(--gray-medium); line-height: 1.65; flex: 1; }
+.process-connector { display: flex; align-items: center; justify-content: center; padding: 0 0.5rem; color: rgba(0,0,0,0.08); font-size: 0.85rem; padding-top: 5rem; }
+.process-cta { text-align: center; margin-top: 3rem; }
+.service-area { position: relative; background: var(--dark); color: white; text-align: center; overflow: hidden; }
+.service-area-bg { position: absolute; inset: 0; background: linear-gradient(135deg, #BF360C, #E65100); }
+.service-area-overlay { position: absolute; inset: 0; background: rgba(0, 0, 0, 0.80); z-index: 1; }
+.service-area .container { position: relative; z-index: 2; }
+.area-content { max-width: 640px; margin: 0 auto; }
+.area-icon { width: 60px; height: 60px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; margin: 0 auto 1.75rem; color: white; }
+.area-content h2 { font-family: var(--font-display); font-size: clamp(1.9rem, 3.5vw, 2.5rem); font-weight: 400; margin-bottom: 1.5rem; }
+.area-towns { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 1.5rem; }
+.area-towns span { padding: 0.35rem 0.85rem; background: rgba(255,255,255,0.06); border-radius: 50px; font-size: 0.85rem; font-weight: 500; border: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.7); }
+.area-content > p { opacity: 0.45; line-height: 1.7; margin-bottom: 2rem; font-size: 0.95rem; }
+.contact { background: var(--gray); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: start; }
+.contact-info h2 { font-family: var(--font-display); font-size: clamp(1.9rem, 3vw, 2.5rem); font-weight: 400; color: var(--dark); line-height: 1.2; margin-top: 0.75rem; margin-bottom: 0.75rem; }
+.contact-info > p { color: var(--gray-medium); line-height: 1.7; margin-bottom: 2rem; }
+.contact-details { display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem; }
+.info-item { display: flex; align-items: flex-start; gap: 0.85rem; padding: 0.85rem; border-radius: var(--radius-sm); transition: background 0.3s; }
+.info-item:hover { background: white; }
+.info-icon { width: 42px; height: 42px; background: var(--primary); border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 0.9rem; color: white; flex-shrink: 0; }
+.info-content h4 { font-size: 0.72rem; font-weight: 700; color: var(--dark); margin-bottom: 0.15rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.info-content p { font-size: 0.88rem; color: var(--gray-medium); }
+.info-content a { font-size: 0.88rem; color: var(--primary); text-decoration: none; }
+.contact-serving { background: white; border-radius: var(--radius-sm); padding: 0.85rem 1rem; font-size: 0.82rem; color: var(--gray-medium); display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.6; }
+.contact-serving i { color: var(--primary); flex-shrink: 0; margin-top: 0.1rem; }
+.contact-form { background: white; border-radius: var(--radius); padding: 2.5rem; box-shadow: var(--shadow-sm); }
+.contact-form h3 { font-family: var(--font-display); font-size: 1.6rem; font-weight: 400; color: var(--dark); margin-bottom: 0.35rem; }
+.form-subline { font-size: 0.85rem; color: var(--gray-medium); margin-bottom: 1.75rem; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.form-group { margin-bottom: 1rem; }
+.form-group label { display: block; font-size: 0.72rem; font-weight: 700; color: var(--dark); margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.05em; }
+.form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.85rem 1rem; border: 1.5px solid #e0e0e0; border-radius: var(--radius-sm); font-family: var(--font-body); font-size: 0.9rem; color: var(--dark); transition: all 0.25s; background: var(--off-white); -webkit-appearance: none; appearance: none; }
+.form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 1rem center; background-size: 16px; padding-right: 2.5rem; cursor: pointer; }
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: var(--primary); background: white; box-shadow: 0 0 0 3px rgba(0,0,0,0.04); }
+.form-group textarea { resize: none; min-height: 110px; }
+.form-group input::placeholder, .form-group textarea::placeholder { color: #bbb; }
+.map-section { padding: 0; line-height: 0; }
+.map-container iframe { width: 100%; height: 400px; display: block; filter: grayscale(100%) invert(92%) contrast(83%); }
+footer { background: var(--dark); color: white; padding: 5rem 3.5rem 2rem; }
+.footer-grid { display: grid; grid-template-columns: 1.8fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+.footer-logo-text { font-family: var(--font-display); font-size: 1.6rem; color: white; text-decoration: none; display: block; margin-bottom: 1rem; letter-spacing: -0.02em; }
+.footer-logo-text span { color: var(--primary-light); }
+.footer-brand p { color: rgba(255,255,255,0.35); font-size: 0.85rem; line-height: 1.7; max-width: 280px; }
+.footer-tagline { display: flex; align-items: center; gap: 0.4rem; margin-top: 1rem; color: rgba(255,255,255,0.25); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; }
+.footer-tagline i { color: var(--primary-light); }
+.footer-links h4 { font-size: 0.7rem; font-weight: 700; color: rgba(255,255,255,0.6); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.08em; }
+.footer-links ul { list-style: none; }
+.footer-links li { margin-bottom: 0.5rem; font-size: 0.85rem; }
+.footer-links a { color: rgba(255,255,255,0.3); text-decoration: none; transition: color 0.3s; }
+.footer-links a:hover { color: white; }
+.footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 1.5rem; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.78rem; color: rgba(255,255,255,0.2); }
+.demo-modal { display: none; position: fixed; inset: 0; z-index: 2000; background: rgba(0,0,0,0.55); backdrop-filter: blur(6px); align-items: center; justify-content: center; padding: 1rem; }
+.demo-modal.visible { display: flex; }
+.demo-modal-content { background: white; border-radius: 24px; padding: 2.5rem; max-width: 440px; width: 100%; text-align: center; position: relative; box-shadow: 0 24px 80px rgba(0,0,0,0.25); animation: modalPop 0.25s cubic-bezier(0.34,1.56,0.64,1); }
+@keyframes modalPop { from { transform: scale(0.88); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+.demo-modal-close { position: absolute; top: 1.25rem; right: 1.25rem; background: var(--gray); border: none; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; color: var(--gray-dark); }
+.demo-modal-icon { width: 56px; height: 56px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; color: white; font-size: 1.25rem; }
+.demo-modal-content h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--dark); margin-bottom: 0.75rem; }
+.demo-modal-content p { font-size: 0.95rem; color: var(--gray-medium); line-height: 1.6; margin-bottom: 0.5rem; }
+.demo-modal-sub { font-size: 0.85rem !important; opacity: 0.7; }
+@media (max-width: 1100px) { .process-track { grid-template-columns: 1fr 1fr; gap: 1rem; } .process-connector { display: none; } .about-grid { gap: 3rem; } .footer-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 900px) { .reasons-grid { grid-template-columns: repeat(2, 1fr); } .stats-grid { grid-template-columns: repeat(2, 1fr); } .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
+@media (max-width: 768px) { .navbar { padding: 0.75rem 1rem; } .logo-text { left: 1rem; } .mobile-menu-btn { display: flex; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); z-index: 1001; } .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.85); backdrop-filter: blur(24px); flex-direction: column; align-items: center; padding-top: 6rem; gap: 1.75rem; z-index: 999; } .nav-links.active { display: flex; } .nav-links a { color: var(--dark) !important; font-size: 1.2rem; font-weight: 600; } .nav-cta { display: none; } section { padding: 4.5rem 1.5rem; } .hero-content { padding: 6rem 1.5rem 3rem; } .hero h1 { font-size: 3rem; } .services-grid { grid-template-columns: 1fr; } .process-track { grid-template-columns: 1fr; } .reasons-grid { grid-template-columns: 1fr; } .about-grid { grid-template-columns: 1fr; gap: 2.5rem; } .about-experience-badge { right: 0; bottom: -1rem; } .footer-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; } .trust-bar-grid { flex-direction: column; } .trust-bar-item { border-right: none; border-bottom: 1px solid var(--border); } .form-row { grid-template-columns: 1fr; } }
+@media (max-width: 480px) { .hero h1 { font-size: 2.5rem; } .hero-buttons { flex-direction: column; } .hero-buttons .btn { justify-content: center; } .hero-stats { flex-direction: column; align-items: flex-start; gap: 1rem; } .stat-divider { width: 40px; height: 1px; } }
+</style>
+</head>
+<body>
+
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose"><i class="fa-solid fa-xmark"></i></button>
+        <div class="demo-modal-icon"><i class="fa-solid fa-globe"></i></div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Excellence Contracting. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="logo-text">Excellence <span>Contracting</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="mailto:nateqcon@gmail.com" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-envelope"></i> Get a Quote</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+</nav>
+
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('img/hero.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge"><i class="fa-solid fa-location-dot"></i> General Contracting — Melbourne, Victoria</div>
+            <h1>Quality <em>Contracting</em>, Done Right</h1>
+            <p>Excellence Contracting delivers reliable, professional contracting services across Melbourne. From renovations to new builds, we bring quality and integrity to every project.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get a Free Quote</a>
+                <a href="#services" class="btn btn-ghost btn-lg"><i class="fa-solid fa-hammer"></i> Our Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>10<span class="stat-plus">+</span></h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>100<span class="stat-plus">%</span></h3>
+                    <p>Commitment</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>24<span class="stat-plus">hr</span></h3>
+                    <p>Response Time</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-cue"><i class="fa-solid fa-chevron-down"></i><span>Scroll</span></div>
+</section>
+
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item"><i class="fa-solid fa-hard-hat"></i> Licensed Contractor</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-ruler-combined"></i> Residential &amp; Commercial</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Fully Insured</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-clock"></i> On-Time Delivery</div>
+        </div>
+    </div>
+</div>
+
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>Professional contracting services for residential and commercial projects across Melbourne.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" style="background-image: url('img/service-residential-construction.jpg'); background-size: cover; background-position: center;">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-house-chimney"></i></div>
+                    <div class="service-card-body">
+                        <h3>Residential Construction</h3>
+                        <p>New home builds, extensions, and renovations. Quality craftsmanship from foundation to finish.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-commercial-projects.jpg'); background-size: cover; background-position: center;">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-building"></i></div>
+                    <div class="service-card-body">
+                        <h3>Commercial Projects</h3>
+                        <p>Commercial fitouts, office renovations, and retail construction. Professional results on schedule.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-renovations.jpg'); background-size: cover; background-position: center;">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-hammer"></i></div>
+                    <div class="service-card-body">
+                        <h3>Renovations</h3>
+                        <p>Kitchen, bathroom, and full home renovations. Transform your space with expert craftsmanship.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-project-management.jpg'); background-size: cover; background-position: center;">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-ruler-combined"></i></div>
+                    <div class="service-card-body">
+                        <h3>Project Management</h3>
+                        <p>End-to-end project management — planning, coordination, and delivery. One point of contact for your entire build.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-general-contracting.jpg'); background-size: cover; background-position: center;">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <div class="service-card-body">
+                        <h3>General Contracting</h3>
+                        <p>From small repairs to large-scale projects. Reliable service, quality workmanship, competitive rates.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card" style="background-image: url('img/service-extensions-additions.jpg'); background-size: cover; background-position: center;">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-archway"></i></div>
+                    <div class="service-card-body">
+                        <h3>Extensions &amp; Additions</h3>
+                        <p>Home extensions, second-storey additions, and granny flats. Maximise your property's potential.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-route"></i>&nbsp; How It Works</span>
+            <h2>From <span>Concept</span> to Completion</h2>
+            <p style="color: var(--gray-medium); max-width: 540px; margin: -0.5rem auto 0; line-height: 1.75;">A clear, transparent process that keeps your project on track.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-comments"></i></div>
+                <h3>Consultation</h3>
+                <p>Discuss your project scope, timeline, and budget. Free initial consultation — no obligations.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-file-contract"></i></div>
+                <h3>Quote &amp; Plan</h3>
+                <p>Detailed quote with transparent pricing and a clear project timeline. No hidden costs.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-helmet-safety"></i></div>
+                <h3>Construction</h3>
+                <p>Professional construction with quality materials and regular progress updates.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-key"></i></div>
+                <h3>Handover</h3>
+                <p>Final inspection, quality check, and handover. We make sure everything exceeds expectations.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Start Your Project</a>
+        </div>
+    </div>
+</section>
+
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="About us" style="width:100%;height:440px;border-radius:20px;object-fit:cover;box-shadow:0 30px 80px rgba(0,0,0,0.4);">
+                    <div class="about-experience-badge">
+                        <span class="badge-number">10<span class="badge-plus">+</span></span>
+                        <span class="badge-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Excellence in Every <em>Detail</em></h2>
+                <p class="about-lead">Excellence Contracting delivers quality construction and renovation services across Melbourne. Based in Deer Park, we serve residential and commercial clients with integrity and professionalism.</p>
+                <p>Whether it's a new build, a renovation, or a commercial fitout — we approach every project with the same commitment to quality and client satisfaction.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item"><i class="fa-solid fa-check"></i> Residential &amp; commercial projects</div>
+                    <div class="highlight-item"><i class="fa-solid fa-check"></i> Licensed and insured</div>
+                    <div class="highlight-item"><i class="fa-solid fa-check"></i> Transparent pricing</div>
+                    <div class="highlight-item"><i class="fa-solid fa-check"></i> Quality craftsmanship</div>
+                    <div class="highlight-item"><i class="fa-solid fa-check"></i> On-time project delivery</div>
+                </div>
+                <a href="#contact" class="btn btn-white btn-lg demo-trigger"><i class="fa-solid fa-envelope"></i> Discuss Your Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>Excellence</span> Difference</h2>
+            <p>Quality contracting that puts your project first.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h3>Trusted Team</h3>
+                <p>Experienced professionals who treat your project like their own. Honest, reliable, and committed.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-dollar-sign"></i></div>
+                <h3>Transparent Pricing</h3>
+                <p>Clear, upfront quotes with no hidden extras. You know exactly what you're paying for.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3>On-Time Delivery</h3>
+                <p>We respect deadlines and keep your project on schedule. Regular updates so you're always informed.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>Quality Materials</h3>
+                <p>We use quality materials and proven construction methods — built to last, not just to pass inspection.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-headset"></i></div>
+                <h3>Clear Communication</h3>
+                <p>One point of contact, regular progress updates, and quick responses to your questions.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-map-pin"></i></div>
+                <h3>Local Knowledge</h3>
+                <p>Based in Deer Park, we know Melbourne's building regulations, soil conditions, and local suppliers.</p>
+            </div>
+        </div>
+        <div class="stats-bar">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box"><h4>10+</h4><p>Years Experience</p></div>
+                <div class="stat-box"><h4>100%</h4><p>Commitment</p></div>
+                <div class="stat-box"><h4>AUD$200</h4><p>Setup Fee</p></div>
+                <div class="stat-box"><h4>24hr</h4><p>Quote Response</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/service-area.jpg'); background-size: cover; background-position: center;"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+            <h2>Serving Melbourne &amp; Surrounds</h2>
+            <div class="area-towns">
+                <span>Deer Park</span>
+                <span>Sunshine</span>
+                <span>St Albans</span>
+                <span>Brimbank</span>
+                <span>Werribee</span>
+                <span>Taylors Lakes</span>
+                <span>Sydenham</span>
+                <span>Hillside</span>
+                <span>Caroline Springs</span>
+                <span>Burnside</span>
+                <span>Melton</span>
+                <span>Melbourne CBD</span>
+            </div>
+            <p>Based in Deer Park. We service all of Melbourne's western suburbs and surrounding areas.</p>
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get a Free Quote</a>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Ready to <span>Build</span>?</h2>
+                <p>Whether it's a renovation, extension, or new build — we'd love to discuss your project.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:nateqcon@gmail.com">nateqcon@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Location</h4>
+                            <p>Deer Park, Melbourne VIC</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Melbourne's western suburbs &amp; metro area</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Quote</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="+61 400 000 000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="residential">Residential Construction</option>
+                                <option value="commercial">Commercial Projects</option>
+                                <option value="renovation">Renovations</option>
+                                <option value="extension">Extensions &amp; Additions</option>
+                                <option value="management">Project Management</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201882.14413784!2d144.75364!3d-37.8136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2sau!4v1" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Excellence Contracting — Melbourne, Victoria"></iframe>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="footer-logo-text">Excellence <span>Contracting</span></span>
+                <p>Quality contracting services across Melbourne. Residential, commercial, and renovation projects.</p>
+                <div class="footer-tagline"><i class="fa-solid fa-hard-hat"></i><span>Excellence in Every Detail</span></div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li>Residential Construction</li>
+                    <li>Commercial Projects</li>
+                    <li>Renovations</li>
+                    <li>Extensions &amp; Additions</li>
+                    <li>Project Management</li>
+                    <li>General Contracting</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="mailto:nateqcon@gmail.com">nateqcon@gmail.com</a></li>
+                    <li>Deer Park, Melbourne VIC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Excellence Contracting Pty Ltd. All rights reserved.</span>
+            <span>Serving Melbourne, Victoria &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : ''; });
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => { const isOpen = navLinks.classList.toggle('active'); mobileBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>'; });
+navLinks.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { navLinks.classList.remove('active'); mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>'; }); });
+const form = document.getElementById('contactForm');
+const demoModal = document.getElementById('demoModal');
+if (form) { form.addEventListener('submit', (e) => { e.preventDefault(); demoModal.classList.add('visible'); }); }
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => { btn.addEventListener('click', (e) => { e.preventDefault(); demoModal.classList.add('visible'); }); });
+demoModalClose.addEventListener('click', () => demoModal.classList.remove('visible'));
+demoModal.addEventListener('click', (e) => { if (e.target === demoModal) demoModal.classList.remove('visible'); });
+const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); } }); }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.section-header').forEach(el => { el.classList.add('fade-up'); observer.observe(el); });
+document.querySelectorAll('.services-grid, .reasons-grid, .process-track, .trust-bar-grid, .about-grid, .contact-grid, .stats-grid, .area-towns').forEach(grid => {
+    grid.querySelectorAll('.service-card, .reason-card, .process-step-card, .trust-bar-item, .stat-box, .area-towns span').forEach((card, i) => { card.classList.add('fade-up'); card.style.transitionDelay = (i * 0.08) + 's'; observer.observe(card); });
+});
+</script>
+</body>
+</html>
