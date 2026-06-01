@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balta Pro — Flooring contractor in Caldwell, Idaho</title>
+    <meta name="description" content="Balta Pro — Professional flooring contractor services in Caldwell, Idaho.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for Balta Pro. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════
+     VSL WELCOME SECTION
+     ═══════════════════════════════════════ -->
+<section class="vsl-welcome" id="vslWelcome">
+    <div class="vsl-welcome-inner">
+        <h2 class="vsl-title">Welcome on your free demo</h2>
+        <p class="vsl-step"><span class="vsl-step-num">Step 1:</span> Watch the video</p>
+        <div class="vsl-video-wrap">
+            <iframe src="https://www.youtube.com/embed/C1PNgdLFEWs" title="FortX Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="vsl-buttons">
+            <a href="https://www.fortxweb.com/start" class="vsl-btn vsl-btn-primary" target="_blank" rel="noopener">START NOW</a>
+            <a href="https://www.fortxweb.com/copy-of-how-it-works" class="vsl-btn vsl-btn-glass" target="_blank" rel="noopener">How It Works</a>
+        </div>
+        <div class="vsl-step2">
+            <p class="vsl-step-bigger"><span class="vsl-step-num">Step 2:</span> Explore your demo</p>
+            <div class="vsl-scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#hero" class="logo-text">Balta Pro<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:(971) 373-2999" class="phone-link">
+                <i class="fa-solid fa-phone"></i> (971) 373-2999
+            </a>
+            <a href="tel:(971) 373-2999" class="btn btn-primary demo-trigger">Get a Free Estimate</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('img/hero.jpg')"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Flooring contractor — Caldwell, Idaho
+            </div>
+            <h1>Caldwell's Trusted <em>Flooring contractor</em> Experts</h1>
+            <p>Family-owned and serving the Caldwell area. Quality workmanship, fair pricing, and real customer service.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary demo-trigger"><i class="fa-solid fa-phone"></i> Get a Free Quote</a><a href="#services" class="btn btn-ghost">Our Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item"><h3>200<span class="stat-plus">+</span></h3><p>Projects Completed</p></div><div class="stat-divider"></div><div class="stat-item"><h3>15<span class="stat-plus">+</span></h3><p>Years Experience</p></div><div class="stat-divider"></div><div class="stat-item"><h3>5<span class="stat-plus">★</span></h3><p>Customer Rating</p></div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Licensed &amp; Insured</div><div class="trust-bar-item"><i class="fa-solid fa-file-signature"></i> Free Estimates</div><div class="trust-bar-item"><i class="fa-solid fa-thumbs-up"></i> Quality Guaranteed</div><div class="trust-bar-item"><i class="fa-solid fa-clock"></i> On-Time Service</div><div class="trust-bar-item"><i class="fa-solid fa-star"></i> 5-Star Rated</div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>From small repairs to large installations — we handle all your flooring contractor needs.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card" style="background-image: url('img/service-1.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-hard-hat"></i></div>
+                    <div class="service-card-body">
+                        <h3>Hard surface flooring installation</h3>
+                        <p>Professional hard surface flooring installation services in the Treasure Valley.</p>
+                    </div>
+                </div>
+            </div><div class="service-card" style="background-image: url('img/service-2.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-toolbox"></i></div>
+                    <div class="service-card-body">
+                        <h3>Floor replacement services</h3>
+                        <p>Professional floor replacement services services in the Treasure Valley.</p>
+                    </div>
+                </div>
+            </div><div class="service-card" style="background-image: url('img/service-3.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-wrench"></i></div>
+                    <div class="service-card-body">
+                        <h3>Ceramic tile installation</h3>
+                        <p>Professional ceramic tile installation services in the Treasure Valley.</p>
+                    </div>
+                </div>
+            </div><div class="service-card" style="background-image: url('img/service-4.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-paint-roller"></i></div>
+                    <div class="service-card-body">
+                        <h3>Hardwood flooring</h3>
+                        <p>Professional hardwood flooring services in the Treasure Valley.</p>
+                    </div>
+                </div>
+            </div><div class="service-card" style="background-image: url('img/service-5.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-hammer"></i></div>
+                    <div class="service-card-body">
+                        <h3>Laminate flooring</h3>
+                        <p>Professional laminate flooring services in the Treasure Valley.</p>
+                    </div>
+                </div>
+            </div><div class="service-card" style="background-image: url('img/service-6.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-trowel"></i></div>
+                    <div class="service-card-body">
+                        <h3>Luxury vinyl plank</h3>
+                        <p>Professional luxury vinyl plank services.</p>
+                    </div>
+                </div>
+            </div><div class="service-card" style="background-image: url('img/hero.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-building"></i></div>
+                    <div class="service-card-body">
+                        <h3>Eco-friendly finish options</h3>
+                        <p>Professional eco-friendly finish options services in the Treasure Valley.</p>
+                    </div>
+                </div>
+            </div><div class="service-card" style="background-image: url('img/about.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap"><i class="fa-solid fa-border-all"></i></div>
+                    <div class="service-card-body">
+                        <h3>Flooring design consultation</h3>
+                        <p>Professional flooring design consultation services.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-arrow-right-arrow-left"></i>&nbsp; How It Works</span>
+            <h2>Our <span>Process</span></h2>
+            <p class="process-subtitle">Simple, transparent, and stress-free from start to finish.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card">
+                <div class="process-icon-ring"><i class="fa-solid fa-phone"></i></div>
+                <h3>Reach Out</h3>
+                <p>Give us a call or fill out our contact form to tell us about your project.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-icon-ring"><i class="fa-solid fa-clipboard"></i></div>
+                <h3>Free Estimate</h3>
+                <p>We visit your site, assess the scope, and provide a detailed no-obligation quote.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-icon-ring"><i class="fa-solid fa-wrench"></i></div>
+                <h3>We Get to Work</h3>
+                <p>Our team handles the project from start to finish with minimal disruption to your day.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-chevron-right"></i></div>
+            <div class="process-step-card">
+                <div class="process-icon-ring"><i class="fa-solid fa-face-smile"></i></div>
+                <h3>You Love the Result</h3>
+                <p>We walk through the finished work with you to make sure everything is perfect.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="#contact" class="btn btn-dark btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Get Your Free Estimate</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="Balta Pro" class="about-photo">
+                    <div class="about-experience-badge"><span class="badge-number">15<span class="badge-plus">+</span></span><span class="badge-label">Years Experience</span></div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Our <em>Story</em></h2>
+                <p class="about-lead">Serving Caldwell and surrounding communities with quality flooring contractor services.</p>
+                <p>We are a trusted flooring contractor serving Caldwell, Idaho. Our team brings experience, professionalism, and attention to detail to every project. We believe in doing the job right the first time — with transparent pricing and clear communication from start to finish.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Licensed &amp; Insured</div>
+                    <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Free Estimates</div>
+                    <div class="highlight-item"><i class="fa-solid fa-check-circle"></i> Quality Guaranteed</div>
+                </div>
+                <a href="#contact" class="btn btn-white"><i class="fa-solid fa-arrow-right"></i> Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>Balta Pro</span> Difference</h2>
+            <p>Here's why Caldwell homeowners and businesses trust Balta Pro</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                    <div class="reason-icon"><i class="fa-solid fa-medal"></i></div>
+                    <h3>Experience You Can Trust</h3>
+                    <p>Years of hands-on experience serving Caldwell and the Treasure Valley.</p>
+                </div><div class="reason-card">
+                    <div class="reason-icon"><i class="fa-solid fa-shield"></i></div>
+                    <h3>Fully Licensed & Insured</h3>
+                    <p>Your property is protected. We carry full liability and workers' compensation insurance.</p>
+                </div><div class="reason-card">
+                    <div class="reason-icon"><i class="fa-solid fa-hand-holding-usd"></i></div>
+                    <h3>Fair & Transparent Pricing</h3>
+                    <p>No hidden fees, no surprises. You'll know the cost before we start.</p>
+                </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/hero.jpg')">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box"><h4>200+</h4><p>Projects Done</p></div><div class="stat-box"><h4>15+</h4><p>Years Experience</p></div><div class="stat-box"><h4>500+</h4><p>Happy Clients</p></div><div class="stat-box"><h4>5★</h4><p>Rating</p></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-handshake"></i>&nbsp; Our Commitment</span>
+            <h2>Why <span>Balta Pro</span> Stands Out</h2>
+            <p>We're not just another flooring contractor company. Here's what sets us apart.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card">
+                <div class="trust-card-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3>On-Time, Every Time</h3>
+                <p>We respect your time. Our team arrives when promised and works efficiently to meet deadlines.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-card-icon"><i class="fa-solid fa-broom"></i></div>
+                <h3>Clean Work Sites</h3>
+                <p>We treat your home like our own. Every job site is cleaned thoroughly before we leave.</p>
+            </div>
+            <div class="trust-card">
+                <div class="trust-card-icon"><i class="fa-solid fa-message"></i></div>
+                <h3>Clear Communication</h3>
+                <p>You'll never wonder what's happening. We keep you informed throughout the entire process.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="gallery section-dark" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-images"></i>&nbsp; Our Work</span>
+            <h2>Recent <span>Projects</span></h2>
+            <p>Take a look at some of our recent work across Caldwell and the surrounding areas.</p>
+        </div>
+        <div class="gallery-grid gallery-grid-6">
+            <div class="gallery-item">
+                <img src="img/gallery-1.jpg" alt="Project 1">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Residential Project</div>
+                    <div class="gallery-item-sub">Caldwell, Idaho</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-2.jpg" alt="Project 2">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Commercial Project</div>
+                    <div class="gallery-item-sub">Caldwell, Idaho</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/gallery-3.jpg" alt="Project 3">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Local Landmark</div>
+                    <div class="gallery-item-sub">Treasure Valley</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/about.jpg" alt="Project 4">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Custom Work</div>
+                    <div class="gallery-item-sub">Caldwell, Idaho</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/hero.jpg" alt="Project 5">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Full Service</div>
+                    <div class="gallery-item-sub">Caldwell, Idaho</div>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="img/service-1.jpg" alt="Project 6">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Specialty Work</div>
+                    <div class="gallery-item-sub">Caldwell, Idaho</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/hero.jpg')"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Serving All of Caldwell &amp; Surrounding Areas</h2>
+            <div class="area-towns">
+                <span>Caldwell</span><span>Nampa</span><span>Meridian</span><span>Boise</span><span>Middleton</span><span>Eagle</span><span>Star</span><span>Kuna</span>
+            </div>
+            <p>No matter where you are in the Treasure Valley, Balta Pro is ready to help with your flooring contractor needs.</p>
+            <a href="#contact" class="btn btn-white demo-trigger"><i class="fa-solid fa-location-dot"></i> Request Service</a>
+        </div>
+    </div>
+</section>
+
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Frequently Asked <span>Questions</span></h2>
+                <p>Quick answers to the most common questions we get from our customers in Caldwell.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">Do you provide free estimates? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><p>Yes! We offer free, no-obligation estimates for all projects. Simply give us a call or fill out our contact form to schedule a visit.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">Are you licensed and insured? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><p>Absolutely. We are fully licensed in the state of Idaho and carry comprehensive general liability and workers' compensation insurance.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">How long does a typical project take? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><p>Timelines vary depending on the scope. We provide a clear timeline during the estimate process and keep you updated every step of the way.</p></div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">What areas do you serve? <span class="faq-icon">+</span></button>
+                    <div class="faq-a"><p>We serve Caldwell and all surrounding Treasure Valley communities, including Nampa, Meridian, Boise, Middleton, Eagle, Star, and Kuna.</p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Ready to Get <em>Started?</em></h2>
+                <p>Call us or fill out the form — we'll get back to you within 24 hours.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <a href="tel:(971) 373-2999">(971) 373-2999</a>
+                        </div>
+                    </div><div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>yev.petrenko@gmail.com</p>
+                        </div>
+                    </div><div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info-content">
+                            <h4>Address</h4>
+                            <p>19285 Red Eagle Wy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Caldwell, Idaho and all of the Treasure Valley</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Estimate</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="Hard surface flooring installation">Hard surface flooring installation</option><option value="Floor replacement services">Floor replacement services</option><option value="Ceramic tile installation">Ceramic tile installation</option><option value="Hardwood flooring">Hardwood flooring</option><option value="Laminate flooring">Laminate flooring</option><option value="Luxury vinyl plank">Luxury vinyl plank</option><option value="Eco-friendly finish options">Eco-friendly finish options</option><option value="Flooring design consultation">Flooring design consultation</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Briefly describe your project, timeline, or any questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Caldwell+Idaho"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Balta Pro location — Caldwell, Idaho">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <a href="#hero" class="footer-logo-text">Balta Pro<span>.</span></a>
+                </div>
+                <p>Your trusted flooring contractor serving Caldwell and the Treasure Valley since 2006.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Caldwell's Premier Flooring contractor Specialists</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Hard surface flooring installation</a></li><li><a href="#services">Floor replacement services</a></li><li><a href="#services">Ceramic tile installation</a></li><li><a href="#services">Hardwood flooring</a></li><li><a href="#services">Laminate flooring</a></li><li><a href="#services">Luxury vinyl plank</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li><li><a href="#about">About Us</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> (971) 373-2999</li><li><i class="fa-solid fa-envelope"></i> yev.petrenko@gmail.com</li><li><i class="fa-solid fa-location-dot"></i> 19285 Red Eagle Wy</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Balta Pro. All rights reserved.</span>
+            <span>Serving Caldwell, Idaho &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    const vslH = document.getElementById('vslWelcome')?.offsetHeight || 0;
+    navbar.classList.toggle('scrolled', window.scrollY > vslH - 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+// Contact form → demo modal (not success message)
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+// Demo modal — all CTA buttons trigger it
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+// Scroll animations — IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Animate section headers
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+// Stagger grid children with sequential delays
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>

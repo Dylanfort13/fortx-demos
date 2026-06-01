@@ -42,8 +42,14 @@ body { font-family: var(--font-body); line-height: 1.7; color: var(--gray-medium
 @keyframes heroFadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
 .fade-up { opacity: 0; transform: translateY(32px); transition: opacity 0.7s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.7s cubic-bezier(0.25,0.46,0.45,0.94); }
 .fade-up.visible { opacity: 1; transform: translateY(0); }
-.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2rem; transition: all 0.35s cubic-bezier(0.4,0,0.2,1); }
-.navbar.scrolled { padding: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
+.navbar { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; padding: 1rem 2rem; transition: all 0.35s cubic-bezier(0.4,0,0.2,1);
+    /* VSL: hide until scroll */
+    opacity: 0;
+    pointer-events: none; }
+.navbar.scrolled { padding: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(20px); /* VSL: show on scroll */
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: 0 1px 20px rgba(0,0,0,0.06); }
 .navbar-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: center; padding: 0.85rem 1.5rem; position: relative; }
 .logo-text { font-family: var(--font-display); font-size: 1.5rem; color: white; text-decoration: none; transition: color 0.3s; letter-spacing: -0.02em; position: absolute; left: 1.5rem; }
 .logo-text span { color: var(--primary-light); }
@@ -212,6 +218,37 @@ footer { background: var(--dark); color: white; padding: 5rem 3.5rem 2rem; }
 @media (max-width: 900px) { .reasons-grid { grid-template-columns: repeat(2, 1fr); } .stats-grid { grid-template-columns: repeat(2, 1fr); } .contact-grid { grid-template-columns: 1fr; gap: 3rem; } }
 @media (max-width: 768px) { .navbar { padding: 0.75rem 1rem; } .logo-text { left: 1rem; } .mobile-menu-btn { display: flex; position: absolute; right: 1rem; top: 50%; transform: translateY(-50%); z-index: 1001; } .nav-links { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.85); backdrop-filter: blur(24px); flex-direction: column; align-items: center; padding-top: 6rem; gap: 1.75rem; z-index: 999; } .nav-links.active { display: flex; } .nav-links a { color: var(--dark) !important; font-size: 1.2rem; font-weight: 600; } .nav-cta { display: none; } section { padding: 4.5rem 1.5rem; } .hero-content { padding: 6rem 1.5rem 3rem; } .hero h1 { font-size: 3rem; } .services-grid { grid-template-columns: 1fr; } .process-track { grid-template-columns: 1fr; } .reasons-grid { grid-template-columns: 1fr; } .about-grid { grid-template-columns: 1fr; gap: 2.5rem; } .about-experience-badge { right: 0; bottom: -1rem; } .footer-grid { grid-template-columns: 1fr; gap: 2rem; } .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; } .trust-bar-grid { flex-direction: column; } .trust-bar-item { border-right: none; border-bottom: 1px solid var(--border); } .form-row { grid-template-columns: 1fr; } }
 @media (max-width: 480px) { .hero h1 { font-size: 2.5rem; } .hero-buttons { flex-direction: column; } .hero-buttons .btn { justify-content: center; } .hero-stats { flex-direction: column; align-items: flex-start; gap: 1rem; } .stat-divider { width: 40px; height: 1px; } }
+
+/* ═══════════════════════════════════════
+   VSL WELCOME SECTION
+   ═══════════════════════════════════════ */
+.vsl-welcome {
+    background-color: #f1f3f7;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    padding: 32px 24px 48px;
+    text-align: center;
+}
+.vsl-welcome-inner { max-width: 720px; margin: 0 auto; width: 100%; }
+.vsl-title { font-family: var(--font-display); font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--dark); margin-bottom: 12px; letter-spacing: -0.02em; }
+.vsl-step { font-family: var(--font-body); font-size: 1.05rem; color: var(--gray-medium); margin-bottom: 16px; margin-top: 8px; }
+.vsl-step-num { font-weight: 700; color: var(--dark); }
+.vsl-video-wrap { position: relative; width: 100%; padding-bottom: 56.25%; margin: 16px 0 28px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); }
+.vsl-video-wrap iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+.vsl-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 4px; }
+.vsl-btn { display: inline-flex; align-items: center; justify-content: center; font-family: var(--font-body); font-size: 1rem; font-weight: 600; padding: 14px 36px; border-radius: 50px; text-decoration: none; transition: all 0.25s ease; cursor: pointer; }
+.vsl-btn-primary { background: #2563eb; color: #fff; box-shadow: 0 4px 16px rgba(37,99,235,0.35); }
+.vsl-btn-primary:hover { background: #1d4ed8; box-shadow: 0 6px 24px rgba(37,99,235,0.45); transform: translateY(-1px); }
+.vsl-btn-glass { background: rgba(255,255,255,0.65); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); color: var(--dark); border: 1px solid rgba(255,255,255,0.8); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+.vsl-btn-glass:hover { background: rgba(255,255,255,0.85); transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.1); }
+.vsl-step2 { margin-top: 36px; }
+.vsl-step-bigger { font-family: var(--font-body); font-size: 1.3rem; font-weight: 600; color: var(--dark); }
+.vsl-scroll-arrow { margin-top: 12px; font-size: 1.6rem; color: var(--gray-medium); animation: vslBounce 2s infinite; }
+@keyframes vslBounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(10px); } 60% { transform: translateY(5px); } }
+@media (max-width: 600px) { .vsl-welcome { padding: 60px 16px 48px; } .vsl-btn { padding: 12px 28px; font-size: 0.95rem; } .vsl-step-bigger { font-size: 1.15rem; } }
+
 </style>
 </head>
 <body>
@@ -225,6 +262,27 @@ footer { background: var(--dark); color: white; padding: 5rem 3.5rem 2rem; }
         <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
     </div>
 </div>
+
+<!-- ═══════════════════════════════════════
+     VSL WELCOME SECTION
+     ═══════════════════════════════════════ -->
+<section class="vsl-welcome" id="vslWelcome">
+    <div class="vsl-welcome-inner">
+        <h2 class="vsl-title">Welcome on your free demo</h2>
+        <p class="vsl-step"><span class="vsl-step-num">Step 1:</span> Watch the video</p>
+        <div class="vsl-video-wrap">
+            <iframe src="https://www.youtube.com/embed/C1PNgdLFEWs" title="FortX Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="vsl-buttons">
+            <a href="https://www.fortxweb.com/start" class="vsl-btn vsl-btn-primary" target="_blank" rel="noopener">START NOW</a>
+            <a href="https://www.fortxweb.com/copy-of-how-it-works" class="vsl-btn vsl-btn-glass" target="_blank" rel="noopener">How It Works</a>
+        </div>
+        <div class="vsl-step2">
+            <p class="vsl-step-bigger"><span class="vsl-step-num">Step 2:</span> Explore your demo</p>
+            <div class="vsl-scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+    </div>
+</section>
 
 <nav class="navbar" id="navbar">
     <div class="navbar-inner">
@@ -609,7 +667,8 @@ footer { background: var(--dark); color: white; padding: 5rem 3.5rem 2rem; }
 <script>
 const navbar = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
-window.addEventListener('scroll', () => { navbar.classList.toggle('scrolled', window.scrollY > 60); if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : ''; });
+window.addEventListener('scroll', () => { const vslH = document.getElementById('vslWelcome')?.offsetHeight || 0;
+    navbar.classList.toggle('scrolled', window.scrollY > vslH - 60); if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : ''; });
 const mobileBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('navLinks');
 mobileBtn.addEventListener('click', () => { const isOpen = navLinks.classList.toggle('active'); mobileBtn.innerHTML = isOpen ? '<i class="fa-solid fa-xmark"></i>' : '<i class="fa-solid fa-bars"></i>'; });

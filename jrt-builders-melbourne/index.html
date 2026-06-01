@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JRT Builders — Home Builder in Melbourne, VIC</title>
+    <meta name="description" content="JRT Builders — Trusted home builders in Melbourne, VIC. New home construction, renovations, extensions, and knockdown rebuilds. Quality craftsmanship, on time, on budget.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>This is a Demo Website</h3>
+        <p>This site has been built as a free preview for JRT Builders. It's not their official website — yet.</p>
+        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<!-- ═══════════════════════════════════════
+     VSL WELCOME SECTION
+     ═══════════════════════════════════════ -->
+<section class="vsl-welcome" id="vslWelcome">
+    <div class="vsl-welcome-inner">
+        <h2 class="vsl-title">Welcome on your free demo</h2>
+        <p class="vsl-step"><span class="vsl-step-num">Step 1:</span> Watch the video</p>
+        <div class="vsl-video-wrap">
+            <iframe src="https://www.youtube.com/embed/C1PNgdLFEWs" title="FortX Demo Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="vsl-buttons">
+            <a href="https://www.fortxweb.com/start" class="vsl-btn vsl-btn-primary" target="_blank" rel="noopener">START NOW</a>
+            <a href="https://www.fortxweb.com/copy-of-how-it-works" class="vsl-btn vsl-btn-glass" target="_blank" rel="noopener">How It Works</a>
+        </div>
+        <div class="vsl-step2">
+            <p class="vsl-step-bigger"><span class="vsl-step-num">Step 2:</span> Explore your demo</p>
+            <div class="vsl-scroll-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="logo-text">JRT <span>Builders</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+61398857558" class="phone-link"><i class="fa-solid fa-phone"></i> (03) 9885 7558</a>
+            <a href="#contact" class="btn btn-primary demo-trigger">Free Estimate</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('img/hero.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Home Builder — Melbourne, VIC
+            </div>
+            <h1>Building <em>homes</em> that stand the test of time</h1>
+            <p>From custom new builds to full renovations — JRT Builders delivers<br>quality craftsmanship across Melbourne. Your vision, built right.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Get a Free Quote <i class="fa-solid fa-arrow-right"></i></a>
+                <a href="#services" class="btn btn-ghost btn-lg">Our Services</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>15<span class="stat-plus">+</span></h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>200<span class="stat-plus">+</span></h3>
+                    <p>Homes Built</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>100<span class="stat-plus">%</span></h3>
+                    <p>Australian Owned</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Scroll</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-shield-halved"></i> Licensed &amp; Insured
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-certificate"></i> Registered Builder
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-clock"></i> On-Time Delivery
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-solid fa-hand-holding-dollar"></i> Transparent Pricing
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; What We Do</span>
+            <h2>Our <span>Services</span></h2>
+            <p>Full-service home building and renovation — from the ground up, we handle every detail so you don't have to.</p>
+        </div>
+        <div class="services-grid">
+
+            <!-- Service 1: New Home Construction -->
+            <div class="service-card" style="background-image: url('img/service-new-homes.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>New Home Construction</h3>
+                        <p>Custom-built homes designed for your lifestyle, your block, and your budget. We manage the entire build from slab to handover.</p>
+                    </div>
+                </div>
+                <span class="service-card-tag">Popular</span>
+            </div>
+
+            <!-- Service 2: Home Renovations -->
+            <div class="service-card" style="background-image: url('img/service-renovations.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-paint-roller"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Home Renovations</h3>
+                        <p>Breathe new life into your existing home. Kitchen and bathroom upgrades, full interior refits, and modern makeovers.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 3: Extensions & Additions -->
+            <div class="service-card" style="background-image: url('img/service-extensions.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-expand"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Extensions &amp; Additions</h3>
+                        <p>Need more room? Second-storey additions, rear extensions, and granny flats designed to blend seamlessly with your home.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 4: Knockdown Rebuild -->
+            <div class="service-card" style="background-image: url('img/service-knockdown.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Knockdown Rebuild</h3>
+                        <p>Love your suburb, not your house? We'll demolish and rebuild a brand-new home on your existing block — hassle-free.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 5: Townhouse Development -->
+            <div class="service-card" style="background-image: url('img/service-townhouse.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Townhouse Development</h3>
+                        <p>Maximise your property's potential with dual-occupancy or multi-unit townhouse builds. Full project management included.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Service 6: Commercial Fit-Outs -->
+            <div class="service-card" style="background-image: url('img/service-commercial.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-store"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Commercial Fit-Outs</h3>
+                        <p>Shop and office fit-outs built to spec. We deliver on schedule so your business can open on time.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS
+     ═══════════════════════════════════════ -->
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; How It Works</span>
+            <h2>From <span>Concept</span> to Keys</h2>
+            <p class="process-subtitle">A straightforward, stress-free building process. We keep you informed at every stage.</p>
+        </div>
+        <div class="process-track">
+            <!-- Step 1 -->
+            <div class="process-step-card fade-up">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-clipboard-check"></i></div>
+                <h3>Consultation</h3>
+                <p>We visit your site, discuss your vision, and provide a detailed quote — no obligation, no pressure.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <!-- Step 2 -->
+            <div class="process-step-card fade-up">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-drafting-compass"></i></div>
+                <h3>Design &amp; Approvals</h3>
+                <p>Working with your architect or ours, we finalise plans, handle permits, and lock in your selections.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <!-- Step 3 -->
+            <div class="process-step-card fade-up">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-helmet-safety"></i></div>
+                <h3>Construction</h3>
+                <p>Our experienced crews build with precision. Regular site updates keep you in the loop throughout the build.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <!-- Step 4 -->
+            <div class="process-step-card fade-up">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-key"></i></div>
+                <h3>Handover</h3>
+                <p>Final inspection, quality walkthrough, and we hand you the keys. We stay available for any follow-up needs.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Start Your Project <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="JRT Builders — Melbourne home builder on site" class="about-photo">
+                    <div class="about-experience-badge">
+                        <span class="badge-number">15<span class="badge-plus">+</span></span>
+                        <span class="badge-label">Years Building<br>in Melbourne</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Our Story</span>
+                <h2>Built on <em>trust</em>, backed by results</h2>
+                <p class="about-lead">JRT Builders is a Melbourne-based home building company with a reputation for doing things right. We take on every project — big or small — with the same commitment to quality and communication.</p>
+                <p>From custom new homes in the eastern suburbs to period renovations in the inner north, we understand Melbourne's diverse housing styles and council requirements inside and out.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Registered domestic builder (DB-U)</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Fixed-price contracts — no hidden surprises</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Dedicated site supervisor on every project</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Full warranty and after-build support</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Talk to Our Team <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Why Choose Us</span>
+            <h2>The <span>JRT</span> Difference</h2>
+            <p>We don't cut corners. Every build gets the same attention to detail, clear communication, and honest pricing.</p>
+        </div>
+        <div class="reasons-grid">
+
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-comments"></i></div>
+                <h3>Clear Communication</h3>
+                <p>No radio silence. Weekly progress updates, quick call-backs, and a single point of contact throughout your build.</p>
+            </div>
+
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Fully Insured</h3>
+                <p>Complete public liability and domestic building insurance. Your investment is protected from day one.</p>
+            </div>
+
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <h3>Fixed-Price Contracts</h3>
+                <p>The price we quote is the price you pay. No variation surprises, no hidden costs, no ambiguity.</p>
+            </div>
+
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-ruler-combined"></i></div>
+                <h3>Attention to Detail</h3>
+                <p>From frame to finish, we sweat the small stuff — because that's what separates a good build from a great one.</p>
+            </div>
+
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-clock"></i></div>
+                <h3>On-Time Delivery</h3>
+                <p>Realistic timelines and disciplined scheduling. We set a completion date and we stick to it.</p>
+            </div>
+
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h3>Melbourne Specialists</h3>
+                <p>We know the councils, the soil conditions, and the weather. Local knowledge that saves you time and money.</p>
+            </div>
+
+        </div>
+
+        <!-- Stats bar -->
+        <div class="stats-bar" style="background-image: url('img/stats-bar-bg.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box fade-up">
+                    <h4>200+</h4>
+                    <p>Homes Built</p>
+                </div>
+                <div class="stat-box fade-up">
+                    <h4>15+</h4>
+                    <p>Years in Business</p>
+                </div>
+                <div class="stat-box fade-up">
+                    <h4>98%</h4>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="stat-box fade-up">
+                    <h4>50+</h4>
+                    <p>Extensions Completed</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST SECTION
+     ═══════════════════════════════════════ -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-medal"></i>&nbsp; Our Guarantee</span>
+            <h2>Built on <span>Trust</span></h2>
+            <p>When you choose JRT Builders, you're choosing a team that stands behind every nail, every joint, and every finish.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-file-contract"></i></div>
+                <h3>Written Warranty</h3>
+                <p>Every project comes with a comprehensive written warranty. If something isn't right, we come back and make it right.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-hard-hat"></i></div>
+                <h3>Qualified Trades</h3>
+                <p>Licensed plumbers, electricians, and carpenters on every job. No handymen, no shortcuts — proper trades, proper work.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h3>Local &amp; Accountable</h3>
+                <p>We live and work in Melbourne. Our reputation is everything — and we treat every build like it's our own home.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     GALLERY
+     ═══════════════════════════════════════ -->
+<section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-images"></i>&nbsp; Our Work</span>
+            <h2>Recent <span>Projects</span></h2>
+            <p>A selection of homes we've built and renovated across Melbourne.</p>
+        </div>
+        <div class="gallery-grid gallery-grid-6">
+
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-1.jpg" alt="Modern custom home exterior">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Modern Custom Build</div>
+                    <div class="gallery-item-sub">New residence, Melbourne East</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-2.jpg" alt="Open-concept living interior">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Open-Plan Living</div>
+                    <div class="gallery-item-sub">Interior fit-out, custom home</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-3.jpg" alt="Home addition exterior">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Rear Extension</div>
+                    <div class="gallery-item-sub">Family home addition</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-4.jpg" alt="Kitchen remodel">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Kitchen Renovation</div>
+                    <div class="gallery-item-sub">Full kitchen and butler's pantry</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-5.jpg" alt="Residential framing under construction">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Under Construction</div>
+                    <div class="gallery-item-sub">Framing stage, new build</div>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-6.jpg" alt="Cedar gazebo outdoor structure">
+                <div class="gallery-item-overlay">
+                    <div class="gallery-item-title">Outdoor Living</div>
+                    <div class="gallery-item-sub">Custom cedar gazebo build</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/service-area-bg.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Proudly Serving Greater Melbourne</h2>
+            <div class="area-towns">
+                <span>Melbourne CBD</span>
+                <span>Eastern Suburbs</span>
+                <span>South Eastern</span>
+                <span>Inner North</span>
+                <span>Boroondara</span>
+                <span>Monash</span>
+                <span>Whitehorse</span>
+                <span>Stonnington</span>
+                <span>Bayside</span>
+                <span>Glen Eira</span>
+                <span>Manningham</span>
+                <span>Knox</span>
+            </div>
+            <p>Don't see your area? Get in touch — we cover most of metropolitan Melbourne.</p>
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Check Your Area <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Get in Touch</span>
+                <h2>Ready to start your build?</h2>
+                <p>Whether you're planning a new home, a renovation, or an extension — we'd love to hear about your project.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info-content">
+                            <h4>Call Us</h4>
+                            <p><a href="tel:+61398857558">(03) 9885 7558</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p><a href="mailto:jnjnalateras@gmail.com">jnjnalateras@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+                        <div class="info-content">
+                            <h4>Hours</h4>
+                            <p>Mon–Fri: 7:00 AM – 5:00 PM<br>Sat: By appointment</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Serving Melbourne, VIC and surrounding suburbs. Site inspections available across the metropolitan area.</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Request a Free Estimate</h3>
+                    <p class="form-subline">Tell us about your project — we'll respond within 24 hours.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Your Name</label>
+                                <input type="text" id="fname" name="name" placeholder="First &amp; last name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Phone Number</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="04XX XXX XXX">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Email Address</label>
+                            <input type="email" id="femail" name="email" placeholder="you@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Service Type</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="new-home">New Home Construction</option>
+                                <option value="renovation">Home Renovation</option>
+                                <option value="extension">Extension &amp; Addition</option>
+                                <option value="knockdown">Knockdown Rebuild</option>
+                                <option value="townhouse">Townhouse Development</option>
+                                <option value="commercial">Commercial Fit-Out</option>
+                                <option value="other">Other / Not Sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Tell Us About Your Project</label>
+                            <textarea id="fmessage" name="message" placeholder="Describe your project, timeline, budget range, or any questions you have..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Send Request
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Sent!</h4>
+                        <p>Thanks for reaching out. We'll be in touch within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403269.6504664569!2d144.5624569!3d-37.813611!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="JRT Builders location — Melbourne, VIC">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="footer-logo-text">JRT <span>Builders</span></span>
+                </div>
+                <p>Quality home builders serving Melbourne and surrounding suburbs. From new builds to renovations — we build it right.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-hammer"></i>
+                    <span>Building Melbourne's Future</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">New Home Construction</a></li>
+                    <li><a href="#services">Home Renovations</a></li>
+                    <li><a href="#services">Extensions &amp; Additions</a></li>
+                    <li><a href="#services">Knockdown Rebuild</a></li>
+                    <li><a href="#services">Townhouse Development</a></li>
+                    <li><a href="#services">Commercial Fit-Outs</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+61398857558">(03) 9885 7558</a></li>
+                    <li><a href="mailto:jnjnalateras@gmail.com">jnjnalateras@gmail.com</a></li>
+                    <li>Melbourne, VIC</li>
+                    <li>Mon–Fri: 7am – 5pm</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 JRT Builders. All rights reserved.</span>
+            <span>Serving Melbourne, VIC &amp; surrounding areas</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    const vslH = document.getElementById('vslWelcome')?.offsetHeight || 0;
+    navbar.classList.toggle('scrolled', window.scrollY > vslH - 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+// Contact form → demo modal (not success message)
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+// Demo modal — all CTA buttons trigger it
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+// Scroll animations — IntersectionObserver
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+// Animate section headers
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+// Stagger grid children with sequential delays
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .contact-grid, .stats-grid, .area-towns, .reviews-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .info-item, .area-towns span, .review-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
