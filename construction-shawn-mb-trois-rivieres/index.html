@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Shawn M.B — Construction & Rénovation à Trois-Rivières</title>
+    <meta name="description" content="Construction Shawn M.B — Entrepreneur passionné en construction & rénovation à Trois-Rivières. Services : rénovation complète, cuisine, salle de bain, sous-sol, fenêtres, revêtement de sol et travaux extérieurs. Membre APCHQ.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>Ceci est un site de démo</h3>
+        <p>Ce site a été créé comme aperçu gratuit pour Construction Shawn M.B. Ce n'est pas encore leur site officiel.</p>
+        <p class="demo-modal-sub">Cliquez sur les boutons ci-dessus pour voir comment fonctionnerait un vrai formulaire de contact.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     ═══════════════════════════════════════ -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="logo-link"><img src="img/logo.png" alt="Construction Shawn M.B" class="logo-img"></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">Processus</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:+18193835345" class="phone-link"><i class="fa-solid fa-phone"></i> (819) 383-5345</a>
+            <a href="#contact" class="btn btn-primary demo-trigger">Devis gratuit</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('img/hero-bg.jpg')"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Construction & Rénovation — Trois-Rivières, QC
+            </div>
+            <h1><span>Construction & Rénovation</span> à <em>Trois-Rivières</em></h1>
+            <p>Entrepreneur passionné — chaque chantier traité comme si c'était chez moi. Qualité. Respect. Fierté du métier.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-file-invoice"></i> Obtenez un Devis Gratuit</a>
+                <a href="#services" class="btn btn-ghost btn-lg">Nos Services <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>APCHQ</h3>
+                    <p>Membre Certifié</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>15+<span class="stat-plus">+</span></h3>
+                    <p>Projets Réalisés</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>100%</h3>
+                    <p>Satisfaction Garantie</p>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <h3>Mauricie</h3>
+                    <p>Région Desservie</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="img/logo.png" alt="Construction Shawn M.B" class="hero-logo">
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Découvrir</span>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST BAR
+     ═══════════════════════════════════════ -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item">
+                <i class="fa-regular fa-circle-check"></i> Membre APCHQ
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-regular fa-circle-check"></i> Soumission Gratuite
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-regular fa-circle-check"></i> Travail Garanti
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-regular fa-circle-check"></i> Service Personnalisé
+            </div>
+            <div class="trust-bar-item">
+                <i class="fa-regular fa-circle-check"></i> Chantier Propre
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     ═══════════════════════════════════════ -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; Nos Services</span>
+            <h2>Tout pour votre <span>projet de rénovation</span></h2>
+            <p>De la cuisine au sous-sol, en passant par les fenêtres et les travaux extérieurs — je prends en charge votre projet de A à Z avec passion et professionnalisme.</p>
+        </div>
+        <div class="services-grid">
+
+            <div class="service-card" style="background-image: url('img/service-1.jpg')">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Rénovation Complète</h3>
+                        <p>De la conception à la finition, je prends en charge tous les aspects de votre projet de rénovation résidentielle.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" style="background-image: url('img/service-2.jpg')">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-sink"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Cuisine & Salle de Bain</h3>
+                        <p>Des designs fonctionnels et élégants, avec des finitions haut de gamme qui transforment le cœur de votre maison.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" style="background-image: url('img/service-3.jpg')">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-stairs"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Rénovation de Sous-Sol</h3>
+                        <p>Aménagement complet pour créer des espaces de vie supplémentaires : salle familiale, chambre, bureau ou salle de jeux.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" style="background-image: url('img/service-4.jpg')">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-window-maximize"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Fenêtres & Portes</h3>
+                        <p>Installation et remplacement professionnels pour améliorer l'isolation, la sécurité et l'esthétique de votre maison.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" style="background-image: url('img/service-5.jpg')">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-border-all"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Revêtement de Sol</h3>
+                        <p>Pose et réparation de tous types de revêtements — bois franc, stratifié, céramique, époxy et plus encore.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card" style="background-image: url('img/service-6.jpg')">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Travaux Extérieurs</h3>
+                        <p>Terrasses, revêtement extérieur et aménagement — tout pour embellir et valoriser l'extérieur de votre propriété.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     PROCESS STEPS
+     ═══════════════════════════════════════ -->
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-arrows-spin"></i>&nbsp; Comment ça marche</span>
+            <h2>Un processus <span>simple et transparent</span></h2>
+            <p class="process-subtitle">De la première rencontre à la remise des clés, je vous accompagne à chaque étape avec honnêteté et professionnalisme.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-comments"></i>
+                </div>
+                <h3>Consultation</h3>
+                <p>Rencontre personnalisée chez vous pour comprendre votre vision, vos besoins et votre budget.</p>
+            </div>
+            <div class="process-connector">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="process-step-card">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-file-invoice"></i>
+                </div>
+                <h3>Devis Détailé</h3>
+                <p>Soumission claire, écrite et sans surprise — vous savez exactement où vous allez.</p>
+            </div>
+            <div class="process-connector">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="process-step-card">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-hard-hat"></i>
+                </div>
+                <h3>Réalisation</h3>
+                <p>Travail exécuté avec soin, dans le respect des délais et de votre quotidien. Chantier toujours propre.</p>
+            </div>
+            <div class="process-connector">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="process-step-card">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring">
+                    <i class="fa-solid fa-check-double"></i>
+                </div>
+                <h3>Finition & Livraison</h3>
+                <p>Nettoyage complet, inspection finale et remise des clés — votre satisfaction est ma priorité.</p>
+            </div>
+        </div>
+        <div class="process-cta">
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-file-invoice"></i> Demandez votre soumission gratuite</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     ABOUT
+     ═══════════════════════════════════════ -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <div class="about-image-placeholder" style="background-image: url('img/service-1.jpg'); background-size: cover; background-position: center;">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="badge-number">APCHQ<span class="badge-plus">®</span></span>
+                        <span class="badge-label">Membre Certifié</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Notre Histoire</span>
+                <h2>Passionné par la <em>construction</em></h2>
+                <p class="about-lead">Je m'appelle Shawn, et la construction & rénovation c'est ma passion. Chaque projet est pour moi une occasion de créer quelque chose de durable et de beau.</p>
+                <p>Membre de l'APCHQ et fier de servir la région de Trois-Rivières et toute la Mauricie, je traite chaque chantier comme si c'était chez moi. Peu importe l'ampleur du projet — une rénovation de salle de bain ou un projet complet de A à Z — je m'engage à fournir un travail de qualité, avec respect et fierté du métier.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-certificate"></i> Membre certifié APCHQ
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-handshake"></i> Service personnalisé et transparent
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-list-check"></i> Plus de 15 projets réalisés
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved"></i> Travail garanti
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Parlons de votre projet</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     WHY US
+     ═══════════════════════════════════════ -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Pourquoi Choisir</span>
+            <h2>La différence <span>Shawn M.B</span></h2>
+            <p>Ce qui me distingue, c'est mon engagement envers la qualité, la transparence et la satisfaction de mes clients.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-certificate"></i>
+                </div>
+                <h3>Membre APCHQ</h3>
+                <p>Reconnu par la plus grande association de professionnels de la construction et de l'habitation au Québec.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+                <h3>Travail Artisanal</h3>
+                <p>Chaque projet est unique, réalisé avec soin, attention aux détails et une fierté du métier inégalée.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-file-invoice"></i>
+                </div>
+                <h3>Prix Transparents</h3>
+                <p>Devis clair, détaillé et sans frais cachés. Vous savez exactement ce que vous payez.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-broom"></i>
+                </div>
+                <h3>Chantier Propre</h3>
+                <p>Je respecte votre espace de vie — chaque journée de travail se termine avec un chantier bien rangé.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-message"></i>
+                </div>
+                <h3>Communication</h3>
+                <p>Je vous tiens informé à chaque étape. Pas de surprise — juste une communication claire et honnête.</p>
+            </div>
+            <div class="reason-card">
+                <div class="reason-icon">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <h3>Satisfait ou Corrigé</h3>
+                <p>Votre satisfaction est ma priorité absolue. Je ne remets pas un projet tant que vous n'êtes pas pleinement satisfait.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/stats-bg.jpg')">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <h4>15+</h4>
+                    <p>Projets Réalisés</p>
+                </div>
+                <div class="stat-box">
+                    <h4>1</h4>
+                    <p>Entrepreneur Passionné</p>
+                </div>
+                <div class="stat-box">
+                    <h4>100%</h4>
+                    <p>Satisfaction Client</p>
+                </div>
+                <div class="stat-box">
+                    <h4>APCHQ</h4>
+                    <p>Membre Certifié</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     REVIEWS
+     ═══════════════════════════════════════ -->
+<section class="section-dark reviews" id="reviews">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge section-badge-dark"><i class="fa-solid fa-star"></i>&nbsp; Témoignages</span>
+            <h2>Ce que disent <span>mes clients</span></h2>
+            <p>La meilleure publicité, c'est la satisfaction de ceux qui m'ont fait confiance.</p>
+        </div>
+        <div class="reviews-grid">
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">&ldquo;Shawn a complètement transformé notre sous-sol en un espace familial magnifique ! Travail soigné, ponctuel et professionnel. Un gars passionné qui aime ce qu'il fait. Je recommande sans hésiter.&rdquo;</p>
+                <div class="review-author">
+                    <div class="review-avatar">M.S.</div>
+                    <div>
+                        <strong>M. S.</strong>
+                        <span>Trois-Rivières</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">&ldquo;Rénovation complète de notre cuisine. Résultat au-delà de nos attentes ! Cuisine fonctionnelle, belle finition et respect du budget. Merci Shawn pour ce beau travail.&rdquo;</p>
+                <div class="review-author">
+                    <div class="review-avatar">J.L.</div>
+                    <div>
+                        <strong>J. L.</strong>
+                        <span>Trois-Rivières</span>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="review-text">&ldquo;Installation de fenêtres impeccable. Travail propre, rapide et prix très compétitifs. En plus, Shawn a pris le temps de bien m'expliquer les options disponibles. Très satisfait !&rdquo;</p>
+                <div class="review-author">
+                    <div class="review-avatar">C.B.</div>
+                    <div>
+                        <strong>C. B.</strong>
+                        <span>Trois-Rivières</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="reviews-cta">
+            <p>Votre expérience compte</p>
+            <a href="#contact" class="btn btn-white btn-lg demo-trigger"><i class="fa-solid fa-pen"></i> Laissez un témoignage</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     SERVICE AREA
+     ═══════════════════════════════════════ -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/service-area-bg.jpg')"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Au service de toute la <span style="color: var(--primary-light);">Mauricie</span></h2>
+            <div class="area-towns">
+                <span>Trois-Rivières</span>
+                <span>Cap-de-la-Madeleine</span>
+                <span>Bécancour</span>
+                <span>Shawinigan</span>
+                <span>Louiseville</span>
+                <span>Yamachiche</span>
+                <span>Sainte-Geneviève-de-Batiscan</span>
+                <span>Saint-Étienne-des-Grès</span>
+            </div>
+            <p>Que vous soyez à Trois-Rivières ou dans les environs, je me déplace pour évaluer votre projet et vous offrir un service personnalisé, sans frais de déplacement.</p>
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-calendar-check"></i> Réservez votre consultation gratuite</a>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Questions <span>fréquentes</span></h2>
+                <p>Tout ce que vous devez savoir avant de commencer votre projet de rénovation.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Quels types de projets de rénovation réalisez-vous ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Je couvre tous les types de rénovation résidentielle : cuisine, salle de bain, sous-sol, fenêtres et portes, revêtement de sol et travaux extérieurs. Que ce soit une rénovation complète ou partielle, j'ai l'expertise pour réaliser votre projet avec soin.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Êtes-vous certifié et assuré ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Oui, je suis membre de l'APCHQ (Association des professionnels de la construction et de l'habitation du Québec), la plus grande association du genre au Québec. Mon entreprise est dûment enregistrée au Registraire des entreprises du Québec (NEQ #1180678865) et je détiens les assurances nécessaires pour exercer.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Combien de temps prend une rénovation typique ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>La durée varie selon l'ampleur du projet. Une rénovation de salle de bain peut prendre 2 à 3 semaines, tandis qu'une rénovation complète peut prendre 4 à 8 semaines. Lors de la consultation initiale, j'établis un échéancier clair et réaliste adapté à votre projet.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Offrez-vous une garantie sur vos travaux ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Absolument. Chaque projet est réalisé avec fierté et je tiens à la satisfaction de mes clients. Je respecte les normes de l'APCHQ et offre une garantie sur mon travail. Mon engagement : vous ne serez pas satisfait tant que tout n'est pas parfait.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        <span>Comment se déroule le processus de soumission ?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Simple et sans engagement : je visite votre propriété, écoute vos besoins, prends les mesures nécessaires et vous fournis une soumission détaillée et transparente dans les plus brefs délais. Aucun frais pour la visite et le devis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     CONTACT
+     ═══════════════════════════════════════ -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Contact</span>
+                <h2>Prêt à <span>discuter</span> de votre projet ?</h2>
+                <p>Remplissez le formulaire ou appelez-moi directement. Je vous répondrai sous 24 heures.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Téléphone</h4>
+                            <a href="tel:+18193835345">(819) 383-5345</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Courriel</h4>
+                            <a href="mailto:shawnmb1@outlook.com">shawnmb1@outlook.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Adresse</h4>
+                            <p>2400 Rue Saint-Olivier, Trois-Rivières, QC G9A 4E9</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Je dessers toute la Mauricie — Trois-Rivières, Shawinigan, Bécancour et les environs. Déplacements sans frais.</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Demandez un Devis Gratuit</h3>
+                    <p class="form-subline">Parlez-moi de votre projet — je vous répondrai sous 24 heures.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Votre Nom</label>
+                                <input type="text" id="fname" name="name" placeholder="Prénom et nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Téléphone</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Courriel</label>
+                            <input type="email" id="femail" name="email" placeholder="vous@courriel.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Type de Service</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Choisissez un service...</option>
+                                <option>Rénovation complète</option>
+                                <option>Cuisine & salle de bain</option>
+                                <option>Sous-sol</option>
+                                <option>Fenêtres & portes</option>
+                                <option>Revêtement de sol</option>
+                                <option>Travaux extérieurs</option>
+                                <option>Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Parlez-moi de votre projet</label>
+                            <textarea id="fmessage" name="message" placeholder="Décrivez brièvement votre projet, vos échéances ou vos questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Envoyer ma demande
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message Envoyé !</h4>
+                        <p>Merci de m'avoir contacté. Je vous répondrai sous 24 heures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2792.22!2d-72.5481!3d46.3456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc859f672035dd5%3A0x0!2s2400%20Rue%20Saint-Olivier%2C%20Trois-Rivi%C3%A8res%2C%20QC%20G9A%204E9!5e0!3m2!1sfr!2sca!4v1"
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Construction Shawn M.B — Trois-Rivières, QC">
+        </iframe>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-text"><img src="img/logo-white.png" alt="Construction Shawn M.B" class="footer-logo-img"></div>
+                <p>Entrepreneur passionné en construction & rénovation à Trois-Rivières. Chaque chantier traité comme si c'était chez moi.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Qualité. Respect. Fierté du métier.</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li>Rénovation complète</li>
+                    <li>Cuisine & salle de bain</li>
+                    <li>Sous-sol</li>
+                    <li>Fenêtres & portes</li>
+                    <li>Revêtement de sol</li>
+                    <li>Travaux extérieurs</li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Liens Rapides</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#process">Processus</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+18193835345">(819) 383-5345</a></li>
+                    <li><a href="mailto:shawnmb1@outlook.com">shawnmb1@outlook.com</a></li>
+                    <li>2400 Rue Saint-Olivier</li>
+                    <li>Trois-Rivières, QC G9A 4E9</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Construction Shawn M.B. Tous droits réservés.</span>
+            <span>Au service de Trois-Rivières, Shawinigan, Bécancour &amp; toute la Mauricie</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.classList.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '\u2212';
+        }
+    });
+});
+
+const form = document.getElementById('contactForm');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
