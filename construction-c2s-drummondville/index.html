@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction C2S | Entrepreneur général à Drummondville, Québec</title>
+    <meta name="description" content="Construction C2S. Entrepreneur général à Drummondville. Rénovations complètes, agrandissements, garages, remises, galeries et nouvelles constructions. Soumission gratuite.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- DO NOT CHANGE THESE FONTS — Bebas Neue + Inter is the fixed BTS design system -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal — DO NOT REMOVE OR MODIFY -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="demo-modal-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3>Ceci est un site démo</h3>
+        <p>Ce site a été créé comme aperçu gratuit pour Construction C2S. Ce n'est pas leur site officiel — pour l'instant.</p>
+        <p class="demo-modal-sub">Clique sur un bouton pour voir comment le formulaire fonctionnerait.</p>
+    </div>
+</div>
+
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo demo-trigger">
+            <img src="img/logo.png" alt="Construction C2S" class="nav-logo-light">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#hero" class="demo-trigger">Accueil</a></li>
+            <li><a href="#services" class="demo-trigger">Services</a></li>
+            <li><a href="#about" class="demo-trigger">À propos</a></li>
+            <li><a href="#gallery" class="demo-trigger">Réalisations</a></li>
+            <li><a href="#contact" class="demo-trigger">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#" class="btn btn-primary demo-trigger">Soumission gratuite</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<section class="hero" id="hero">
+    <div class="hero-bg hero-fade-in" style="background-image:url('img/project-residence.jpg')"></div>
+    <div class="hero-bg-overlay hero-fade-in"></div>
+    <div class="hero-bg-vignette hero-fade-in"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <h1 class="title-gradient hero-slide-up" style="animation-delay:0.2s">VOTRE PROJET<br><span class="accent">NOTRE EXPERTISE</span></h1>
+            <p class="hero-subtitle hero-slide-up" style="animation-delay:0.5s">Entrepreneur général à Drummondville. Rénovations complètes, agrandissements, garages, remises, galeries et nouvelles constructions. Réalisé avec soin et professionnalisme.</p>
+            <div class="hero-buttons hero-slide-up" style="animation-delay:0.8s">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    Soumission gratuite
+                </a>
+                <a href="#services" class="btn btn-ghost btn-lg">Nos services</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="img/logo.png" alt="Construction C2S" class="hero-logo">
+        </div>
+    </div>
+</section>
+
+<div class="reveal">
+    <section class="trust-strip">
+        <div class="trust-strip-grid">
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Entrepreneur général</div>
+                    <div class="trust-badge-desc">Spécialiste en construction résidentielle</div>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Projets clés en main</div>
+                    <div class="trust-badge-desc">De la planification à la livraison</div>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Soumission gratuite</div>
+                    <div class="trust-badge-desc">Devis détaillé sans engagement</div>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Drummondville et environs</div>
+                    <div class="trust-badge-desc">Service dans tout le Centre-du-Québec</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="services" id="services">
+        <div class="services-inner">
+            <div class="services-header">
+                <div class="section-badge"><span class="section-badge-line"></span>CONSTRUCTION C2S</div>
+                <h2 class="title-gradient">NOS SERVICES</h2>
+                <p>Des solutions complètes en construction et rénovation résidentielle. Adaptées à tes besoins, à ton budget et à tes délais.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" style="background-image: url('img/project-residence.jpg');">
+                    <div class="service-card-bg"><img src="img/project-residence.jpg" alt="Rénovations complètes Drummondville"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">01</div>
+                        <span class="service-card-tag">Populaire</span>
+                        <h3>Rénovations complètes</h3>
+                        <p>Cuisine, salle de bain, sous-sol. On transforme ton espace avec un finish impeccable.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Design et planification sur mesure</li>
+                                <li>Cuisine et salle de bain clé en main</li>
+                                <li>Finition de sous-sol complète</li>
+                                <li>Travaux électriques et plomberie</li>
+                            </ul>
+                            <a href="#" class="service-card-link demo-trigger">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" style="background-image: url('img/project-garage-exterior.jpg');">
+                    <div class="service-card-bg"><img src="img/project-garage-exterior.jpg" alt="Agrandissements résidentiels"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">02</div>
+                        <span class="service-card-tag">Résidentiel</span>
+                        <h3>Agrandissements résidentiels</h3>
+                        <p>Extensions, ajout d'étage, conversion de garage. On agrandit ta maison selon ta vision.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Extension de plain-pied ou ajout d'étage</li>
+                                <li>Conversion de garage ou sous-sol</li>
+                                <li>Plans et permis inclus</li>
+                                <li>Intégration harmonieuse à l'existant</li>
+                            </ul>
+                            <a href="#" class="service-card-link demo-trigger">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" style="background-image: url('img/project-garage-interior-1.jpg');">
+                    <div class="service-card-bg"><img src="img/project-garage-interior-1.jpg" alt="Construction de garages remises et galeries"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">03</div>
+                        <span class="service-card-tag">Construction annexée</span>
+                        <h3>Garages, remises et galeries</h3>
+                        <p>Construction annexée sur mesure. Garage détaché, remise de jardin ou galerie couverte.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Garage détaché ou attenant</li>
+                                <li>Remise de jardin et cabanon</li>
+                                <li>Galerie couverte et patio</li>
+                                <li>Choix de revêtement et finition</li>
+                            </ul>
+                            <a href="#" class="service-card-link demo-trigger">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card" style="background-image: url('img/project-fondation-beton.jpg');">
+                    <div class="service-card-bg"><img src="img/project-fondation-beton.jpg" alt="Nouvelles constructions résidentielles"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">04</div>
+                        <span class="service-card-tag">Clés en main</span>
+                        <h3>Nouvelles constructions</h3>
+                        <p>Construction résidentielle clés en main. Du coffrage de fondation à la livraison finale.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Fondation et structure complète</li>
+                                <li>Toiture, isolation et fenestration</li>
+                                <li>Finition intérieure et extérieure</li>
+                                <li>Suivi personnalisé de A à Z</li>
+                            </ul>
+                            <a href="#" class="service-card-link demo-trigger">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-content reveal">
+            <div class="section-badge">Qui sommes-nous</div>
+            <h2 class="title-gradient-light">L'ÉQUIPE LOCALE<br><span class="accent">QUI BÂTIT TA VISION</span></h2>
+            <p>Construction C2S, c'est une équipe d'entrepreneurs général basée à Drummondville. On réalise tes projets de rénovation, d'agrandissement et de construction résidentielle avec un seul objectif : livrer un résultat à la hauteur de tes attentes.</p>
+            <p>De la première soumission jusqu'au nettoyage final, on t'accompagne avec transparence, professionalism et une gestion de projet rigoureuse. Pas de sous-traitants à coordonner. On gère tout, de A à Z.</p>
+            <blockquote class="about-quote">« Chaque projet est unique. On le traite comme si c'était le nôtre. »</blockquote>
+            <div class="about-tags">
+                <span class="about-tag">Rénovations</span>
+                <span class="about-tag">Agrandissements</span>
+                <span class="about-tag">Garages</span>
+                <span class="about-tag">Nouvelles constructions</span>
+            </div>
+        </div>
+        <div class="reveal">
+            <div class="about-image-wrap">
+                <img src="img/trailer.png" alt="Construction C2S. Flotte de chantier" class="about-photo">
+                <div class="about-image-fade"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="reveal">
+    <section class="stats" id="stats">
+        <div class="stats-bg" style="background-image:url('img/concrete-texture.jpg')">
+            <img src="img/concrete-texture.jpg" alt="">
+        </div>
+        <div class="stats-overlay"></div>
+        <div class="stats-vignette"></div>
+        <div class="stats-inner">
+            <div class="stat-item reveal">
+                <div class="stat-value">100%</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Professionnalisme</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-value">24h</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Délai de réponse</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-value">$0</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Soumission gratuite</div>
+            </div>
+            <div class="stat-item reveal">
+                <div class="stat-value">7/7</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Disponibilité</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="process" id="process">
+        <div class="process-inner">
+            <div class="process-header">
+                <div class="section-badge"><span class="section-badge-line"></span>Notre processus<span class="section-badge-line-right"></span></div>
+                <h2 class="title-gradient">COMMENT NOUS TRAVAILLONS</h2>
+            </div>
+            <div class="process-track">
+                <div class="process-line"></div>
+                <div class="process-grid">
+                    <div class="process-step reveal">
+                        <div class="process-step-circle"><span class="process-step-number">01</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Contact</h3>
+                        <p>Appelle-nous ou remplis le formulaire pour discuter de ton projet.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-step-circle"><span class="process-step-number">02</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Évaluation</h3>
+                        <p>Visite sur place, soumission détaillée, échéancier clair. Sans surprise.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-step-circle"><span class="process-step-number">03</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Exécution</h3>
+                        <p>Travaux professionnels, communication régulière, chantier propre.</p>
+                    </div>
+                    <div class="process-step reveal">
+                        <div class="process-step-circle"><span class="process-step-number">04</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Livraison</h3>
+                        <p>Projet terminé clé en main, walkthrough final, garantie sur les travaux.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="gallery" id="gallery">
+        <div class="gallery-inner">
+            <div class="gallery-header">
+                <div>
+                    <div class="section-badge">Réalisations</div>
+                    <h2 class="title-gradient-light">NOS RÉALISATIONS</h2>
+                </div>
+                <p>Quelques-uns de nos projets récents à Drummondville et dans le Centre-du-Québec.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="img/project-residence.jpg" alt="Construction C2S. Résidence clé en main">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Construction</span>
+                        <span class="gallery-item-title">Résidence clé en main</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="img/project-garage-exterior.jpg" alt="Construction C2S. Garage avec revêtement">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Garage</span>
+                        <span class="gallery-item-title">Garage avec revêtement</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="img/project-garage-interior-1.jpg" alt="Construction C2S. Garage intérieur">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Garage</span>
+                        <span class="gallery-item-title">Construction métallique</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="img/project-garage-interior-2.jpg" alt="Construction C2S. Espace de travail">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Garage</span>
+                        <span class="gallery-item-title">Espace de travail</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="img/project-fondation-beton.jpg" alt="Construction C2S. Travaux de béton">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Fondation</span>
+                        <span class="gallery-item-title">Travaux de béton</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="#contact" class="btn btn-primary demo-trigger">Discuter de ton projet <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="cta-section">
+        <div class="cta-glow"><div class="cta-glow-circle"></div></div>
+        <div class="cta-inner">
+            <div class="cta-line"></div>
+            <h2>UN PROJET EN TÊTE?</h2>
+            <p>Parlons de ton projet. Soumission gratuite, sans engagement. On répond sous 24 heures.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Soumission gratuite</a>
+                <a href="tel:+18198172760" class="btn btn-outline-light btn-lg">819-817-2760</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="contact-section" id="contact">
+    <div class="contact-inner">
+        <div class="contact-info">
+            <div class="section-badge">Contactez-nous</div>
+            <h2 class="title-gradient">CONTACTEZ-NOUS</h2>
+            <p>On répond sous 24 heures. Décris ton projet, on s'occupe du reste.</p>
+            <div class="contact-details">
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Téléphone</h4>
+                        <a href="tel:+18198172760">819-817-2760</a>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Courriel</h4>
+                        <a href="mailto:info@constructionc2s.com">info@constructionc2s.com</a>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Adresse</h4>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Construction%20C2S&query_place_id=ChIJV1MuHDEZyEwR2SlhplsVTaM" target="_blank" rel="noopener">210 Rue Stephane<br>Drummondville, QC</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-wrap">
+            <div class="contact-form">
+                <h3>Demande de soumission</h3>
+                <p class="form-subline">Décris ton projet. On répond sous 24 heures.</p>
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Votre nom</label>
+                            <input type="text" id="fname" name="name" placeholder="Prénom et nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fphone">Téléphone</label>
+                            <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="femail">Courriel</label>
+                        <input type="email" id="femail" name="email" placeholder="vous@courriel.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fservice">Type de service</label>
+                        <select id="fservice" name="service">
+                            <option value="" disabled selected>Choisir un service...</option>
+                            <option value="renovation">Rénovations complètes</option>
+                            <option value="agrandissement">Agrandissement résidentiel</option>
+                            <option value="garage">Garage, remise ou galerie</option>
+                            <option value="construction">Nouvelle construction</option>
+                            <option value="cles-en-main">Projet clé en main</option>
+                            <option value="autoconstruction">Accompagnement autoconstruction</option>
+                            <option value="gestion">Gestion de projet</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmessage">Décrivez votre projet</label>
+                        <textarea id="fmessage" name="message" placeholder="Décris brièvement ton projet, tes délais ou tes questions..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full demo-trigger">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Envoyer la demande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-section" id="map">
+    <iframe
+        src="https://www.google.com/maps?q=Construction+C2S+Drummondville+QC&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Construction C2S. Drummondville, Québec">
+    </iframe>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo-text">C2S <span>Construction</span></a>
+                <p>Entrepreneur général à Drummondville. Rénovations, agrandissements, garages et nouvelles constructions. Service professionnel dans tout le Centre-du-Québec.</p>
+                <p class="rbq"></p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#gallery">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nos services</h4>
+                <ul>
+                    <li><a href="#services">Rénovations complètes</a></li>
+                    <li><a href="#services">Agrandissements</a></li>
+                    <li><a href="#services">Garages et remises</a></li>
+                    <li><a href="#services">Nouvelles constructions</a></li>
+                    <li><a href="#services">Projets clés en main</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact">
+                    <p><strong>Construction C2S</strong></p>
+                    <p class="footer-contact-name">Charlène Sarrazin</p>
+                    <p>210 Rue Stephane<br>Drummondville, QC</p>
+                    <p><a href="tel:+18198172760">819-817-2760</a></p>
+                    <p><a href="tel:+18193140360">819-314-0360</a></p>
+                    <p><a href="mailto:info@constructionc2s.com">info@constructionc2s.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Construction C2S. Tous droits réservés.</span>
+            <span>Site démo par FortX Web</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.innerHTML = isOpen
+        ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>'
+        : '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+    });
+});
+
+const demoModal = document.getElementById('demoModal');
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => demoModal.classList.remove('visible'));
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+const form = document.getElementById('contactForm');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.services-grid, .process-grid, .gallery-grid, .stats-inner, .trust-strip-grid, .about-inner').forEach(grid => {
+    grid.querySelectorAll('.service-card, .process-step, .gallery-item, .stat-item, .trust-badge, .about-content, .about-image-wrap').forEach((card, i) => {
+        card.classList.add('reveal');
+        card.style.transitionDelay = (i * 0.1) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
