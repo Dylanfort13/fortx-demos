@@ -159,6 +159,10 @@ body {
 .nav-cta .btn {
     font-size: 0.72rem;
     padding: 0.55rem 1.2rem;
+    color: white !important;
+}
+.nav-cta .btn i {
+    color: white;
 }
 .mobile-menu-btn {
     display: none;
