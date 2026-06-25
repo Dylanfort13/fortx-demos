@@ -48,12 +48,14 @@
 
 <!-- HERO -->
 <section class="hero" id="hero">
-    <div class="hero-bg hero-fade-in" style="background-image:url('img/hero.jpg')"></div>
+    <video class="hero-bg hero-fade-in" autoplay muted loop playsinline>
+        <source src="img/hero-video.mp4" type="video/mp4">
+    </video>
     <div class="hero-bg-overlay hero-fade-in"></div>
     <div class="hero-bg-vignette hero-fade-in"></div>
     <div class="hero-content">
         <div class="hero-left">
-            <h1 class="title-gradient hero-slide-up" style="animation-delay:0.2s">EXCAVATION<br><span class="accent">FLDL</span></h1>
+            <h1 class="title-gradient hero-slide-up" style="animation-delay:0.2s">VOTRE PROJET<br><span class="accent">NOTRE EXPERTISE</span></h1>
             <p class="hero-subtitle hero-slide-up" style="animation-delay:0.5s">Spécialiste du drain français et de l'égout à Carignan et en Montérégie. RBQ certifié. Protection de vos fondations contre les infiltrations.</p>
             <div class="hero-buttons hero-slide-up" style="animation-delay:0.8s">
                 <a href="#contact" class="btn btn-primary demo-trigger">Soumission gratuite</a>
@@ -121,13 +123,13 @@
             </div>
             <div class="services-grid">
                 <div class="service-card reveal">
-                    <div class="service-card-bg"><img src="img/service-drain.jpg" alt="Drain français"></div>
+                    <div class="service-card-bg"><img src="img/service-excavation.jpg" alt="Excavation"></div>
                     <div class="service-card-overlay"></div>
                     <div class="service-card-accent"></div>
                     <div class="service-card-content">
                         <div class="service-card-number">01</div>
                         <div class="service-card-tag">Spécialité</div>
-                        <h3>Drain français</h3>
+                        <h3>Excavation</h3>
                         <p>Installation et réparation de drains français pour protéger vos fondations contre les infiltrations d'eau.</p>
                         <div class="service-card-details">
                             <ul>
@@ -218,7 +220,7 @@
         </div>
         <div class="reveal">
             <div class="about-image-wrap">
-                <img src="img/about.jpg" alt="Excavation FLDL inc." loading="lazy">
+                <img src="img/about-trailer.png" alt="Excavation FLDL inc." loading="lazy">
                 <div class="about-image-fade"></div>
             </div>
         </div>
@@ -522,8 +524,31 @@
 
 <script>
 const navbar = document.getElementById('navbar');
+let lastScrollY = 0;
+let ticking = false;
+
+function updateNavbar() {
+    const currentScrollY = window.scrollY;
+    
+    // Add scrolled class for background
+    navbar.classList.toggle('scrolled', currentScrollY > 60);
+    
+    // Hide on scroll down, show on scroll up
+    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+        navbar.classList.add('nav-hidden');
+    } else {
+        navbar.classList.remove('nav-hidden');
+    }
+    
+    lastScrollY = currentScrollY;
+    ticking = false;
+}
+
 window.addEventListener('scroll', () => {
-    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (!ticking) {
+        window.requestAnimationFrame(updateNavbar);
+        ticking = true;
+    }
 });
 
 const mobileBtn = document.getElementById('mobileMenuBtn');
