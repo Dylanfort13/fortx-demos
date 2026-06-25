@@ -1284,20 +1284,25 @@ footer {
 @media (max-width: 768px) {
     .mobile-menu-btn { display: block; }
     .nav-links {
-        display: none;
         position: fixed;
         top: 0; left: 0; right: 0; bottom: 0;
-        background: rgba(9,9,9,0.95);
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px);
+        background: rgba(9,9,9,0.92);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
         padding-top: 6rem;
         gap: 1.5rem;
         z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
     }
-    .nav-links.active { display: flex; }
+    .nav-links.active {
+        opacity: 1;
+        visibility: visible;
+    }
     .nav-links a { font-size: 1.1rem; font-weight: 600; }
     .nav-cta { display: none; }
     .hero-right { display: none; }
