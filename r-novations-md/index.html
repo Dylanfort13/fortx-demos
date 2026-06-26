@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rénovations MD | Expert en Maçonnerie — Mascouche, Rive-Nord</title>
+    <meta name="description" content="Rénovations MD — expert en maçonnerie depuis 3 générations. Pierre naturelle, blocs de béton, création sur mesure, patrimoine. Mascouche, Rive-Nord, Grand Montréal.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="demo-modal-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3>Ceci est un site démo</h3>
+        <p>Ce site a été créé comme aperçu gratuit pour Rénovations MD. Ce n'est pas leur site officiel — pour l'instant.</p>
+        <p class="demo-modal-sub">Cliquez sur un bouton pour voir comment le formulaire fonctionnerait.</p>
+    </div>
+</div>
+
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+            <img src="img/logo.png" alt="Rénovations MD">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:4505911990" class="btn btn-primary demo-trigger">Soumission gratuite</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<section class="hero" id="hero">
+    <div class="hero-bg hero-fade-in" style="background-image:url('img/hero.jpg')"></div>
+    <div class="hero-bg-overlay hero-fade-in"></div>
+    <div class="hero-bg-vignette hero-fade-in"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <h1 class="title-gradient hero-slide-up" style="animation-delay:0.2s">Expert en<br>maçonnerie<br><span class="accent">Rive-Nord</span></h1>
+            <p class="hero-subtitle hero-slide-up" style="animation-delay:0.5s">Rénovations MD — une tradition familiale de maçonnerie depuis 3 générations. Spécialistes en pierre naturelle, blocs de béton, création sur mesure et restauration patrimoniale à Mascouche et dans tout le Grand Montréal.</p>
+            <div class="hero-buttons hero-slide-up" style="animation-delay:0.8s">
+                <a href="tel:4505911990" class="btn btn-primary demo-trigger"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg> (450) 591-1990</a>
+                <a href="#services" class="btn btn-ghost">Nos services</a>
+            </div>
+        </div>
+        <div class="hero-right">
+            <img src="img/logo.png" alt="Rénovations MD" class="hero-logo">
+        </div>
+    </div>
+</section>
+
+<div class="reveal">
+    <section class="trust-strip">
+        <div class="trust-strip-grid">
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">3 générations</div>
+                    <div class="trust-badge-desc">Famille de maçons depuis 1940</div>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">RBQ certifié</div>
+                    <div class="trust-badge-desc">Licence 1914-2140-49</div>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Service clé en main</div>
+                    <div class="trust-badge-desc">Forfaitaire ou à l'heure</div>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Grand Montréal</div>
+                    <div class="trust-badge-desc">Rive-Nord, Rive-Sud</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="services" id="services">
+        <div class="services-inner">
+            <div class="services-header">
+                <div class="section-badge"><span class="section-badge-line"></span>Rénovations MD</div>
+                <h2 class="title-gradient">Nos Services</h2>
+                <p>Maçonnerie résidentielle, commerciale, institutionnelle et patrimoniale — du rejointoiement à la création sur mesure.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-card-bg"><img src="img/20260626_040318647167_488221176_1076146217862949_6138976737592550341_n.jpg" alt="Maçonnerie et pierre naturelle"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">01</div>
+                        <div class="service-card-tag">Spécialité</div>
+                        <h3>Maçonnerie & Pierre</h3>
+                        <p>Brique, pierre naturelle et blocs de béton. Construction neuve, restauration et rejointoiement.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Brique collée et maçonnerie traditionnelle</li>
+                                <li>Pierre naturelle — luxe et prestance</li>
+                                <li>Blocs de béton architecturaux</li>
+                                <li>Béton et crépi</li>
+                            </ul>
+                            <span class="service-card-link">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-bg"><img src="img/20260626_040318653155_492540005_1090414643102773_8529995868963860108_n.jpg" alt="Création sur mesure"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">02</div>
+                        <div class="service-card-tag">Sur mesure</div>
+                        <h3>Création sur mesure</h3>
+                        <p>Cave à vin, escalier en pierre, foyer, devanture — donnez vie à vos idées les plus créatives.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Escaliers et colonnes en pierre</li>
+                                <li>Foyers et foyers extérieurs</li>
+                                <li>Devantures de maison</li>
+                                <li>Aménagement paysager en pierre</li>
+                            </ul>
+                            <span class="service-card-link">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-bg"><img src="img/20260626_040318654774_511524245_1138638124947091_1105917424793837482_n.jpg" alt="Patrimoine et restauration"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">03</div>
+                        <h3>Patrimoine & Restauration</h3>
+                        <p>Respect et mise en valeur du patrimoine bâti. Réfection et restauration d'édifices historiques.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Restauration de bâtiments patrimoniaux</li>
+                                <li>Rejointoiement et réfection</li>
+                                <li>Ajout d'une section à l'existant</li>
+                                <li>Travaux d'après-sinistre</li>
+                            </ul>
+                            <span class="service-card-link">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-bg"><img src="img/20260626_040318659815_536278197_1189784506499119_8006055323144365995_n.jpg" alt="Démolition"></div>
+                    <div class="service-card-overlay"></div>
+                    <div class="service-card-accent"></div>
+                    <div class="service-card-content">
+                        <div class="service-card-number">04</div>
+                        <h3>Démolition & Rénovation</h3>
+                        <p>Démolition technique sécuritaire et débris évacués. Travaux préparatoires pour vos projets de construction.</p>
+                        <div class="service-card-details">
+                            <ul>
+                                <li>Démolition résidentielle et commerciale</li>
+                                <li>Évacuation des débris conforme</li>
+                                <li>Préparation de chantier</li>
+                                <li>Nettoyage et finition</li>
+                            </ul>
+                            <span class="service-card-link">En savoir plus <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-content reveal">
+            <div class="section-badge">Qui sommes-nous</div>
+            <h2 class="title-gradient-light">Une tradition<br>de <span class="accent">maçonnerie</span></h2>
+            <p>Rénovations MD voit le jour en 2015, fondée par Maxime Duchêne, maçon de 3e génération. Œuvrant dans le domaine depuis plus de 18 ans, il perpétue la passion familiale initiée par son grand-père, arrivé de Saskatchewan à Montréal en 1940. En 2018, l'entreprise a acquis Les Maçonneries Mar-Ge Inc., dont la licence appartenait à son grand-père.</p>
+            <blockquote class="about-quote">« L'honnêteté, la fiabilité et le souci du travail bien fait sont au cœur de nos valeurs. »</blockquote>
+            <div class="about-tags">
+                <span class="about-tag">Maçonnerie</span>
+                <span class="about-tag">Pierre naturelle</span>
+                <span class="about-tag">Patrimoine</span>
+                <span class="about-tag">Création sur mesure</span>
+            </div>
+        </div>
+        <div class="reveal">
+            <div class="about-image-wrap">
+                <img src="img/about.jpg" alt="Rénovations MD — travail de maçonnerie">
+                <div class="about-image-fade"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="reveal">
+    <section class="stats" id="stats">
+        <div class="stats-bg">
+            <img src="img/stats-bar-bg.jpg" alt="">
+        </div>
+        <div class="stats-overlay"></div>
+        <div class="stats-vignette"></div>
+        <div class="stats-inner">
+            <div class="stat-item">
+                <div class="stat-value">2015</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Fondation</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">3e</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Génération</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">18+</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Ans d'expérience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">RBQ</div>
+                <div class="stat-line"></div>
+                <div class="stat-label">Certifié</div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="process" id="process">
+        <div class="process-inner">
+            <div class="process-header">
+                <div class="section-badge"><span class="section-badge-line"></span>Notre processus<span class="section-badge-line-right"></span></div>
+                <h2 class="title-gradient">Comment nous travaillons</h2>
+            </div>
+            <div class="process-track">
+                <div class="process-line"></div>
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="process-step-circle"><span class="process-step-number">01</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Consultation</h3>
+                        <p>Discutons de votre projet — visite des lieux et écoute de vos besoins.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step-circle"><span class="process-step-number">02</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Soumission</h3>
+                        <p>Soumission détaillée forfaitaire ou à l'heure, selon vos besoins.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step-circle"><span class="process-step-number">03</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Réalisation</h3>
+                        <p>Travail minutieux, respectueux et propre — chantier impeccable.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="process-step-circle"><span class="process-step-number">04</span></div>
+                        <div class="process-step-line"></div>
+                        <h3>Livraison</h3>
+                        <p>Inspection finale avec vous pour une satisfaction garantie.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="gallery" id="gallery">
+        <div class="gallery-inner">
+            <div class="gallery-header">
+                <div>
+                    <div class="section-badge">Portfolio</div>
+                    <h2 class="title-gradient-light">Nos Réalisations</h2>
+                </div>
+                <p>Un aperçu de nos projets de maçonnerie à Mascouche, Saint-Roch-de-l'Achigan et dans tout le Grand Montréal.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="img/20260626_040318647167_488221176_1076146217862949_6138976737592550341_n.jpg" alt="Projet de maçonnerie — brique et pierre">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Maçonnerie</span>
+                        <span class="gallery-item-title">Brique et pierre</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/20260626_040318653155_492540005_1090414643102773_8529995868963860108_n.jpg" alt="Projet sur mesure — création en pierre">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Sur mesure</span>
+                        <span class="gallery-item-title">Création en pierre</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/20260626_040318654774_511524245_1138638124947091_1105917424793837482_n.jpg" alt="Restauration patrimoniale">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Patrimoine</span>
+                        <span class="gallery-item-title">Restauration</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/20260626_040318659815_536278197_1189784506499119_8006055323144365995_n.jpg" alt="Travaux de démolition">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Démolition</span>
+                        <span class="gallery-item-title">Préparation de chantier</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/20260626_040318663329_572531441_1250534647090771_413622940492495545_n.jpg" alt="Blocs de béton architecturaux">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Blocs</span>
+                        <span class="gallery-item-title">Béton architectural</span>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/20260626_040318665961_572869855_1250534803757422_5215580055696594185_n.jpg" alt="Projet de rénovation extérieure">
+                    <div class="gallery-item-overlay">
+                        <span class="gallery-item-category">Rénovation</span>
+                        <span class="gallery-item-title">Façade et crépi</span>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-cta">
+                <a href="#contact" class="btn btn-outline-light demo-trigger">Demandez une soumission</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="reveal">
+    <section class="cta-section">
+        <div class="cta-glow"><div class="cta-glow-circle"></div></div>
+        <div class="cta-inner">
+            <div class="cta-line"></div>
+            <h2>Un projet en tête?</h2>
+            <p>Confiez-nous votre projet de maçonnerie — ensemble, nous en ferons un succès. Soumission gratuite et sans engagement.</p>
+            <div class="cta-buttons">
+                <a href="tel:4505911990" class="btn btn-primary demo-trigger"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg> (450) 591-1990</a>
+                <a href="#contact" class="btn btn-outline-light">Contactez-nous</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<section class="contact-section" id="contact">
+    <div class="contact-inner">
+        <div class="contact-info">
+            <div class="section-badge">Contactez-nous</div>
+            <h2 class="title-gradient">Écrivez-nous</h2>
+            <p>Appelez-nous ou laissez-nous un message — nous vous répondrons sous 24 heures.</p>
+            <div class="contact-details">
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Téléphone</h4>
+                        <a href="tel:4505911990">(450) 591-1990</a>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Secteur desservi</h4>
+                        <p>Grand Montréal, Rive-Nord, Rive-Sud</p>
+                    </div>
+                </div>
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div class="contact-detail-content">
+                        <h4>Horaires</h4>
+                        <p>Lun-Jeu 9h-16h, Ven 9h-12h</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form-wrap">
+            <div class="contact-form">
+                <h3>Demande de soumission</h3>
+                <p class="form-subline">Décrivez votre projet — nous répondons sous 24 heures.</p>
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Votre nom</label>
+                            <input type="text" id="fname" name="name" placeholder="Prénom et nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fphone">Téléphone</label>
+                            <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="femail">Courriel</label>
+                        <input type="email" id="femail" name="email" placeholder="vous@courriel.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fservice">Type de service</label>
+                        <select id="fservice" name="service">
+                            <option value="" disabled selected>Choisir un service...</option>
+                            <option value="maconnerie">Maçonnerie & Pierre</option>
+                            <option value="creation">Création sur mesure</option>
+                            <option value="patrimoine">Patrimoine & Restauration</option>
+                            <option value="demolition">Démolition</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmessage">Décrivez votre projet</label>
+                        <textarea id="fmessage" name="message" placeholder="Décrivez brièvement votre projet, vos délais ou vos questions..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full demo-trigger">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Envoyer la demande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="map-section" id="map">
+    <iframe 
+        src="https://www.google.com/maps?q=Mascouche+Quebec&output=embed"
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Rénovations MD — Mascouche, Québec">
+    </iframe>
+</section>
+
+<footer>
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-text">Rénovations <span>MD</span></div>
+                <p>Expert en maçonnerie depuis 3 générations. Spécialistes en pierre naturelle, blocs de béton, création sur mesure et restauration patrimoniale.</p>
+                <p class="rbq">RBQ: 1914-2140-49</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#gallery">Réalisations</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nos services</h4>
+                <ul>
+                    <li><a href="#services">Maçonnerie & Pierre</a></li>
+                    <li><a href="#services">Création sur mesure</a></li>
+                    <li><a href="#services">Patrimoine & Restauration</a></li>
+                    <li><a href="#services">Démolition</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact">
+                    <div class="footer-contact-name">Rénovations MD</div>
+                    <div class="footer-contact-detail">(450) 591-1990</div>
+                    <div class="footer-contact-detail">Saint-Roch-de-l'Achigan, QC</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Rénovations MD</span>
+            <span>RBQ: 1914-2140-49</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
+function closeMenu() {
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    mobileBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+    document.body.style.overflow = '';
+}
+function openMenu() {
+    navLinks.classList.add('active');
+    navOverlay.classList.add('active');
+    mobileBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+    document.body.style.overflow = 'hidden';
+}
+mobileBtn.addEventListener('click', () => {
+    navLinks.classList.contains('active') ? closeMenu() : openMenu();
+});
+navOverlay.addEventListener('click', closeMenu);
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+const demoModal = document.getElementById('demoModal');
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => demoModal.classList.remove('visible'));
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+const form = document.getElementById('contactForm');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.services-grid, .process-grid, .gallery-grid, .stats-inner, .trust-strip-grid, .about-inner').forEach(grid => {
+    grid.querySelectorAll('.service-card, .process-step, .gallery-item, .stat-item, .trust-badge, .about-content, .about-image-wrap').forEach((card, i) => {
+        card.classList.add('reveal');
+        card.style.transitionDelay = (i * 0.1) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
