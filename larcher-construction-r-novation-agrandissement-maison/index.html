@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larcher Construction — Rénovation & Agrandissement à Québec, QC</title>
+    <meta name="description" content="Larcher Construction — Entrepreneur général en rénovation et agrandissement de maison à Québec. Soumission gratuite.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>Ceci est un site démo</h3>
+        <p>Ce site a été conçu comme aperçu gratuit pour Larcher Construction. Ce n'est pas leur site officiel — pour l'instant.</p>
+        <p class="demo-modal-sub">Cliquez sur n'importe quel bouton pour voir comment fonctionne un formulaire de demande.</p>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#" class="logo demo-trigger">Larcher <span>Construction</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:4184769921" class="btn btn-outline btn-sm demo-trigger"><i class="fa-solid fa-phone"></i> (418) 476-9921</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+    <div class="hero-bg" style="background-image: url('img/hero.jpg');"></div>
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <div class="hero-badge">
+                <i class="fa-solid fa-location-dot"></i>
+                Rénovation & Agrandissement — Québec, QC
+            </div>
+            <h1>Votre projet de<br><span>rénovation</span> mérite le meilleur</h1>
+            <p>Entrepreneur général spécialisé en rénovation résidentielle et agrandissement de maison à Québec. Transformons votre vision en réalité.</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Soumission gratuite</a>
+                <a href="tel:4184769921" class="btn btn-outline-white btn-lg demo-trigger"><i class="fa-solid fa-phone"></i> Appelez-nous</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat"><strong>100+</strong><span>Projets réalisés</span></div>
+                <div class="hero-stat"><strong>Québec</strong><span>Région desservie</span></div>
+                <div class="hero-stat"><strong>Gratuit</strong><span>Soumission</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="hero-scroll-cue">
+        <i class="fa-solid fa-chevron-down"></i>
+        <span>Défiler</span>
+    </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-grid">
+            <div class="trust-bar-item fade-up">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>Entrepreneur licencié</span>
+            </div>
+            <div class="trust-bar-item fade-up">
+                <i class="fa-solid fa-certificate"></i>
+                <span>RBQ certifié</span>
+            </div>
+            <div class="trust-bar-item fade-up">
+                <i class="fa-solid fa-handshake"></i>
+                <span>Soumission gratuite</span>
+            </div>
+            <div class="trust-bar-item fade-up">
+                <i class="fa-solid fa-clock"></i>
+                <span>Respect des délais</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; Nos services</span>
+            <h2>Ce que nous <span>faisons</span></h2>
+            <p>Des solutions complètes pour transformer votre maison selon vos besoins.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up" style="background-image: url('img/service-renovation.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div>
+                    <h3>Rénovation complète</h3>
+                    <p>Rénovation intérieure et extérieure de votre maison. Cuisine, salle de bain, sous-sol, finitions haut de gamme.</p>
+                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/service-agrandissement.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-expand"></i></div>
+                    <h3>Agrandissement de maison</h3>
+                    <p>Extension, ajout de pièces, surélévation. Augmentez l'espace de vie de votre demeure sans compromis.</p>
+                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/hero.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-kitchen-set"></i></div>
+                    <h3>Rénovation de cuisine</h3>
+                    <p>Conception et réalisation de cuisines sur mesure. Armoires, comptoirs, plomberie et électricité inclus.</p>
+                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/about.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-bath"></i></div>
+                    <h3>Rénovation de salle de bain</h3>
+                    <p>Transformation complète de votre salle de bain. Douche italienne, céramique, vanité et plomberie.</p>
+                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-6.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-stairs"></i></div>
+                    <h3>Finition de sous-sol</h3>
+                    <p>Aménagement complet de votre sous-sol. De l'isolation aux finitions, créons un espace de vie fonctionnel.</p>
+                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-1.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon"><i class="fa-solid fa-warehouse"></i></div>
+                    <h3>Construction de garage</h3>
+                    <p>Construction de garage attaché ou détaché. Fondation, structure, toiture et finitions selon vos besoins.</p>
+                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS STEPS -->
+<section class="process" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; Notre processus</span>
+            <h2>Comment ça <span>fonctionne</span></h2>
+            <p>Un processus simple et transparent, de la première rencontre à la remise des clés.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card fade-up">
+                <div class="process-number">1</div>
+                <h4>Rencontre & évaluation</h4>
+                <p>Nous visitons votre maison, écoutons vos besoins et évaluons la faisabilité du projet.</p>
+            </div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">2</div>
+                <h4>Planification & soumission</h4>
+                <p>Plans détaillés, choix de matériaux et soumission transparente — sans surprise.</p>
+            </div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">3</div>
+                <h4>Réalisation des travaux</h4>
+                <p>Notre équipe qualifiée exécute les travaux dans les règles de l'art, dans les délais convenus.</p>
+            </div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">4</div>
+                <h4>Inspection & suivi</h4>
+                <p>Vérification finale, nettoyage complet et suivi après projet pour votre satisfaction totale.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col fade-up">
+                <div class="about-image-frame">
+                    <img src="img/about.jpg" alt="Équipe Larcher Construction sur un chantier résidentiel à Québec">
+                    <div class="about-experience-badge">
+                        <span class="exp-number">15+</span>
+                        <span class="exp-label">Ans d'expérience</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content fade-up">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Notre histoire</span>
+                <h2>Larcher Construction</h2>
+                <p class="about-lead">Un entrepreneur de confiance au cœur de Québec, dédié à transformer vos espaces de vie.</p>
+                <p>Depuis plus de 15 ans, Larcher Construction accomplit des projets de rénovation et d'agrandissement résidentiel dans la région de Québec. Notre approche repose sur l'écoute, la qualité d'exécution et le respect des engagements. Chaque projet est traité avec le même souci du détail, que ce soit une rénovation de cuisine, un agrandissement de maison ou la finition d'un sous-sol.</p>
+                <div class="about-highlights">
+                    <div class="highlight"><i class="fa-solid fa-check"></i> Entrepreneur général licencié RBQ</div>
+                    <div class="highlight"><i class="fa-solid fa-check"></i> Spécialiste en agrandissement résidentiel</div>
+                    <div class="highlight"><i class="fa-solid fa-check"></i> Soumission gratuite et sans engagement</div>
+                    <div class="highlight"><i class="fa-solid fa-check"></i> Service personnalisé et suivi rigoureux</div>
+                </div>
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Demandez votre soumission</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Pourquoi nous choisir</span>
+            <h2>La différence <span>Larcher</span></h2>
+            <p>Ce qui distingue Larcher Construction des autres entrepreneurs de la région.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-award"></i></div>
+                <h4>Qualité sans compromis</h4>
+                <p>Nous utilisons des matériaux de première qualité et des techniques éprouvées pour chaque projet.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-comments"></i></div>
+                <h4>Communication transparente</h4>
+                <p>Vous êtes informé à chaque étape. Pas de surprise, pas de coût caché.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <h4>Respect des délais</h4>
+                <p>Nous nous engageons sur un échéancier réaliste et nous le respectons.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <h4>Expertise locale</h4>
+                <p>Basés à Québec, nous connaissons les codes du bâtiment et les particularités de la région.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <h4>Prix compétitifs</h4>
+                <p>Des soumissions honnêtes et compétitives, sans frais cachés ni surprises à la fin.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-broom"></i></div>
+                <h4>Chantier propre</h4>
+                <p>Nous maintenons un chantier propre et sécuritaire en tout temps.</p>
+            </div>
+        </div>
+        <div class="stats-bar" style="background-image: url('img/stats-bar-bg.jpg');">
+            <div class="stats-bar-overlay"></div>
+            <div class="stats-grid">
+                <div class="stat-box fade-up">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Projets réalisés</div>
+                </div>
+                <div class="stat-box fade-up">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Ans d'expérience</div>
+                </div>
+                <div class="stat-box fade-up">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Satisfaction client</div>
+                </div>
+                <div class="stat-box fade-up">
+                    <div class="stat-number">Québec</div>
+                    <div class="stat-label">Région desservie</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST SECTION -->
+<section class="trust" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Confiance & garanties</span>
+            <h2>Des garanties qui <span>parlent</span></h2>
+            <p>Votre tranquillité d'esprit est notre priorité. Voici nos engagements.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
+                <h4>Licence RBQ</h4>
+                <p>Entrepreneur général licencié par la Régie du bâtiment du Québec. Travail conforme aux normes.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-umbrella"></i></div>
+                <h4>Assurance responsabilité</h4>
+                <p>Couverture complète en assurance responsabilité civile pour votre protection.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-handshake"></i></div>
+                <h4>Garantie satisfaction</h4>
+                <p>Nous ne considérons pas le projet terminé tant que vous n'êtes pas entièrement satisfait.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="realisations">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-images"></i>&nbsp; Nos réalisations</span>
+            <h2>Projets <span>complétés</span></h2>
+            <p>Un aperçu de nos réalisations en rénovation et agrandissement à Québec.</p>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-1.jpg" alt="Agrandissement extérieur d'une maison à Québec">
+                <div class="gallery-overlay">
+                    <h4>Agrandissement résidentiel</h4>
+                    <p>Extension d'une maison à Québec</p>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-2.jpg" alt="Rénovation de cuisine moderne">
+                <div class="gallery-overlay">
+                    <h4>Rénovation de cuisine</h4>
+                    <p>Cuisine sur mesure moderne</p>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-3.jpg" alt="Maison rénovée extérieur">
+                <div class="gallery-overlay">
+                    <h4>Rénovation extérieure</h4>
+                    <p>Transformation complète</p>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-4.jpg" alt="Intérieur maison rénovée concept ouvert">
+                <div class="gallery-overlay">
+                    <h4>Espace ouvert</h4>
+                    <p>Rénovation intérieure aérée</p>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-5.jpg" alt="Terrasse en cèdre">
+                <div class="gallery-overlay">
+                    <h4>Terrasse & galerie</h4>
+                    <p>Aménagement extérieur en cèdre</p>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-6.jpg" alt="Porche enveloppant">
+                <div class="gallery-overlay">
+                    <h4>Porche enveloppant</h4>
+                    <p>Ajout de galerie couverte</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/service-area-bg.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="area-content">
+            <div class="area-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <h2>Fièrement au service de Québec et ses environs</h2>
+            <div class="area-towns">
+                <span class="fade-up">Québec</span>
+                <span class="fade-up">Vieux-Québec</span>
+                <span class="fade-up">Sainte-Foy</span>
+                <span class="fade-up">Sillery</span>
+                <span class="fade-up">Beauport</span>
+                <span class="fade-up">Charlesbourg</span>
+                <span class="fade-up">Loretteville</span>
+                <span class="fade-up">Cap-Rouge</span>
+            </div>
+            <p>Interventions rapides dans tout le territoire de la Ville de Québec.</p>
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Demandez votre soumission</a>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header fade-up">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; Questions fréquentes</span>
+                <h2>Vous avez des <span>questions</span>?</h2>
+                <p>Voici les réponses aux questions les plus courantes sur nos services.</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item fade-up">
+                    <button class="faq-q">Combien coûte un agrandissement de maison ? <span class="faq-icon">+</span></button>
+                    <div class="faq-a">
+                        <p>Le coût varie selon la taille et la complexité du projet. Nous offrons une soumission gratuite et détaillée pour que vous sachiez exactement à quoi vous attendre — sans surprise.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <button class="faq-q">Combien de temps dure une rénovation complète ? <span class="faq-icon">+</span></button>
+                    <div class="faq-a">
+                        <p>La durée dépend de l'ampleur des travaux. Une rénovation de cuisine prend généralement 4 à 6 semaines, tandis qu'un agrandissement peut nécessiter 2 à 4 mois. Nous établissons un échéancier clair dès le départ.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <button class="faq-q">Êtes-vous licencié et assuré ? <span class="faq-icon">+</span></button>
+                    <div class="faq-a">
+                        <p>Oui. Larcher Construction détient une licence RBQ valide et une assurance responsabilité civile complète. Tous nos travaux sont conformes au Code de construction du Québec.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <button class="faq-q">Offrez-vous des soumissions gratuites ? <span class="faq-icon">+</span></button>
+                    <div class="faq-a">
+                        <p>Absolument. Toutes nos soumissions sont gratuites et sans engagement. Nous visitons votre maison, évaluons le projet et vous remettons une soumission détaillée.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-up">
+                    <button class="faq-q">Quelles régions desservez-vous ? <span class="faq-icon">+</span></button>
+                    <div class="faq-a">
+                        <p>Nous desservons toute la Ville de Québec et ses environs : Vieux-Québec, Sainte-Foy, Sillery, Beauport, Charlesbourg, Loretteville, Cap-Rouge et plus encore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Contactez-nous</span>
+                <h2>Parlons de votre projet</h2>
+                <p>Une question, un projet en tête ? Contactez-nous pour une soumission gratuite.</p>
+                <div class="contact-details">
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                        <div>
+                            <strong>Téléphone</strong>
+                            <span>(418) 476-9921</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div>
+                            <strong>Courriel</strong>
+                            <span>gestion@larcherconstruction.com</span>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div>
+                            <strong>Région</strong>
+                            <span>Québec, QC</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    <i class="fa-solid fa-map-pin"></i>
+                    <span>Desservons Québec et ses environs</span>
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="contact-form">
+                    <h3>Demandez une soumission gratuite</h3>
+                    <p class="form-subline">Décrivez votre projet — nous répondrons dans les 24 heures.</p>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="fname">Votre nom</label>
+                                <input type="text" id="fname" name="name" placeholder="Prénom et nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="fphone">Téléphone</label>
+                                <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="femail">Courriel</label>
+                            <input type="email" id="femail" name="email" placeholder="vous@courriel.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fservice">Type de service</label>
+                            <select id="fservice" name="service">
+                                <option value="" disabled selected>Choisir un service...</option>
+                                <option value="renovation">Rénovation complète</option>
+                                <option value="agrandissement">Agrandissement de maison</option>
+                                <option value="cuisine">Rénovation de cuisine</option>
+                                <option value="salle-de-bain">Rénovation de salle de bain</option>
+                                <option value="sous-sol">Finition de sous-sol</option>
+                                <option value="garage">Construction de garage</option>
+                                <option value="autre">Autre projet</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="fmessage">Décrivez votre projet</label>
+                            <textarea id="fmessage" name="message" placeholder="Décrivez brièvement votre projet, votre échéancier ou vos questions..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                            <i class="fa-solid fa-paper-plane"></i> Envoyer la demande
+                        </button>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <div class="form-success-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <h4>Message envoyé !</h4>
+                        <p>Merci de nous avoir contactés. Nous vous répondrons dans les 24 heures.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section" id="map">
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89247.42577634356!2d-71.29!3d46.81!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8963f05c7281f%3A0x50a1e9c2f1d7c80!2sQu%C3%A9bec%2C%20QC!5e0!3m2!1sfr!2sca!4v1700000000000!5m2!1sfr!2sca"
+            width="100%" 
+            height="400" 
+            style="border:0;filter:grayscale(100%);" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Larcher Construction — Québec, QC">
+        </iframe>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo">Larcher <span>Construction</span></span>
+                </div>
+                <p>Entrepreneur général spécialisé en rénovation et agrandissement résidentiel à Québec.</p>
+                <div class="footer-tagline">
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>Construit pour le Québec. Construit pour durer.</span>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services" class="demo-trigger">Rénovation complète</a></li>
+                    <li><a href="#services" class="demo-trigger">Agrandissement de maison</a></li>
+                    <li><a href="#services" class="demo-trigger">Rénovation de cuisine</a></li>
+                    <li><a href="#services" class="demo-trigger">Rénovation de salle de bain</a></li>
+                    <li><a href="#services" class="demo-trigger">Finition de sous-sol</a></li>
+                    <li><a href="#services" class="demo-trigger">Construction de garage</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Liens rapides</h4>
+                <ul>
+                    <li><a href="#services">Nos services</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#realisations">Réalisations</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> (418) 476-9921</li>
+                    <li><i class="fa-solid fa-envelope"></i> gestion@larcherconstruction.com</li>
+                    <li><i class="fa-solid fa-location-dot"></i> Québec, QC</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 Larcher Construction. Tous droits réservés.</span>
+            <span>Desservons Québec, QC et les environs</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+const navbar = document.getElementById('navbar');
+const scrollCue = document.querySelector('.hero-scroll-cue');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('active');
+    mobileBtn.toggle('active', isOpen);
+    mobileBtn.innerHTML = isOpen
+        ? '<i class="fa-solid fa-xmark"></i>'
+        : '<i class="fa-solid fa-bars"></i>';
+});
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        mobileBtn.classList.remove('active');
+        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+    });
+});
+
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(openItem => {
+            openItem.classList.remove('open');
+            const icon = openItem.querySelector('.faq-icon');
+            if (icon) icon.textContent = '+';
+        });
+        if (!isOpen) {
+            item.classList.add('open');
+            const icon = item.querySelector('.faq-icon');
+            if (icon) icon.textContent = '−';
+        }
+    });
+});
+
+const form = document.getElementById('contactForm');
+const formSuccess = document.getElementById('formSuccess');
+const demoModal = document.getElementById('demoModal');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => {
+    demoModal.classList.remove('visible');
+});
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.section-header').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+});
+
+document.querySelectorAll(
+    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
+).forEach(grid => {
+    grid.querySelectorAll(
+        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
+    ).forEach((card, i) => {
+        card.classList.add('fade-up');
+        card.style.transitionDelay = (i * 0.08) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
