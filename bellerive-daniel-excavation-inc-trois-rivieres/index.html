@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bellerive Daniel Excavation — Excavation à Trois-Rivières, QC</title>
+    <meta name="description" content="Bellerive Daniel Excavation — entrepreneur en excavation, drainage et terrassement à Trois-Rivières, QC. Soumission gratuite. (819) 377-1750">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="demo-modal-icon">
+            <i class="fa-solid fa-globe"></i>
+        </div>
+        <h3>Ceci est un site démo</h3>
+        <p>Ce site a été construit comme aperçu gratuit pour Bellerive Daniel Excavation. Ce n'est pas leur site officiel — pour l'instant.</p>
+        <p class="demo-modal-sub">Cliquez sur n'importe quel bouton pour voir comment un formulaire de contact fonctionnerait.</p>
+    </div>
+</div>
+
+<!-- NAVIGATION -->
+<nav class="navbar" id="navbar">
+    <div class="navbar-inner">
+        <a href="#hero" class="logo-text">Bellerive <span>Daniel Excavation</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Réalisations</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="tel:8193771750" class="phone-link">
+                <i class="fa-solid fa-phone"></i> (819) 377-1750
+            </a>
+            <a href="#contact" class="btn btn-primary demo-trigger">Soumission gratuite</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero" style="background-image:url('img/hero.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <span class="hero-badge heroFadeUp">Excavation · Drainage · Terrassement</span>
+        <h1 class="heroFadeUp" style="animation-delay:0.1s">Excavation fiable à <em>Trois-Rivières</em></h1>
+        <p class="heroFadeUp" style="animation-delay:0.2s">Excavation résidentielle et commerciale, drainage, fosses septiques et déneigement dans la région de la Mauricie. Soumission gratuite.</p>
+        <div class="hero-buttons heroFadeUp" style="animation-delay:0.3s">
+            <a href="tel:8193771750" class="btn btn-primary btn-lg demo-trigger">
+                <i class="fa-solid fa-phone"></i> Appelez — (819) 377-1750
+            </a>
+            <a href="#contact" class="btn btn-ghost">Soumission gratuite</a>
+        </div>
+        <div class="hero-stats heroFadeUp" style="animation-delay:0.4s">
+            <div class="stat-item">
+                <h3>Free</h3>
+                <p>Soumissions</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3>Local</h3>
+                <p>Entreprise Mauricie</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3>Assuré</h3>
+                <p>Pleine couverture</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST BAR -->
+<section class="trust-bar">
+    <div class="container">
+        <div class="trust-bar-items">
+            <div class="trust-bar-item"><i class="fa-solid fa-shield-halved"></i> Licencié &amp; Assuré</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-truck-monster"></i> Mini-Excavation</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-clock"></i> Soumission gratuite</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-map-pin"></i> Mauricie</div>
+            <div class="trust-bar-item"><i class="fa-solid fa-snowplow"></i> Déneigement</div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-truck-monster"></i>&nbsp; Nos Services</span>
+            <h2>Services d'<span>Excavation</span></h2>
+            <p>Excavation, drainage, terrassement et plus — des services complets pour les projets résidentiels et commerciaux à Trois-Rivières.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card fade-up" style="background-image: url('img/hero.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <span class="service-card-tag">Le plus demandé</span>
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-truck-monster"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Excavation</h3>
+                        <p>Excavation générale et mini-excavation pour fondations, tranchées, entrées et projets résidentiels ou commerciaux.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-1.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Drainage</h3>
+                        <p>Installation et réparation de drains français, drains de fondation et correction de problèmes d'eau autour de votre propriété.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-2.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-house-crack"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Fondation</h3>
+                        <p>Creusage de fondations, réparation de fissures et travaux liés aux fondations de béton et drains de fondation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-3.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-toilet"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Fosses Septiques</h3>
+                        <p>Installation et entretien de fosses septiques, égouts et travaux d'aqueduc pour propriétés résidentielles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/gallery-4.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-mountain-sun"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Terrassement</h3>
+                        <p>Nivellement, préparation de terrain et terrassement pour aménagement paysager, entrées et nouveaux projets de construction.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="service-card fade-up" style="background-image: url('img/about.jpg');">
+                <div class="service-card-overlay"></div>
+                <div class="service-card-content">
+                    <div class="service-icon-wrap">
+                        <i class="fa-solid fa-snowplow"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3>Dénéigement</h3>
+                        <p>Service de déneigement pour entrées, stationnements et terrains commerciaux pendant la saison hivernale.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS STEPS -->
+<section class="process-section" id="process">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; Comment ça marche</span>
+            <h2>Notre <span>Processus Simple</span></h2>
+            <p class="process-subtitle">Du premier appel au projet terminé — chaque étape est simple et sans stress.</p>
+        </div>
+        <div class="process-track">
+            <div class="process-step-card fade-up">
+                <div class="process-number">01</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-phone"></i></div>
+                <h3>Contactez-nous</h3>
+                <p>Appelez-nous ou remplissez le formulaire. Nous vous répondons rapidement pour discuter de votre projet.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">02</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-clipboard-list"></i></div>
+                <h3>Évaluation sur place</h3>
+                <p>Nous visitons votre terrain pour évaluer les travaux et vous fournir une soumission détaillée et gratuite.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">03</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Réalisation des travaux</h3>
+                <p>Notre équipe effectue les travaux d'excavation avec précision, respect des délais et propreté du chantier.</p>
+            </div>
+            <div class="process-connector"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="process-step-card fade-up">
+                <div class="process-number">04</div>
+                <div class="process-icon-ring"><i class="fa-solid fa-circle-check"></i></div>
+                <h3>Inspection finale</h3>
+                <p>Nous passons en revue le travail accompli avec vous pour votre entière satisfaction avant de quitter les lieux.</p>
+            </div>
+        </div>
+        <div class="process-cta fade-up">
+            <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Commencez votre projet</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section-dark" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image-col">
+                <img src="img/about.jpg" alt="Bellerive Daniel Excavation équipe au travail" class="about-photo">
+            </div>
+            <div class="about-text-col">
+                <span class="section-badge section-badge-dark"><i class="fa-solid fa-hard-hat"></i>&nbsp; À propos</span>
+                <h2>Expertise locale en <em>excavation</em></h2>
+                <p class="about-lead">Bellerive Daniel Excavation est une entreprise d'excavation bien établie à Trois-Rivières, spécialisée en excavation, drainage et terrassement pour les projets résidentiels et commerciaux de la Mauricie.</p>
+                <p class="about-body">Avec une gamme complète de services — de l'excavation de fondations au déneigement — Daniel et son équipe offrent un travail fiable et professionnel à chaque projet.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-map-pin"></i>
+                        <span>Trois-Rivières — Région de la Mauricie</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Licencié et assuré</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-truck-monster"></i>
+                        <span>Excavation générale et mini-excavation</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fa-solid fa-box-open"></i>
+                        <span>Transport de sable, terre et pierre</span>
+                    </div>
+                </div>
+                <a href="tel:8193771750" class="btn btn-primary demo-trigger">
+                    <i class="fa-solid fa-phone"></i> Appelez (819) 377-1750
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-us" id="why-us">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-award"></i>&nbsp; Pourquoi nous</span>
+            <h2>Pourquoi choisir <span>Bellerive Daniel</span></h2>
+            <p>Ce qui nous distingue des autres entrepreneurs en excavation de la Mauricie.</p>
+        </div>
+        <div class="reasons-grid">
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-map-pin"></i></div>
+                <h3>Enraciné à Trois-Rivières</h3>
+                <p>Entreprise locale bien établie sur la rue Charbonneau, nous connaissons les sols et les conditions de la Mauricie.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-list-check"></i></div>
+                <h3>Services complets</h3>
+                <p>Excavation, drainage, fosses septiques, terrassement, déneigement et transport de matériaux — tout sous un même toit.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Licencié et assuré</h3>
+                <p>Pleine couverture d'assurance pour tous les travaux. Vous êtes protégé du début à la fin du projet.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-camera"></i></div>
+                <h3>Inspection par caméra</h3>
+                <p>Service d'inspection par caméra pour diagnostiquer les problèmes de drainage et de conduites avec précision.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-truck"></i></div>
+                <h3>Transport de matériaux</h3>
+                <p>Livraison de sable, terre tamisée, pierre de rivière, pierre concassée et poussière de pierre directement sur votre chantier.</p>
+            </div>
+            <div class="reason-card fade-up">
+                <div class="reason-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                <h3>Soumission gratuite</h3>
+                <p>Évaluation et soumission sans engagement. Vous connaissez le coût avant de commencer — pas de surprise.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STATS BAR -->
+<section class="stats-bar">
+    <div class="container">
+        <div class="stats-bar-content">
+            <div class="stat-box">
+                <h4>Résidentiel</h4>
+                <p>&amp; Commercial</p>
+            </div>
+            <div class="stat-box">
+                <h4>6+</h4>
+                <p>Services offerts</p>
+            </div>
+            <div class="stat-box">
+                <h4>Mauricie</h4>
+                <p>Zone desservie</p>
+            </div>
+            <div class="stat-box">
+                <h4>Gratuit</h4>
+                <p>Soumissions</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST SECTION (no real reviews) -->
+<section class="trust-section" id="trust">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Confiance</span>
+            <h2>Bâti sur la <span>Réputation</span></h2>
+            <p>Les valeurs qui guident chaque projet que nous entreprenons à Trois-Rivières.</p>
+        </div>
+        <div class="trust-grid">
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-medal"></i></div>
+                <h3>Expertise locale</h3>
+                <p>Entreprise bien établie à Trois-Rivières-Ouest, nous comprenons les conditions du sol et les défis uniques de la région.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                <h3>Travail professionnel</h3>
+                <p>Chaque projet est réalisé avec soin — tranchées propres, fondations précises et chantier en ordre à la fin des travaux.</p>
+            </div>
+            <div class="trust-card fade-up">
+                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
+                <h3>Responsabilité assurée</h3>
+                <p>Licencié et assuré pour tous les types de travaux d'excavation, drainage et terrassement résidentiel et commercial.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery section-dark" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge section-badge-dark"><i class="fa-solid fa-images"></i>&nbsp; Réalisations</span>
+            <h2>Nos <span>Projets</span></h2>
+            <p>Un aperçu de nos travaux récents à Trois-Rivières et dans la région de la Mauricie.</p>
+        </div>
+        <div class="gallery-grid gallery-grid-6">
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-1.jpg" alt="Bellerive Daniel Excavation — Installation de drain français">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Drain français</span>
+                    <span class="gallery-item-sub">Installation — Trois-Rivières</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-2.jpg" alt="Bellerive Daniel Excavation — Excavation de fondation">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Fondation neuve</span>
+                    <span class="gallery-item-sub">Excavation complète — Mauricie</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-3.jpg" alt="Bellerive Daniel Excavation — Démolition béton">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Démolition béton</span>
+                    <span class="gallery-item-sub">Retrait entrée — Trois-Rivières</span>
+                </div>
+            </div>
+            <div class="gallery-item fade-up">
+                <img src="img/gallery-4.jpg" alt="Bellerive Daniel Excavation — Terrassement">
+                <div class="gallery-item-overlay">
+                    <span class="gallery-item-title">Terrassement</span>
+                    <span class="gallery-item-sub">Nivellement — Mauricie</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="service-area" id="service-area">
+    <div class="service-area-bg" style="background-image: url('img/hero.jpg');"></div>
+    <div class="service-area-overlay"></div>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge section-badge-dark"><i class="fa-solid fa-map-location-dot"></i>&nbsp; Zone desservie</span>
+            <h2>Fièrement au service de <span>Trois-Rivières</span></h2>
+        </div>
+        <div class="area-towns">
+            <span>Trois-Rivières</span>
+            <span>Trois-Rivières-Ouest</span>
+            <span>Cap-de-la-Madeleine</span>
+            <span>Shawinigan</span>
+            <span>Bécancour</span>
+            <span>Yamachiche</span>
+            <span>Louisville</span>
+            <span>Maskinongé</span>
+        </div>
+        <p class="service-area-text">Nous desservons Trois-Rivières et toute la région de la Mauricie. Contactez-nous pour savoir si nous couvrons votre secteur.</p>
+        <a href="tel:8193771750" class="btn btn-white btn-lg demo-trigger">
+            <i class="fa-solid fa-phone"></i> Appelez (819) 377-1750 — Soumission gratuite
+        </a>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq-section" id="faq">
+    <div class="container">
+        <div class="faq-layout">
+            <div class="faq-header-col">
+                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
+                <h2>Questions <span>Fréquentes</span></h2>
+                <p>Tout ce que vous devez savoir avant de débuter. D'autres questions? Contactez-nous directement.</p>
+                <a href="tel:8193771750" class="btn btn-primary demo-trigger"><i class="fa-solid fa-phone"></i> Appelez Daniel</a>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Offrez-vous des soumissions gratuites?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Oui — nous offrons toujours une soumission gratuite et sans engagement pour tous les projets à Trois-Rivières et en Mauricie. Contactez-nous et nous planifierons une visite.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Quelle zone desservez-vous?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Nous desservons Trois-Rivières, Trois-Rivières-Ouest, Cap-de-la-Madeleine, Shawinigan, Bécancour et les environs en Mauricie.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Êtes-vous licencié et assuré?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Oui, nous sommes pleinement licenciés et assurés pour tous les travaux d'excavation, drainage, terrassement et fosses septiques résidentielles et commerciales.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Faites-vous l'inspection par caméra?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Oui, nous offrons un service d'inspection par caméra pour les drains et conduites, ce qui permet de diagnostiquer précisément les problèmes sans excavation inutile.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q">
+                        Quels types de matériaux transportez-vous?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-a">
+                        <p>Nous livrons du sable, de la terre tamisée, de la pierre de rivière, de la pierre concassée et de la poussière de pierre directement sur votre chantier.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Contact</span>
+            <h2>Prêt à <span>Commencer?</span></h2>
+            <p>Appelez-nous ou remplissez le formulaire — nous vous répondons rapidement.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-content">
+                        <h4>Téléphone</h4>
+                        <a href="tel:8193771750">(819) 377-1750</a>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-content">
+                        <h4>Adresse</h4>
+                        <p>2660 rue Charbonneau, Trois-Rivières, QC G9A 5C9</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-content">
+                        <h4>Courriel</h4>
+                        <p>d.bellriveexc@cgok.ca</p>
+                    </div>
+                </div>
+                <div class="contact-serving">
+                    Dessert Trois-Rivières, Shawinigan, Bécancour, Cap-de-la-Madeleine et la région de la Mauricie.
+                </div>
+            </div>
+            <div class="contact-form-wrap">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <input type="text" placeholder="Nom" required>
+                        <input type="email" placeholder="Courriel" required>
+                    </div>
+                    <input type="text" placeholder="Téléphone">
+                    <select>
+                        <option value="" disabled selected>Type de projet</option>
+                        <option value="excavation">Excavation</option>
+                        <option value="drainage">Drainage</option>
+                        <option value="fondation">Fondation</option>
+                        <option value="fosse-septique">Fosse septique</option>
+                        <option value="terrassement">Terrassement</option>
+                        <option value="deneigement">Dénéigement</option>
+                        <option value="autre">Autre / Pas certain</option>
+                    </select>
+                    <textarea placeholder="Décrivez votre projet..." rows="4"></textarea>
+                    <button type="submit" class="btn btn-dark demo-trigger">Envoyer la demande</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MAP -->
+<section class="map-section">
+    <div class="map-container">
+        <iframe src="https://www.google.com/maps?q=Trois-Rivières+QC&output=embed" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#hero" class="footer-logo-text">Bellerive <span>Daniel Excavation</span></a>
+                <p>Entrepreneur en excavation, drainage et terrassement au service de Trois-Rivières et de la Mauricie depuis des années.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#services">Excavation</a></li>
+                    <li><a href="#services">Drainage</a></li>
+                    <li><a href="#services">Fondation</a></li>
+                    <li><a href="#services">Fosses septiques</a></li>
+                    <li><a href="#services">Terrassement</a></li>
+                    <li><a href="#services">Dénéigement</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#why-us">Pourquoi nous</a></li>
+                    <li><a href="#gallery">Réalisations</a></li>
+                    <li><a href="#contact">Soumission gratuite</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <ul class="footer-contact">
+                    <li><a href="tel:8193771750">(819) 377-1750</a></li>
+                    <li>2660 rue Charbonneau</li>
+                    <li>Trois-Rivières, QC G9A 5C9</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bellerive Daniel Excavation Inc. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Navbar scroll effect
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Mobile menu
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+mobileBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+    mobileBtn.querySelector('i').classList.toggle('fa-bars');
+    mobileBtn.querySelector('i').classList.toggle('fa-xmark');
+});
+
+// Close mobile menu on link click
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        mobileBtn.querySelector('i').classList.add('fa-bars');
+        mobileBtn.querySelector('i').classList.remove('fa-xmark');
+    });
+});
+
+// Demo modal
+const demoModal = document.getElementById('demoModal');
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('active');
+    });
+});
+demoModalClose.addEventListener('click', () => demoModal.classList.remove('active'));
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('active');
+});
+
+// Contact form → demo modal
+document.getElementById('contactForm').addEventListener('submit', (e) => {
+    e.preventDefault();
+    demoModal.classList.add('active');
+});
+
+// FAQ accordion
+document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        const isActive = item.classList.contains('active');
+        document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+        if (!isActive) item.classList.add('active');
+    });
+});
+
+// Scroll animations
+const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+
+// Hero entrance animations
+document.querySelectorAll('.heroFadeUp').forEach((el, i) => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    setTimeout(() => {
+        el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+        el.style.opacity = '1';
+        el.style.transform = 'translateY(0)';
+    }, 100 + i * 150);
+});
+
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    });
+});
+</script>
+
+</body>
+</html>
