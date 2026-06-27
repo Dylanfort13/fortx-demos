@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction MC2 Inc. | Entrepreneur général à Saint-Roch-de-Richelieu, QC</title>
+    <meta name="description" content="Construction MC2 Inc. — entrepreneur général et rénovation résidentielle et commerciale. RBQ : 5836-8036-01. Rive-Sud de Montréal.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- DO NOT CHANGE THESE FONTS — Bebas Neue + Inter is the fixed BTS design system -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Demo popup modal — DO NOT REMOVE OR MODIFY -->
+<div class="demo-modal" id="demoModal">
+    <div class="demo-modal-content">
+        <button class="demo-modal-close" id="demoModalClose">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+        </button>
+        <div class="demo-modal-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <h3>Ceci est un site démo</h3>
+        <p>Ce site a été créé comme aperçu gratuit pour Construction MC2 Inc.. Ce n'est pas leur site officiel — pour l'instant.</p>
+        <p class="demo-modal-sub">Cliquez sur un bouton pour voir comment le formulaire fonctionnerait.</p>
+    </div>
+</div>
+
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     Construction MC2 Inc. → Replace with the real business name
+     MC2 → Short version for logo text (first word or abbreviation)
+     
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+ → Navigation links for included sections (French: Accueil, Services, À propos, Réalisations, Contact)
+     <a href="#contact" class="btn btn-primary demo-trigger">Contact</a> → CTA button in navbar (see Contact-Surface Logic below)
+     ═══════════════════════════════════════ -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo"><img src="img/logo-white.png" alt="Construction MC2 Inc."></a>
+        <ul class="nav-links" id="navLinks">
+            
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-primary demo-trigger">Contact</a>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════════════════
+     HERO
+     style="background-image:url('img/hero.jpg')" → "style='background-image:url(img/hero.jpg)'" or empty for gradient
+     CONSTRUIT POUR → Main heading in ALL CAPS, under 6 words, ends with accent word on its own line
+     DURER → The last/accent word in the heading (displayed in orange)
+     Entrepreneur général spécialisé en charpente, agrandissement, construction neuve et rénovation sur la Rive-Sud de Montréal. Résidentiel et commercial clé en main. → 1-2 sentences in French about what the business does and where
+     <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Soumission gratuite</a> → Primary CTA (French: "Soumission gratuite" or "Appelez-nous")
+     <a href="#services" class="btn btn-ghost">Nos services</a> → Secondary CTA (French: "Nos services")
+     <div class="hero-right hero-slide-up" style="animation-delay:0.4s"><img src="img/logo-white.png" alt="Construction MC2 Inc." class="hero-logo"></div> → Logo image on the right side of hero, or empty string if no logo
+     ═══════════════════════════════════════ -->
+<section class="hero" id="hero">
+    <div class="hero-bg hero-fade-in" style="background-image:url('img/hero.jpg')"></div>
+    <div class="hero-bg-overlay hero-fade-in"></div>
+    <div class="hero-bg-vignette hero-fade-in"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <h1 class="title-gradient hero-slide-up" style="animation-delay:0.2s">CONSTRUIT POUR<br><span class="accent">DURER</span></h1>
+            <p class="hero-subtitle hero-slide-up" style="animation-delay:0.5s">Entrepreneur général spécialisé en charpente, agrandissement, construction neuve et rénovation sur la Rive-Sud de Montréal. Résidentiel et commercial clé en main.</p>
+            <div class="hero-buttons hero-slide-up" style="animation-delay:0.8s">
+                <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Soumission gratuite</a>
+                <a href="#services" class="btn btn-ghost">Nos services</a>
+            </div>
+        </div>
+        <div class="hero-right hero-slide-up" style="animation-delay:0.4s"><img src="img/logo-white.png" alt="Construction MC2 Inc." class="hero-logo"></div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     TRUST STRIP (dark credentials bar)
+     
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Licence RBQ</div>
+                    <p class="trust-badge-desc">Entrepreneur général détenteur de la licence RBQ 5836-8036-01.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Clé en main</div>
+                    <p class="trust-badge-desc">Résidentiel et commercial, du premier coup de crayon jusqu'à la livraison.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">12 ans d'expérience</div>
+                    <p class="trust-badge-desc">Plus de 30 projets réalisés avec succès sur la Rive-Sud.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Soumission gratuite</div>
+                    <p class="trust-badge-desc">Estimation gratuite et personnalisée pour votre projet de construction ou rénovation.</p>
+                </div>
+            </div>
+ → 4 trust badge items. Each = icon SVG + title + short description.
+     Example: Licence RBQ, Travail professionnel, Soumission gratuite, Subvention Hydro-Québec
+     Use real facts from research.md. DO NOT invent credentials.
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="trust-strip">
+        <div class="trust-strip-grid">
+            
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Licence RBQ</div>
+                    <p class="trust-badge-desc">Entrepreneur général détenteur de la licence RBQ 5836-8036-01.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Clé en main</div>
+                    <p class="trust-badge-desc">Résidentiel et commercial, du premier coup de crayon jusqu'à la livraison.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">12 ans d'expérience</div>
+                    <p class="trust-badge-desc">Plus de 30 projets réalisés avec succès sur la Rive-Sud.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Soumission gratuite</div>
+                    <p class="trust-badge-desc">Estimation gratuite et personnalisée pour votre projet de construction ou rénovation.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     SERVICES
+     NOS SERVICES → Section heading (French: "NOS SERVICES")
+     MC2 → Badge text above heading (usually the short business name)
+     Des solutions complètes en construction et rénovation pour la Montérégie. → 1 sentence about services offered
+     
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-1.jpg" alt="Construction neuve"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">01</div>
+                <div class="service-card-tag">Service 01</div>
+                <h3>Construction neuve & Charpente</h3>
+                <p>Construction résidentielle et commerciale clé en main. Charpente solide, précise et durable.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Construction résidentielle et commerciale</li>
+                        <li>Charpente et structure</li>
+                        <li>Fondation et formwork</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-2.jpg" alt="Rénovation intérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">02</div>
+                <div class="service-card-tag">Service 02</div>
+                <h3>Rénovation intérieure & Agrandissement</h3>
+                <p>Agrandissements sur mesure et rénovations complètes : cuisine, salle de bain, sous-sol et plus.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Agrandissement et extension</li>
+                        <li>Rénovation cuisine et salle de bain</li>
+                        <li>Sous-sol et aménagement complet</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-3.jpg" alt="Rénovation extérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">03</div>
+                <div class="service-card-tag">Service 03</div>
+                <h3>Rénovation extérieure & Toiture</h3>
+                <p>Revêtement extérieur, toiture, balcon, terrasse et drain français. Tout pour protéger et embellir votre propriété.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Revêtement et soffites</li>
+                        <li>Toiture et structure</li>
+                        <li>Balcon, terrasse et drain français</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+ → 3 service cards. Each card has: bg image, number, tag, title, description, detail list, link text.
+     All text MUST be in French. Use real services from research.md only.
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="services" id="services">
+        <div class="services-inner">
+            <div class="services-header">
+                <div class="section-badge"><span class="section-badge-line"></span>MC2</div>
+                <h2 class="title-gradient">NOS SERVICES</h2>
+                <p>Des solutions complètes en construction et rénovation pour la Montérégie.</p>
+            </div>
+            <div class="services-grid">
+                
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-1.jpg" alt="Construction neuve"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">01</div>
+                <div class="service-card-tag">Service 01</div>
+                <h3>Construction neuve & Charpente</h3>
+                <p>Construction résidentielle et commerciale clé en main. Charpente solide, précise et durable.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Construction résidentielle et commerciale</li>
+                        <li>Charpente et structure</li>
+                        <li>Fondation et formwork</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-2.jpg" alt="Rénovation intérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">02</div>
+                <div class="service-card-tag">Service 02</div>
+                <h3>Rénovation intérieure & Agrandissement</h3>
+                <p>Agrandissements sur mesure et rénovations complètes : cuisine, salle de bain, sous-sol et plus.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Agrandissement et extension</li>
+                        <li>Rénovation cuisine et salle de bain</li>
+                        <li>Sous-sol et aménagement complet</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-3.jpg" alt="Rénovation extérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">03</div>
+                <div class="service-card-tag">Service 03</div>
+                <h3>Rénovation extérieure & Toiture</h3>
+                <p>Revêtement extérieur, toiture, balcon, terrasse et drain français. Tout pour protéger et embellir votre propriété.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Revêtement et soffites</li>
+                        <li>Toiture et structure</li>
+                        <li>Balcon, terrasse et drain français</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ABOUT (light section)
+     Qui sommes-nous → Badge text (French: "Qui sommes-nous")
+     CONSTRUIT SUR → Heading (French, ALL CAPS, 2 lines max, last word in orange)
+     L'EXPERTISE → The accent word in orange
+     Chez Construction MC2, nous offrons des services résidentiels et commerciaux sur la Rive-Sud de Montréal, dans un rayon de 50 km. Notre équipe rigoureuse accompagne chaque client avec professionnalisme, du premier coup de crayon jusqu'à la livraison finale. → 2-3 sentences about the business in French
+     « Travail exécuté avec minutie et souci du détail. Excellent résultat ! » → A short quote in French with guillemets (« »)
+     
+<span class="about-tag">Charpente</span>
+<span class="about-tag">Agrandissement</span>
+<span class="about-tag">Construction neuve</span>
+<span class="about-tag">Rénovation</span>
+ → 3-4 service/category tag pills in French
+     <img src="img/about.jpg" alt="Construction MC2 Inc." loading="lazy"> → Image (photo of team, truck, or project). Use img/about.jpg
+     ═══════════════════════════════════════ -->
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-content reveal">
+            <div class="section-badge">Qui sommes-nous</div>
+            <h2 class="title-gradient-light">CONSTRUIT SUR<br><span class="accent">L'EXPERTISE</span></h2>
+            <p>Chez Construction MC2, nous offrons des services résidentiels et commerciaux sur la Rive-Sud de Montréal, dans un rayon de 50 km. Notre équipe rigoureuse accompagne chaque client avec professionnalisme, du premier coup de crayon jusqu'à la livraison finale.</p>
+            <blockquote class="about-quote">« Travail exécuté avec minutie et souci du détail. Excellent résultat ! »</blockquote>
+            <div class="about-tags">
+                
+<span class="about-tag">Charpente</span>
+<span class="about-tag">Agrandissement</span>
+<span class="about-tag">Construction neuve</span>
+<span class="about-tag">Rénovation</span>
+
+            </div>
+        </div>
+        <div class="reveal">
+            <div class="about-image-wrap">
+                <img src="img/about.jpg" alt="Construction MC2 Inc." loading="lazy">
+                <div class="about-image-fade"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     STATS (dark with bg image)
+     style="background-image:url('img/stats-bar-bg.jpg')" → "style='background-image:url(img/stats-bar-bg.jpg)'" or empty
+     
+        <div class="stat-item reveal">
+            <div class="stat-value">RBQ</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Licence 5836-8036-01</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">30+</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Projets réalisés</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">12</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Ans d'expérience</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">5.0</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Note Birdeye (9 avis)</div>
+        </div>
+ → 4 stat items. Each = big value + orange line + label.
+     MUST NOT repeat hero stats. Use different metrics.
+     Example: RBQ licence, number of services, area code, $0 soumission
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="stats" id="stats">
+        <div class="stats-bg" style="background-image:url('img/stats-bar-bg.jpg')">
+            <img src="img/stats-bar-bg.jpg" alt="">
+        </div>
+        <div class="stats-overlay"></div>
+        <div class="stats-vignette"></div>
+        <div class="stats-inner">
+            
+        <div class="stat-item reveal">
+            <div class="stat-value">RBQ</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Licence 5836-8036-01</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">30+</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Projets réalisés</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">12</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Ans d'expérience</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">5.0</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Note Birdeye (9 avis)</div>
+        </div>
+
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     PROCESS
+     NOTRE PROCESSUS → Section heading (French: "COMMENT NOUS TRAVAILLONS")
+     
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">01</span></div>
+            <div class="process-step-line"></div>
+            <h3>Contact</h3>
+            <p>Appelez-nous ou envoyez-nous un message. Nous vous répondons rapidement.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">02</span></div>
+            <div class="process-step-line"></div>
+            <h3>Soumission</h3>
+            <p>Nous évaluons votre projet et vous fournissons une soumission gratuite et personnalisée.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">03</span></div>
+            <div class="process-step-line"></div>
+            <h3>Réalisation</h3>
+            <p>Notre équipe exécute les travaux avec minutie, du premier coup de crayon jusqu'à la livraison.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">04</span></div>
+            <div class="process-step-line"></div>
+            <h3>Livraison</h3>
+            <p>Inspection finale avec vous. Un travail bien fait, durable et conforme à vos attentes.</p>
+        </div>
+ → 4 process steps. Each = number circle + title + description.
+     All text MUST be in French.
+     Example: Contact → Évaluation → Exécution → Livraison
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="process" id="process">
+        <div class="process-inner">
+            <div class="process-header">
+                <div class="section-badge"><span class="section-badge-line"></span>Notre processus<span class="section-badge-line-right"></span></div>
+                <h2 class="title-gradient">NOTRE PROCESSUS</h2>
+            </div>
+            <div class="process-track">
+                <div class="process-line"></div>
+                <div class="process-grid">
+                    
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">01</span></div>
+            <div class="process-step-line"></div>
+            <h3>Contact</h3>
+            <p>Appelez-nous ou envoyez-nous un message. Nous vous répondons rapidement.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">02</span></div>
+            <div class="process-step-line"></div>
+            <h3>Soumission</h3>
+            <p>Nous évaluons votre projet et vous fournissons une soumission gratuite et personnalisée.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">03</span></div>
+            <div class="process-step-line"></div>
+            <h3>Réalisation</h3>
+            <p>Notre équipe exécute les travaux avec minutie, du premier coup de crayon jusqu'à la livraison.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">04</span></div>
+            <div class="process-step-line"></div>
+            <h3>Livraison</h3>
+            <p>Inspection finale avec vous. Un travail bien fait, durable et conforme à vos attentes.</p>
+        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     GALLERY / RÉALISATIONS (light section)
+     Réalisations → Badge text (French: "Portfolio" or "Réalisations")
+     NOS RÉALISATIONS → Heading (French: "NOS RÉALISATIONS")
+     Quelques-uns de nos projets résidentiels et commerciaux récents. → Short description
+     
+        <div class="gallery-item reveal" style="grid-column: 1 / 5; grid-row: 1;">
+            <img src="img/gallery-1.jpg" alt="Rénovation de sous-sol">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Rénovation</div>
+                <div class="gallery-item-title">Sous-sol complet</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 5 / 9; grid-row: 1;">
+            <img src="img/gallery-2.jpg" alt="Rénovation de salle de bain">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Salle de bain</div>
+                <div class="gallery-item-title">Rénovation complète</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 9 / 13; grid-row: 1;">
+            <img src="img/gallery-3.jpg" alt="Rénovation commerciale">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Commercial</div>
+                <div class="gallery-item-title">Aménagement de bureau</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 1 / 6; grid-row: 2;">
+            <img src="img/gallery-4.jpg" alt="Construction résidentielle">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Construction</div>
+                <div class="gallery-item-title">Maison neuve</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 6 / 9; grid-row: 2;">
+            <img src="img/gallery-5.jpg" alt="Rénovation intérieure">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Intérieur</div>
+                <div class="gallery-item-title">Aire ouverte moderne</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 9 / 13; grid-row: 2;">
+            <img src="img/gallery-6.jpg" alt="Aménagement extérieur">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Extérieur</div>
+                <div class="gallery-item-title">Terrasse et aménagement</div>
+            </div>
+        </div>
+ → 6 gallery items with bg images and hover overlays (category + title)
+      → "Voir plus de projets" button or empty
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="gallery" id="gallery">
+        <div class="gallery-inner">
+            <div class="gallery-header">
+                <div>
+                    <div class="section-badge">Réalisations</div>
+                    <h2 class="title-gradient-light">NOS RÉALISATIONS</h2>
+                </div>
+                <p>Quelques-uns de nos projets résidentiels et commerciaux récents.</p>
+            </div>
+            <div class="gallery-grid">
+                
+        <div class="gallery-item reveal" style="grid-column: 1 / 5; grid-row: 1;">
+            <img src="img/gallery-1.jpg" alt="Rénovation intérieure">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Rénovation</div>
+                <div class="gallery-item-title">Projet résidentiel</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 5 / 9; grid-row: 1;">
+            <img src="img/gallery-2.jpg" alt="Charpente et structure">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Charpente</div>
+                <div class="gallery-item-title">Travail de structure</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 9 / 13; grid-row: 1;">
+            <img src="img/gallery-3.jpg" alt="Construction en cours">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Construction</div>
+                <div class="gallery-item-title">Chantier en cours</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 1 / 6; grid-row: 2;">
+            <img src="img/gallery-4.jpg" alt="Finitions intérieures">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Rénovation</div>
+                <div class="gallery-item-title">Finitions intérieures</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 6 / 9; grid-row: 2;">
+            <img src="img/gallery-5.jpg" alt="Projet extérieur">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Extérieur</div>
+                <div class="gallery-item-title">Aménagement extérieur</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 9 / 13; grid-row: 2;">
+            <img src="img/gallery-6.jpg" alt="Équipement MC2">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Équipe</div>
+                <div class="gallery-item-title">Notre équipement</div>
+            </div>
+        </div>
+
+            </div>
+            <div class="gallery-cta">
+                
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CTA SECTION (light with orange glow)
+     UN PROJET EN TÊTE ? → Heading (French: "UN PROJET EN TÊTE?")
+     Obtenez votre soumission gratuite et personnalisée dès aujourd'hui. Notre équipe est prête à concrétiser votre vision. → 1-2 sentences in French inviting contact
+     <a href="#contact" class="btn btn-primary demo-trigger">Soumission gratuite</a> → Primary CTA button (French: "Soumission gratuite")
+     <a href="tel:4388689455" class="btn btn-outline-light">438-868-9455</a> → Secondary CTA (phone link or "Contactez-nous")
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="cta-section">
+        <div class="cta-glow"><div class="cta-glow-circle"></div></div>
+        <div class="cta-inner">
+            <div class="cta-line"></div>
+            <h2>UN PROJET EN TÊTE ?</h2>
+            <p>Obtenez votre soumission gratuite et personnalisée dès aujourd'hui. Notre équipe est prête à concrétiser votre vision.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary demo-trigger">Soumission gratuite</a>
+                <a href="tel:4388689455" class="btn btn-outline-light">438-868-9455</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CONTACT (dark section)
+     Contactez-nous → Badge (French: "Contactez-nous")
+     ÉCRIVEZ-NOUS → Heading (French: "ÉCRIVEZ-NOUS" or "CONTACTEZ-NOUS")
+     Remplissez le formulaire ci-dessous et nous vous répondrons rapidement avec une soumission gratuite. → 1-2 sentences in French
+     
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-3.07-8.63A2 2 0 015.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.13a16 16 0 006 6l1.5-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Téléphone</h4>
+                    <a href="tel:4388689455">438-868-9455</a>
+                </div>
+            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Localisation</h4>
+                    <p>438 Rue Ménard, Sabrevois, QC J0J 2G0</p>
+                </div>
+            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Courriel</h4>
+                    <p>info@constructionmc2.com</p>
+                </div>
+            </div>
+ → Contact detail items (phone, address, email)
+     
+                        <option value="charpente">Charpente & Construction neuve</option>
+                        <option value="agrandissement">Agrandissement & Extension</option>
+                        <option value="renovation-interieure">Rénovation intérieure</option>
+                        <option value="renovation-exterieure">Rénovation extérieure</option>
+                        <option value="autre">Autre / Pas encore sûr</option>
+ → Service type dropdown options in French
+     ═══════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+    <div class="contact-inner">
+        <div class="contact-info">
+            <div class="section-badge">Contactez-nous</div>
+            <h2 class="title-gradient">ÉCRIVEZ-NOUS</h2>
+            <p>Remplissez le formulaire ci-dessous et nous vous répondrons rapidement avec une soumission gratuite.</p>
+            <div class="contact-details">
+                
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-3.07-8.63A2 2 0 015.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.13a16 16 0 006 6l1.5-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Téléphone</h4>
+                    <a href="tel:4388689455">438-868-9455</a>
+                </div>
+            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Localisation</h4>
+                    <p>438 Rue Ménard, Sabrevois, QC J0J 2G0</p>
+                </div>
+            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Courriel</h4>
+                    <p>info@constructionmc2.com</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="contact-form-wrap">
+            <div class="contact-form">
+                <h3>Demande de soumission</h3>
+                <p class="form-subline">Décrivez votre projet — nous répondons sous 24 heures.</p>
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Votre nom</label>
+                            <input type="text" id="fname" name="name" placeholder="Prénom et nom" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="fphone">Téléphone</label>
+                            <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="femail">Courriel</label>
+                        <input type="email" id="femail" name="email" placeholder="vous@courriel.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fservice">Type de service</label>
+                        <select id="fservice" name="service">
+                            <option value="" disabled selected>Choisir un service...</option>
+                            
+                        <option value="charpente">Charpente & Construction neuve</option>
+                        <option value="agrandissement">Agrandissement & Extension</option>
+                        <option value="renovation-interieure">Rénovation intérieure</option>
+                        <option value="renovation-exterieure">Rénovation extérieure</option>
+                        <option value="autre">Autre / Pas encore sûr</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmessage">Décrivez votre projet</label>
+                        <textarea id="fmessage" name="message" placeholder="Décrivez brièvement votre projet, vos délais ou vos questions..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full demo-trigger">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Envoyer la demande
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════
+     MAP
+     https://www.google.com/maps?q=Saint-Roch-de-Richelieu+QC&output=embed → Google Maps embed URL for the business's city
+     ═══════════════════════════════════════ -->
+<section class="map-section" id="map">
+    <iframe 
+        src="https://www.google.com/maps?q=Saint-Roch-de-Richelieu+QC&output=embed"
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Construction MC2 Inc. — Saint-Roch-de-Richelieu, QC">
+    </iframe>
+</section>
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     <div class="footer-logo-text">MC2 <span>INC.</span></div> → Logo text or image in footer
+     Entrepreneur général spécialisé en construction résidentielle et commerciale sur la Rive-Sud de Montréal. Clé en main. → 1-2 sentences about the business in French
+     RBQ : 5836-8036-01 → RBQ licence number or other credential, or empty
+     
+<li><a href="#hero">Accueil</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">À propos</a></li>
+<li><a href="#contact">Contact</a></li>
+ → Navigation links
+     
+<li><a href="#services">Construction neuve & Charpente</a></li>
+<li><a href="#services">Agrandissement</a></li>
+<li><a href="#services">Rénovation intérieure</a></li>
+<li><a href="#services">Rénovation extérieure</a></li>
+ → Service links
+     
+<li><a href="tel:4388689455">438-868-9455</a></li>
+<li>438 Rue Ménard, Sabrevois, QC</li>
+<li><a href="mailto:info@constructionmc2.com">info@constructionmc2.com</a></li>
+ → Contact info (business name, RBQ, phone)
+     © 2026 Construction MC2 Inc. Tous droits réservés. → Copyright text
+     ═══════════════════════════════════════ -->
+<footer>
+    <div class="footer-inner">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="footer-logo-text">MC2 <span>INC.</span></div>
+                <p>Entrepreneur général spécialisé en construction résidentielle et commerciale sur la Rive-Sud de Montréal. Clé en main.</p>
+                <p class="rbq">RBQ : 5836-8036-01</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    
+<li><a href="#hero">Accueil</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">À propos</a></li>
+<li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Nos services</h4>
+                <ul>
+                    
+<li><a href="#services">Construction neuve & Charpente</a></li>
+<li><a href="#services">Agrandissement</a></li>
+<li><a href="#services">Rénovation intérieure</a></li>
+<li><a href="#services">Rénovation extérieure</a></li>
+
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <div class="footer-contact">
+                    
+<li><a href="tel:4388689455">438-868-9455</a></li>
+<li>438 Rue Ménard, Sabrevois, QC</li>
+<li><a href="mailto:info@constructionmc2.com">info@constructionmc2.com</a></li>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Construction MC2 Inc. Tous droits réservés.</span>
+            <span>RBQ : 5836-8036-01</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ═══════════════════════════════════════
+// DO NOT MODIFY THIS JAVASCRIPT
+// It handles: navbar scroll, mobile menu, FAQ accordion,
+// demo modal, scroll reveal animations
+// ═══════════════════════════════════════
+
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const mobileBtn = document.getElementById('mobileMenuBtn');
+const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
+function closeMenu() {
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    mobileBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+    document.body.style.overflow = '';
+}
+function openMenu() {
+    navLinks.classList.add('active');
+    navOverlay.classList.add('active');
+    mobileBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+    document.body.style.overflow = 'hidden';
+}
+mobileBtn.addEventListener('click', () => {
+    navLinks.classList.contains('active') ? closeMenu() : openMenu();
+});
+navOverlay.addEventListener('click', closeMenu);
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+const demoModal = document.getElementById('demoModal');
+const demoModalClose = document.getElementById('demoModalClose');
+document.querySelectorAll('.demo-trigger').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+});
+demoModalClose.addEventListener('click', () => demoModal.classList.remove('visible'));
+demoModal.addEventListener('click', (e) => {
+    if (e.target === demoModal) demoModal.classList.remove('visible');
+});
+const form = document.getElementById('contactForm');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+document.querySelectorAll('.services-grid, .process-grid, .gallery-grid, .stats-inner, .trust-strip-grid, .about-inner').forEach(grid => {
+    grid.querySelectorAll('.service-card, .process-step, .gallery-item, .stat-item, .trust-badge, .about-content, .about-image-wrap').forEach((card, i) => {
+        card.classList.add('reveal');
+        card.style.transitionDelay = (i * 0.1) + 's';
+        observer.observe(card);
+    });
+});
+</script>
+</body>
+</html>
