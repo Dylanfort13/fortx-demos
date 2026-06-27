@@ -5,7 +5,7 @@
    
    DESIGN SYSTEM — DO NOT CHANGE:
    - Fonts: Bebas Neue (display/headings, ALL CAPS) + Inter (body)
-   - Colors: #e94560 orange accent, #090909 black bg, #d7cece silver text
+   - Colors: #f95e24 orange accent, #090909 black bg, #d7cece silver text
    - Style: Dark premium, squared buttons (5px radius), noise texture, gradient headings
    - Language: French (QC)
    - CTAs: French ("Soumission gratuite", "Appelez-nous", "Contactez-nous")
@@ -13,7 +13,7 @@
    
    THE AI SHOULD ONLY:
    1. Replace {{PLACEHOLDER}} variables with real business data
-   2. Adjust #e94560 to match the business's brand
+   2. Adjust #f95e24 to match the business's brand
    3. Replace placeholder images with real ones
    4. Replace placeholder text with real business info
    
@@ -21,13 +21,13 @@
    - Change fonts, layout, spacing, border-radius, or any CSS structure
    - Change the design system or section ordering
    - Add new CSS classes or modify existing ones
-   - Change color scheme beyond #e94560
+   - Change color scheme beyond #f95e24
    ═══════════════════════════════════════ */
 
 :root {
-    --orange: #e94560;
-    --orange-dark: #c23652;
-    --orange-glow: rgba(233,69,96,0.25);
+    --orange: #f95e24;
+    --orange-dark: #d94e1e;
+    --orange-glow: rgba(249,94,36,0.25);
     --black-1: #090909;
     --black-2: #111111;
     --charcoal: #1a1a1a;
