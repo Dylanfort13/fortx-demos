@@ -136,6 +136,22 @@ body {
     position: absolute;
     left: 1.5rem;
 }
+.logo-link {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 1.5rem;
+    z-index: 11;
+}
+.logo-white-link { display: flex; }
+.logo-dark-link { display: none; }
+.navbar.scrolled .logo-white-link { display: none; }
+.navbar.scrolled .logo-dark-link { display: flex; }
+.logo-img {
+    height: 38px;
+    width: auto;
+    display: block;
+}
 .logo-text span { color: var(--primary-light); }
 .navbar.scrolled .logo-text { color: var(--dark); }
 .navbar.scrolled .logo-text span { color: var(--primary); }
@@ -1482,6 +1498,11 @@ footer {
     height: 56px;
     width: auto;
     margin-bottom: 1.25rem;
+    display: block;
+}
+.footer-logo-img {
+    height: 38px !important;
+    width: auto;
     display: block;
 }
 .footer-logo-text {
