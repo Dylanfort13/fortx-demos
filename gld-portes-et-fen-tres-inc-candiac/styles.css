@@ -3,6 +3,8 @@
    Updated: 2026-04-25
    Changes from v1:
    - Removed gradient icon backgrounds (solid primary for cool, gradient for warm)
+   - 2026-06-28: Changed primary-light from orange (#e67e22) to blue (#3498db) per Dylan request
+   - 2026-06-28: Replaced all images with Gemini-generated windows/doors relevant photos
    - Hero overlay strengthened to 85% for text legibility
    - Service cards support background images with overlay
    - Nav: centered links, logo left, CTA right
@@ -25,7 +27,7 @@
 :root {
     --primary: #1a5276;
     --primary-dark: #2980b9;
-    --primary-light: #e67e22;
+    --primary-light: #3498db;
     --primary-glow: rgba(26,82,118,0.28);
     --dark: #1A1A1A;
     --dark-2: #252527;
