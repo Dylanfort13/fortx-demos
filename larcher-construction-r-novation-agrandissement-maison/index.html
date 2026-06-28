@@ -3,659 +3,907 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Larcher Construction — Rénovation & Agrandissement à Québec, QC</title>
-    <meta name="description" content="Larcher Construction — Entrepreneur général en rénovation et agrandissement de maison à Québec. Soumission gratuite.">
+    <title>Larcher Construction | Rénovation & Agrandissement à Québec, QC</title>
+    <meta name="description" content="Larcher Construction — rénovation intérieure, agrandissement de maison, cuisine, salle de bain, sous-sol et garage à Québec et ses environs.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- DO NOT CHANGE THESE FONTS — Bebas Neue + Inter is the fixed BTS design system -->
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- Demo popup modal -->
+<!-- Demo popup modal — DO NOT REMOVE OR MODIFY -->
 <div class="demo-modal" id="demoModal">
     <div class="demo-modal-content">
         <button class="demo-modal-close" id="demoModalClose">
-            <i class="fa-solid fa-xmark"></i>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
         </button>
         <div class="demo-modal-icon">
-            <i class="fa-solid fa-globe"></i>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
         </div>
         <h3>Ceci est un site démo</h3>
-        <p>Ce site a été conçu comme aperçu gratuit pour Larcher Construction. Ce n'est pas leur site officiel — pour l'instant.</p>
-        <p class="demo-modal-sub">Cliquez sur n'importe quel bouton pour voir comment fonctionne un formulaire de demande.</p>
+        <p>Ce site a été créé comme aperçu gratuit pour Larcher Construction. Ce n'est pas leur site officiel — pour l'instant.</p>
+        <p class="demo-modal-sub">Cliquez sur un bouton pour voir comment le formulaire fonctionnerait.</p>
     </div>
 </div>
 
-<!-- NAVIGATION -->
-<nav class="navbar" id="navbar">
-    <div class="navbar-inner">
-        <a href="#" class="logo demo-trigger">Larcher <span>Construction</span></a>
-        <ul class="nav-links" id="navLinks">
+<!-- ═══════════════════════════════════════
+     NAVIGATION
+     Larcher Construction → Replace with the real business name
+     Larcher → Short version for logo text (first word or abbreviation)
+     
+            <li><a href="#hero">Accueil</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#about">À propos</a></li>
-            <li><a href="#realisations">Réalisations</a></li>
+            <li><a href="#gallery">Réalisations</a></li>
             <li><a href="#contact">Contact</a></li>
+ → Navigation links for included sections (French: Accueil, Services, À propos, Réalisations, Contact)
+     <a href="#contact" class="btn btn-primary demo-trigger">Contact</a> → CTA button in navbar (see Contact-Surface Logic below)
+     ═══════════════════════════════════════ -->
+<div class="nav-overlay" id="navOverlay"></div>
+<nav class="navbar" id="navbar">
+    <div class="nav-inner">
+        <a href="#hero" class="nav-logo"><img src="img/logo-white.png" alt="Larcher Construction"></a>
+        <ul class="nav-links" id="navLinks">
+            
+            <li><a href="#hero">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#gallery">Réalisations</a></li>
+            <li><a href="#contact">Contact</a></li>
+
         </ul>
         <div class="nav-cta">
-            <a href="tel:4184769921" class="btn btn-outline btn-sm demo-trigger"><i class="fa-solid fa-phone"></i> (418) 476-9921</a>
+            <a href="#contact" class="btn btn-primary demo-trigger">Contact</a>
         </div>
-        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Ouvrir le menu">
-            <i class="fa-solid fa-bars"></i>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
         </button>
     </div>
 </nav>
 
-<!-- HERO -->
+<!-- ═══════════════════════════════════════
+     HERO
+     background-image:url('img/hero.jpg') → "style='background-image:url(img/hero.jpg)'" or empty for gradient
+     RÉNOVATION<br>AGRANDISSEMENT → Main heading in ALL CAPS, 3–4 words max. Layout: 3 words = 2 lines, 4 words = 3 lines. Ends with the accent word on its own line.
+     DE CONFIANCE → The last/accent word in the heading (displayed in orange)
+     Experts en rénovation et agrandissement de maison à Québec et ses environs depuis plus de 10 ans. Cuisine, salle de bain, sous-sol, garage — tout pour votre confort. → 1-2 sentences in French about what the business does and where
+     Soumission gratuite → Primary CTA (French: "Soumission gratuite" or "Appelez-nous")
+     Nos services → Secondary CTA (French: "Nos services")
+     <img src="img/logo-white.png" alt="Larcher Construction" class="hero-logo"> → Logo image on the right side of hero, or empty string if no logo
+     ═══════════════════════════════════════ -->
 <section class="hero" id="hero">
-    <div class="hero-bg" style="background-image: url('img/hero.jpg');"></div>
-    <div class="hero-bg-overlay"></div>
+    <div class="hero-bg hero-fade-in" background-image:url('img/hero.jpg')></div>
+    <div class="hero-bg-overlay hero-fade-in"></div>
+    <div class="hero-bg-vignette hero-fade-in"></div>
     <div class="hero-content">
         <div class="hero-left">
-            <div class="hero-badge">
-                <i class="fa-solid fa-location-dot"></i>
-                Rénovation & Agrandissement — Québec, QC
-            </div>
-            <h1>Votre projet de<br><span>rénovation</span> mérite le meilleur</h1>
-            <p>Entrepreneur général spécialisé en rénovation résidentielle et agrandissement de maison à Québec. Transformons votre vision en réalité.</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Soumission gratuite</a>
-                <a href="tel:4184769921" class="btn btn-outline-white btn-lg demo-trigger"><i class="fa-solid fa-phone"></i> Appelez-nous</a>
-            </div>
-            <div class="hero-stats">
-                <div class="hero-stat"><strong>100+</strong><span>Projets réalisés</span></div>
-                <div class="hero-stat"><strong>Québec</strong><span>Région desservie</span></div>
-                <div class="hero-stat"><strong>Gratuit</strong><span>Soumission</span></div>
+            <h1 class="title-gradient hero-slide-up" style="animation-delay:0.2s">RÉNOVATION<br>AGRANDISSEMENT<br><span class="accent">DE CONFIANCE</span></h1>
+            <p class="hero-subtitle hero-slide-up" style="animation-delay:0.5s">Experts en rénovation et agrandissement de maison à Québec et ses environs depuis plus de 10 ans. Cuisine, salle de bain, sous-sol, garage — tout pour votre confort.</p>
+            <div class="hero-buttons hero-slide-up" style="animation-delay:0.8s">
+                Soumission gratuite
+                Nos services
             </div>
         </div>
-    </div>
-    <div class="hero-scroll-cue">
-        <i class="fa-solid fa-chevron-down"></i>
-        <span>Défiler</span>
+        <img src="img/logo-white.png" alt="Larcher Construction" class="hero-logo">
     </div>
 </section>
 
-<!-- TRUST BAR -->
-<div class="trust-bar">
-    <div class="container">
-        <div class="trust-bar-grid">
-            <div class="trust-bar-item fade-up">
-                <i class="fa-solid fa-shield-halved"></i>
-                <span>Entrepreneur licencié</span>
+<!-- ═══════════════════════════════════════
+     TRUST STRIP (dark credentials bar)
+     
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Travail professionnel</div>
+                    <p class="trust-badge-desc">Équipe qualifiée et expérimentée, finition soignée et souci du détail.</p>
+                </div>
             </div>
-            <div class="trust-bar-item fade-up">
-                <i class="fa-solid fa-certificate"></i>
-                <span>RBQ certifié</span>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Soumission gratuite</div>
+                    <p class="trust-badge-desc">Estimation personnalisée et sans frais pour votre projet de rénovation.</p>
+                </div>
             </div>
-            <div class="trust-bar-item fade-up">
-                <i class="fa-solid fa-handshake"></i>
-                <span>Soumission gratuite</span>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Rénovation complète</div>
+                    <p class="trust-badge-desc">De la cuisine au garage, en passant par le sous-sol et la salle de bain.</p>
+                </div>
             </div>
-            <div class="trust-bar-item fade-up">
-                <i class="fa-solid fa-clock"></i>
-                <span>Respect des délais</span>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Projets sur mesure</div>
+                    <p class="trust-badge-desc">Chaque projet est unique — nous créons des espaces qui vous ressemblent.</p>
+                </div>
             </div>
+ → 4 trust badge items. Each = icon SVG + title + short description.
+     Example: Licence RBQ, Travail professionnel, Soumission gratuite, Subvention Hydro-Québec
+     Use real facts from research.md. DO NOT invent credentials.
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="trust-strip">
+        <div class="trust-strip-grid">
+            
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Travail professionnel</div>
+                    <p class="trust-badge-desc">Équipe qualifiée et expérimentée, finition soignée et souci du détail.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Soumission gratuite</div>
+                    <p class="trust-badge-desc">Estimation personnalisée et sans frais pour votre projet de rénovation.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Rénovation complète</div>
+                    <p class="trust-badge-desc">De la cuisine au garage, en passant par le sous-sol et la salle de bain.</p>
+                </div>
+            </div>
+            <div class="trust-badge">
+                <div class="trust-badge-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                </div>
+                <div>
+                    <div class="trust-badge-title">Projets sur mesure</div>
+                    <p class="trust-badge-desc">Chaque projet est unique — nous créons des espaces qui vous ressemblent.</p>
+                </div>
+            </div>
+
         </div>
-    </div>
+    </section>
 </div>
 
-<!-- SERVICES -->
-<section class="services" id="services">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-hammer"></i>&nbsp; Nos services</span>
-            <h2>Ce que nous <span>faisons</span></h2>
-            <p>Des solutions complètes pour transformer votre maison selon vos besoins.</p>
+<!-- ═══════════════════════════════════════
+     SERVICES
+     NOS SERVICES → Section heading (French: "NOS SERVICES")
+     Larcher → Badge text above heading (usually the short business name)
+     Des solutions complètes en rénovation et agrandissement pour les propriétaires de Québec et des environs. → 1 sentence about services offered
+     
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-renovation.jpg" alt="Rénovation intérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">01</div>
+                <div class="service-card-tag">Service 01</div>
+                <h3>Rénovation intérieure</h3>
+                <p>Cuisine, salle de bain, finition intérieure. Nous transformons votre espace avec un savoir-faire artisanal.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Cuisine et salle de bain</li>
+                        <li>Planchers, gypse et peinture</li>
+                        <li>Finition intérieure haut de gamme</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
         </div>
-        <div class="services-grid">
-            <div class="service-card fade-up" style="background-image: url('img/service-renovation.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon"><i class="fa-solid fa-house-chimney"></i></div>
-                    <h3>Rénovation complète</h3>
-                    <p>Rénovation intérieure et extérieure de votre maison. Cuisine, salle de bain, sous-sol, finitions haut de gamme.</p>
-                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/gallery-2.jpg" alt="Agrandissement de maison"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">02</div>
+                <div class="service-card-tag">Service 02</div>
+                <h3>Agrandissement</h3>
+                <p>Ajout de pièces, surélévation, agrandissement de maison. Nous agrandissons votre espace de vie.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Ajout de pièces et surélévation</li>
+                        <li>Extension de maison</li>
+                        <li>Aménagement et rénovation</li>
+                    </ul>
                 </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-            <div class="service-card fade-up" style="background-image: url('img/service-agrandissement.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon"><i class="fa-solid fa-expand"></i></div>
-                    <h3>Agrandissement de maison</h3>
-                    <p>Extension, ajout de pièces, surélévation. Augmentez l'espace de vie de votre demeure sans compromis.</p>
-                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/gallery-3.jpg" alt="Sous-sol et Garage"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">03</div>
+                <div class="service-card-tag">Service 03</div>
+                <h3>Sous-sol &amp; Garage</h3>
+                <p>Finition de sous-sol complète et construction/rénovation de garage. Maximisez votre espace.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Finition de sous-sol clé en main</li>
+                        <li>Construction et rénovation de garage</li>
+                        <li>Aménagement personnalisé</li>
+                    </ul>
                 </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-            <div class="service-card fade-up" style="background-image: url('img/hero.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon"><i class="fa-solid fa-kitchen-set"></i></div>
-                    <h3>Rénovation de cuisine</h3>
-                    <p>Conception et réalisation de cuisines sur mesure. Armoires, comptoirs, plomberie et électricité inclus.</p>
-                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/gallery-4.jpg" alt="Rénovation extérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">04</div>
+                <div class="service-card-tag">Service 04</div>
+                <h3>Rénovation extérieure</h3>
+                <p>Revêtement, toiture, balcon et terrasse. Protégez et embellissez votre propriété de l'extérieur.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Revêtement extérieur et soffites</li>
+                        <li>Toiture et réparation</li>
+                        <li>Balcon et terrasse sur mesure</li>
+                    </ul>
                 </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-            <div class="service-card fade-up" style="background-image: url('img/about.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon"><i class="fa-solid fa-bath"></i></div>
-                    <h3>Rénovation de salle de bain</h3>
-                    <p>Transformation complète de votre salle de bain. Douche italienne, céramique, vanité et plomberie.</p>
-                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
-                </div>
+        </div>
+ → 3 service cards. Each card has: bg image, number, tag, title, description, detail list, link text.
+     All text MUST be in French. Use real services from research.md only.
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="services" id="services">
+        <div class="services-inner">
+            <div class="services-header">
+                <div class="section-badge"><span class="section-badge-line"></span>Larcher</div>
+                <h2 class="title-gradient">NOS SERVICES</h2>
+                <p>Des solutions complètes en rénovation et agrandissement pour les propriétaires de Québec et des environs.</p>
             </div>
-            <div class="service-card fade-up" style="background-image: url('img/gallery-6.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon"><i class="fa-solid fa-stairs"></i></div>
-                    <h3>Finition de sous-sol</h3>
-                    <p>Aménagement complet de votre sous-sol. De l'isolation aux finitions, créons un espace de vie fonctionnel.</p>
-                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+            <div class="services-grid">
+                
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/service-renovation.jpg" alt="Rénovation intérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">01</div>
+                <div class="service-card-tag">Service 01</div>
+                <h3>Rénovation intérieure</h3>
+                <p>Cuisine, salle de bain, finition intérieure. Nous transformons votre espace avec un savoir-faire artisanal.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Cuisine et salle de bain</li>
+                        <li>Planchers, gypse et peinture</li>
+                        <li>Finition intérieure haut de gamme</li>
+                    </ul>
                 </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
             </div>
-            <div class="service-card fade-up" style="background-image: url('img/gallery-1.jpg');">
-                <div class="service-card-overlay"></div>
-                <div class="service-card-content">
-                    <div class="service-icon"><i class="fa-solid fa-warehouse"></i></div>
-                    <h3>Construction de garage</h3>
-                    <p>Construction de garage attaché ou détaché. Fondation, structure, toiture et finitions selon vos besoins.</p>
-                    <a href="#contact" class="btn btn-outline-white btn-sm demo-trigger">En savoir plus</a>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/gallery-2.jpg" alt="Agrandissement de maison"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">02</div>
+                <div class="service-card-tag">Service 02</div>
+                <h3>Agrandissement</h3>
+                <p>Ajout de pièces, surélévation, agrandissement de maison. Nous agrandissons votre espace de vie.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Ajout de pièces et surélévation</li>
+                        <li>Extension de maison</li>
+                        <li>Aménagement et rénovation</li>
+                    </ul>
                 </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/gallery-3.jpg" alt="Sous-sol et Garage"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">03</div>
+                <div class="service-card-tag">Service 03</div>
+                <h3>Sous-sol &amp; Garage</h3>
+                <p>Finition de sous-sol complète et construction/rénovation de garage. Maximisez votre espace.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Finition de sous-sol clé en main</li>
+                        <li>Construction et rénovation de garage</li>
+                        <li>Aménagement personnalisé</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+        <div class="service-card reveal">
+            <div class="service-card-bg"><img src="img/gallery-4.jpg" alt="Rénovation extérieure"></div>
+            <div class="service-card-overlay"></div>
+            <div class="service-card-accent"></div>
+            <div class="service-card-content">
+                <div class="service-card-number">04</div>
+                <div class="service-card-tag">Service 04</div>
+                <h3>Rénovation extérieure</h3>
+                <p>Revêtement, toiture, balcon et terrasse. Protégez et embellissez votre propriété de l'extérieur.</p>
+                <div class="service-card-details">
+                    <ul>
+                        <li>Revêtement extérieur et soffites</li>
+                        <li>Toiture et réparation</li>
+                        <li>Balcon et terrasse sur mesure</li>
+                    </ul>
+                </div>
+                <span class="service-card-link">En savoir plus <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+            </div>
+        </div>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     ABOUT (light section)
+     Qui sommes-nous → Badge text (French: "Qui sommes-nous")
+     BÂTIS SUR → Heading (French, ALL CAPS, 2 lines max, last word in orange)
+     L'EXPERTISE → The accent word in orange
+     Chez Larcher Construction, nous sommes passionnés par la rénovation et l'agrandissement de maison. Présents à Québec depuis plus de 10 ans, notre équipe expérimentée transforme vos espaces avec minutie et professionnalisme. Que ce soit pour une cuisine, une salle de bain, un sous-sol ou un garage, nous vous accompagnons de la conception à la livraison. → 2-3 sentences about the business in French
+     « Travail soigné, équipe professionnelle. Notre maison est exactement comme nous l'avions imaginée. » → A short quote in French with guillemets (« »)
+     
+<span class="about-tag">Rénovation</span>
+<span class="about-tag">Agrandissement</span>
+<span class="about-tag">Cuisine</span>
+<span class="about-tag">Garage</span>
+ → 3-4 service/category tag pills in French
+     <img src="img/about.jpg" alt="Larcher Construction" loading="lazy"> → Image (photo of team, truck, or project). Use img/about.jpg
+     ═══════════════════════════════════════ -->
+<section class="about" id="about">
+    <div class="about-inner">
+        <div class="about-content reveal">
+            <div class="section-badge">Qui sommes-nous</div>
+            <h2 class="title-gradient-light">BÂTIS SUR<br><span class="accent">L'EXPERTISE</span></h2>
+            <p>Chez Larcher Construction, nous sommes passionnés par la rénovation et l'agrandissement de maison. Présents à Québec depuis plus de 10 ans, notre équipe expérimentée transforme vos espaces avec minutie et professionnalisme. Que ce soit pour une cuisine, une salle de bain, un sous-sol ou un garage, nous vous accompagnons de la conception à la livraison.</p>
+            <blockquote class="about-quote">« Travail soigné, équipe professionnelle. Notre maison est exactement comme nous l'avions imaginée. »</blockquote>
+            <div class="about-tags">
+                
+<span class="about-tag">Rénovation</span>
+<span class="about-tag">Agrandissement</span>
+<span class="about-tag">Cuisine</span>
+<span class="about-tag">Garage</span>
+
+            </div>
+        </div>
+        <div class="reveal">
+            <div class="about-image-wrap">
+                <img src="img/about.jpg" alt="Larcher Construction" loading="lazy">
+                <div class="about-image-fade"></div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- PROCESS STEPS -->
-<section class="process" id="process">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-list-check"></i>&nbsp; Notre processus</span>
-            <h2>Comment ça <span>fonctionne</span></h2>
-            <p>Un processus simple et transparent, de la première rencontre à la remise des clés.</p>
+<!-- ═══════════════════════════════════════
+     STATS (dark with bg image)
+     background-image:url('img/stats-bar-bg.jpg') → "style='background-image:url(img/stats-bar-bg.jpg)'" or empty
+     
+        <div class="stat-item reveal">
+            <div class="stat-value">12+</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Années d'expérience</div>
         </div>
-        <div class="process-track">
-            <div class="process-step-card fade-up">
-                <div class="process-number">1</div>
-                <h4>Rencontre & évaluation</h4>
-                <p>Nous visitons votre maison, écoutons vos besoins et évaluons la faisabilité du projet.</p>
-            </div>
-            <div class="process-step-card fade-up">
-                <div class="process-number">2</div>
-                <h4>Planification & soumission</h4>
-                <p>Plans détaillés, choix de matériaux et soumission transparente — sans surprise.</p>
-            </div>
-            <div class="process-step-card fade-up">
-                <div class="process-number">3</div>
-                <h4>Réalisation des travaux</h4>
-                <p>Notre équipe qualifiée exécute les travaux dans les règles de l'art, dans les délais convenus.</p>
-            </div>
-            <div class="process-step-card fade-up">
-                <div class="process-number">4</div>
-                <h4>Inspection & suivi</h4>
-                <p>Vérification finale, nettoyage complet et suivi après projet pour votre satisfaction totale.</p>
-            </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">50+</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Projets réalisés</div>
         </div>
-    </div>
-</section>
+        <div class="stat-item reveal">
+            <div class="stat-value">4</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Spécialités en rénovation</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">✓</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Soumission gratuite</div>
+        </div>
+ → 4 stat items. Each = big value + orange line + label.
+     MUST NOT repeat hero stats. Use different metrics.
+     Example: RBQ licence, number of services, area code, $0 soumission
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="stats" id="stats">
+        <div class="stats-bg" background-image:url('img/stats-bar-bg.jpg')>
+            img/stats-bar-bg.jpg
+        </div>
+        <div class="stats-overlay"></div>
+        <div class="stats-vignette"></div>
+        <div class="stats-inner">
+            
+        <div class="stat-item reveal">
+            <div class="stat-value">12+</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Années d'expérience</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">50+</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Projets réalisés</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">4</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Spécialités en rénovation</div>
+        </div>
+        <div class="stat-item reveal">
+            <div class="stat-value">✓</div>
+            <div class="stat-line"></div>
+            <div class="stat-label">Soumission gratuite</div>
+        </div>
 
-<!-- ABOUT -->
-<section class="about section-dark" id="about">
-    <div class="container">
-        <div class="about-grid">
-            <div class="about-image-col fade-up">
-                <div class="about-image-frame">
-                    <img src="img/about.jpg" alt="Équipe Larcher Construction sur un chantier résidentiel à Québec">
-                    <div class="about-experience-badge">
-                        <span class="exp-number">15+</span>
-                        <span class="exp-label">Ans d'expérience</span>
-                    </div>
-                </div>
-            </div>
-            <div class="about-content fade-up">
-                <span class="section-badge section-badge-dark"><i class="fa-solid fa-user-tie"></i>&nbsp; Notre histoire</span>
-                <h2>Larcher Construction</h2>
-                <p class="about-lead">Un entrepreneur de confiance au cœur de Québec, dédié à transformer vos espaces de vie.</p>
-                <p>Depuis plus de 15 ans, Larcher Construction accomplit des projets de rénovation et d'agrandissement résidentiel dans la région de Québec. Notre approche repose sur l'écoute, la qualité d'exécution et le respect des engagements. Chaque projet est traité avec le même souci du détail, que ce soit une rénovation de cuisine, un agrandissement de maison ou la finition d'un sous-sol.</p>
-                <div class="about-highlights">
-                    <div class="highlight"><i class="fa-solid fa-check"></i> Entrepreneur général licencié RBQ</div>
-                    <div class="highlight"><i class="fa-solid fa-check"></i> Spécialiste en agrandissement résidentiel</div>
-                    <div class="highlight"><i class="fa-solid fa-check"></i> Soumission gratuite et sans engagement</div>
-                    <div class="highlight"><i class="fa-solid fa-check"></i> Service personnalisé et suivi rigoureux</div>
-                </div>
-                <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Demandez votre soumission</a>
-            </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
-<!-- WHY US -->
-<section class="why-us" id="why-us">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-star"></i>&nbsp; Pourquoi nous choisir</span>
-            <h2>La différence <span>Larcher</span></h2>
-            <p>Ce qui distingue Larcher Construction des autres entrepreneurs de la région.</p>
+<!-- ═══════════════════════════════════════
+     PROCESS
+     NOTRE PROCESSUS → Section heading (French: "COMMENT NOUS TRAVAILLONS")
+     
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">01</span></div>
+            <div class="process-step-line"></div>
+            <h3>Consultation</h3>
+            <p>Rencontre à votre domicile pour comprendre vos besoins, vos goûts et votre budget.</p>
         </div>
-        <div class="reasons-grid">
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-award"></i></div>
-                <h4>Qualité sans compromis</h4>
-                <p>Nous utilisons des matériaux de première qualité et des techniques éprouvées pour chaque projet.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-comments"></i></div>
-                <h4>Communication transparente</h4>
-                <p>Vous êtes informé à chaque étape. Pas de surprise, pas de coût caché.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-calendar-check"></i></div>
-                <h4>Respect des délais</h4>
-                <p>Nous nous engageons sur un échéancier réaliste et nous le respectons.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-map-location-dot"></i></div>
-                <h4>Expertise locale</h4>
-                <p>Basés à Québec, nous connaissons les codes du bâtiment et les particularités de la région.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                <h4>Prix compétitifs</h4>
-                <p>Des soumissions honnêtes et compétitives, sans frais cachés ni surprises à la fin.</p>
-            </div>
-            <div class="reason-card fade-up">
-                <div class="reason-icon"><i class="fa-solid fa-broom"></i></div>
-                <h4>Chantier propre</h4>
-                <p>Nous maintenons un chantier propre et sécuritaire en tout temps.</p>
-            </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">02</span></div>
+            <div class="process-step-line"></div>
+            <h3>Conception</h3>
+            <p>Plans détaillés et soumission personnalisée. Nous visualisons votre projet ensemble.</p>
         </div>
-        <div class="stats-bar" style="background-image: url('img/stats-bar-bg.jpg');">
-            <div class="stats-bar-overlay"></div>
-            <div class="stats-grid">
-                <div class="stat-box fade-up">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Projets réalisés</div>
-                </div>
-                <div class="stat-box fade-up">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Ans d'expérience</div>
-                </div>
-                <div class="stat-box fade-up">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Satisfaction client</div>
-                </div>
-                <div class="stat-box fade-up">
-                    <div class="stat-number">Québec</div>
-                    <div class="stat-label">Région desservie</div>
-                </div>
-            </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">03</span></div>
+            <div class="process-step-line"></div>
+            <h3>Réalisation</h3>
+            <p>Notre équipe exécute les travaux avec minutie et respect des délais convenus.</p>
         </div>
-    </div>
-</section>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">04</span></div>
+            <div class="process-step-line"></div>
+            <h3>Livraison</h3>
+            <p>Inspection finale avec vous. Un résultat impeccable et conforme à vos attentes.</p>
+        </div>
+ → 4 process steps. Each = number circle + title + description.
+     All text MUST be in French.
+     Example: Contact → Évaluation → Exécution → Livraison
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="process" id="process">
+        <div class="process-inner">
+            <div class="process-header">
+                <div class="section-badge"><span class="section-badge-line"></span>Notre processus<span class="section-badge-line-right"></span></div>
+                <h2 class="title-gradient">NOTRE PROCESSUS</h2>
+            </div>
+            <div class="process-track">
+                <div class="process-line"></div>
+                <div class="process-grid">
+                    
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">01</span></div>
+            <div class="process-step-line"></div>
+            <h3>Consultation</h3>
+            <p>Rencontre à votre domicile pour comprendre vos besoins, vos goûts et votre budget.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">02</span></div>
+            <div class="process-step-line"></div>
+            <h3>Conception</h3>
+            <p>Plans détaillés et soumission personnalisée. Nous visualisons votre projet ensemble.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">03</span></div>
+            <div class="process-step-line"></div>
+            <h3>Réalisation</h3>
+            <p>Notre équipe exécute les travaux avec minutie et respect des délais convenus.</p>
+        </div>
+        <div class="process-step reveal">
+            <div class="process-step-circle"><span class="process-step-number">04</span></div>
+            <div class="process-step-line"></div>
+            <h3>Livraison</h3>
+            <p>Inspection finale avec vous. Un résultat impeccable et conforme à vos attentes.</p>
+        </div>
 
-<!-- TRUST SECTION -->
-<section class="trust" id="trust">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-shield-halved"></i>&nbsp; Confiance & garanties</span>
-            <h2>Des garanties qui <span>parlent</span></h2>
-            <p>Votre tranquillité d'esprit est notre priorité. Voici nos engagements.</p>
-        </div>
-        <div class="trust-grid">
-            <div class="trust-card fade-up">
-                <div class="trust-card-icon"><i class="fa-solid fa-file-shield"></i></div>
-                <h4>Licence RBQ</h4>
-                <p>Entrepreneur général licencié par la Régie du bâtiment du Québec. Travail conforme aux normes.</p>
-            </div>
-            <div class="trust-card fade-up">
-                <div class="trust-card-icon"><i class="fa-solid fa-umbrella"></i></div>
-                <h4>Assurance responsabilité</h4>
-                <p>Couverture complète en assurance responsabilité civile pour votre protection.</p>
-            </div>
-            <div class="trust-card fade-up">
-                <div class="trust-card-icon"><i class="fa-solid fa-handshake"></i></div>
-                <h4>Garantie satisfaction</h4>
-                <p>Nous ne considérons pas le projet terminé tant que vous n'êtes pas entièrement satisfait.</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
-<!-- GALLERY -->
-<section class="gallery" id="realisations">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-badge"><i class="fa-solid fa-images"></i>&nbsp; Nos réalisations</span>
-            <h2>Projets <span>complétés</span></h2>
-            <p>Un aperçu de nos réalisations en rénovation et agrandissement à Québec.</p>
-        </div>
-        <div class="gallery-grid">
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-1.jpg" alt="Agrandissement extérieur d'une maison à Québec">
-                <div class="gallery-overlay">
-                    <h4>Agrandissement résidentiel</h4>
-                    <p>Extension d'une maison à Québec</p>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-2.jpg" alt="Rénovation de cuisine moderne">
-                <div class="gallery-overlay">
-                    <h4>Rénovation de cuisine</h4>
-                    <p>Cuisine sur mesure moderne</p>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-3.jpg" alt="Maison rénovée extérieur">
-                <div class="gallery-overlay">
-                    <h4>Rénovation extérieure</h4>
-                    <p>Transformation complète</p>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-4.jpg" alt="Intérieur maison rénovée concept ouvert">
-                <div class="gallery-overlay">
-                    <h4>Espace ouvert</h4>
-                    <p>Rénovation intérieure aérée</p>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-5.jpg" alt="Terrasse en cèdre">
-                <div class="gallery-overlay">
-                    <h4>Terrasse & galerie</h4>
-                    <p>Aménagement extérieur en cèdre</p>
-                </div>
-            </div>
-            <div class="gallery-item fade-up">
-                <img src="img/gallery-6.jpg" alt="Porche enveloppant">
-                <div class="gallery-overlay">
-                    <h4>Porche enveloppant</h4>
-                    <p>Ajout de galerie couverte</p>
-                </div>
+<!-- ═══════════════════════════════════════
+     GALLERY / RÉALISATIONS (light section)
+     Réalisations → Badge text (French: "Portfolio" or "Réalisations")
+     NOS RÉALISATIONS → Heading (French: "NOS RÉALISATIONS")
+     Quelques-uns de nos projets de rénovation et d'agrandissement récents à Québec et ses environs. → Short description
+     
+        <div class="gallery-item reveal" style="grid-column: 1 / 5; grid-row: 1;">
+            <img src="img/gallery-1.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 1</div>
             </div>
         </div>
-    </div>
-</section>
+        <div class="gallery-item reveal" style="grid-column: 5 / 9; grid-row: 1;">
+            <img src="img/gallery-2.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 2</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 9 / 13; grid-row: 1;">
+            <img src="img/gallery-3.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 3</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 1 / 7; grid-row: 2;">
+            <img src="img/gallery-4.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 4</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 7 / 13; grid-row: 2;">
+            <img src="img/gallery-5.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 5</div>
+            </div>
+        </div>
+ → 5-6 gallery items with bg images and hover overlays. Use simple naming: category = "Exemple", title = "Image 1", "Image 2", etc.
+      → "Voir plus de projets" button or empty
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="gallery" id="gallery">
+        <div class="gallery-inner">
+            <div class="gallery-header">
+                <div>
+                    <div class="section-badge">Réalisations</div>
+                    <h2 class="title-gradient-light">NOS RÉALISATIONS</h2>
+                </div>
+                <p>Quelques-uns de nos projets de rénovation et d'agrandissement récents à Québec et ses environs.</p>
+            </div>
+            <div class="gallery-grid">
+                
+        <div class="gallery-item reveal" style="grid-column: 1 / 5; grid-row: 1;">
+            <img src="img/gallery-1.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 1</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 5 / 9; grid-row: 1;">
+            <img src="img/gallery-2.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 2</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 9 / 13; grid-row: 1;">
+            <img src="img/gallery-3.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 3</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 1 / 7; grid-row: 2;">
+            <img src="img/gallery-4.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 4</div>
+            </div>
+        </div>
+        <div class="gallery-item reveal" style="grid-column: 7 / 13; grid-row: 2;">
+            <img src="img/gallery-5.jpg" alt="Exemple">
+            <div class="gallery-item-overlay">
+                <div class="gallery-item-category">Exemple</div>
+                <div class="gallery-item-title">Image 5</div>
+            </div>
+        </div>
 
-<!-- SERVICE AREA -->
-<section class="service-area" id="service-area">
-    <div class="service-area-bg" style="background-image: url('img/service-area-bg.jpg');"></div>
-    <div class="service-area-overlay"></div>
-    <div class="container">
-        <div class="area-content">
-            <div class="area-icon">
-                <i class="fa-solid fa-map-location-dot"></i>
             </div>
-            <h2>Fièrement au service de Québec et ses environs</h2>
-            <div class="area-towns">
-                <span class="fade-up">Québec</span>
-                <span class="fade-up">Vieux-Québec</span>
-                <span class="fade-up">Sainte-Foy</span>
-                <span class="fade-up">Sillery</span>
-                <span class="fade-up">Beauport</span>
-                <span class="fade-up">Charlesbourg</span>
-                <span class="fade-up">Loretteville</span>
-                <span class="fade-up">Cap-Rouge</span>
-            </div>
-            <p>Interventions rapides dans tout le territoire de la Ville de Québec.</p>
-            <a href="#contact" class="btn btn-primary btn-lg demo-trigger"><i class="fa-solid fa-paper-plane"></i> Demandez votre soumission</a>
-        </div>
-    </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq" id="faq">
-    <div class="container">
-        <div class="faq-layout">
-            <div class="faq-header fade-up">
-                <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; Questions fréquentes</span>
-                <h2>Vous avez des <span>questions</span>?</h2>
-                <p>Voici les réponses aux questions les plus courantes sur nos services.</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item fade-up">
-                    <button class="faq-q">Combien coûte un agrandissement de maison ? <span class="faq-icon">+</span></button>
-                    <div class="faq-a">
-                        <p>Le coût varie selon la taille et la complexité du projet. Nous offrons une soumission gratuite et détaillée pour que vous sachiez exactement à quoi vous attendre — sans surprise.</p>
-                    </div>
-                </div>
-                <div class="faq-item fade-up">
-                    <button class="faq-q">Combien de temps dure une rénovation complète ? <span class="faq-icon">+</span></button>
-                    <div class="faq-a">
-                        <p>La durée dépend de l'ampleur des travaux. Une rénovation de cuisine prend généralement 4 à 6 semaines, tandis qu'un agrandissement peut nécessiter 2 à 4 mois. Nous établissons un échéancier clair dès le départ.</p>
-                    </div>
-                </div>
-                <div class="faq-item fade-up">
-                    <button class="faq-q">Êtes-vous licencié et assuré ? <span class="faq-icon">+</span></button>
-                    <div class="faq-a">
-                        <p>Oui. Larcher Construction détient une licence RBQ valide et une assurance responsabilité civile complète. Tous nos travaux sont conformes au Code de construction du Québec.</p>
-                    </div>
-                </div>
-                <div class="faq-item fade-up">
-                    <button class="faq-q">Offrez-vous des soumissions gratuites ? <span class="faq-icon">+</span></button>
-                    <div class="faq-a">
-                        <p>Absolument. Toutes nos soumissions sont gratuites et sans engagement. Nous visitons votre maison, évaluons le projet et vous remettons une soumission détaillée.</p>
-                    </div>
-                </div>
-                <div class="faq-item fade-up">
-                    <button class="faq-q">Quelles régions desservez-vous ? <span class="faq-icon">+</span></button>
-                    <div class="faq-a">
-                        <p>Nous desservons toute la Ville de Québec et ses environs : Vieux-Québec, Sainte-Foy, Sillery, Beauport, Charlesbourg, Loretteville, Cap-Rouge et plus encore.</p>
-                    </div>
-                </div>
+            <div class="gallery-cta">
+                
             </div>
         </div>
-    </div>
-</section>
+    </section>
+</div>
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
-    <div class="container">
-        <div class="contact-grid">
-            <div class="contact-info">
-                <span class="section-badge"><i class="fa-solid fa-envelope"></i>&nbsp; Contactez-nous</span>
-                <h2>Parlons de votre projet</h2>
-                <p>Une question, un projet en tête ? Contactez-nous pour une soumission gratuite.</p>
-                <div class="contact-details">
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
-                        <div>
-                            <strong>Téléphone</strong>
-                            <span>(418) 476-9921</span>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
-                        <div>
-                            <strong>Courriel</strong>
-                            <span>gestion@larcherconstruction.com</span>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
-                        <div>
-                            <strong>Région</strong>
-                            <span>Québec, QC</span>
-                        </div>
-                    </div>
+<!-- ═══════════════════════════════════════
+     CTA SECTION (light with orange glow)
+     UN PROJET EN TÊTE ? → Heading (French: "UN PROJET EN TÊTE?")
+     Obtenez votre soumission gratuite et personnalisée dès aujourd'hui. Notre équipe est prête à concrétiser votre vision. → 1-2 sentences in French inviting contact
+     Soumission gratuite → Primary CTA button (French: "Soumission gratuite")
+     418-476-9921 → Secondary CTA (phone link or "Contactez-nous")
+     ═══════════════════════════════════════ -->
+<div class="reveal">
+    <section class="cta-section">
+        <div class="cta-glow"><div class="cta-glow-circle"></div></div>
+        <div class="cta-inner">
+            <div class="cta-line"></div>
+            <h2>UN PROJET EN TÊTE ?</h2>
+            <p>Obtenez votre soumission gratuite et personnalisée dès aujourd'hui. Notre équipe est prête à concrétiser votre vision.</p>
+            <div class="cta-buttons">
+                Soumission gratuite
+                418-476-9921
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- ═══════════════════════════════════════
+     CONTACT (dark section)
+     Contactez-nous → Badge (French: "Contactez-nous")
+     ÉCRIVEZ-NOUS → Heading (French: "ÉCRIVEZ-NOUS" or "CONTACTEZ-NOUS")
+     Remplissez le formulaire ci-dessous et nous vous répondrons rapidement avec une soumission gratuite. → 1-2 sentences in French
+     
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-3.07-8.63A2 2 0 015.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.13a16 16 0 006 6l1.5-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
                 </div>
-                <div class="contact-serving">
-                    <i class="fa-solid fa-map-pin"></i>
-                    <span>Desservons Québec et ses environs</span>
+                <div class="contact-detail-content">
+                    <h4>Téléphone</h4>
+                    <a href="tel:14184769921">418-476-9921</a>
                 </div>
             </div>
-            <div class="contact-form-wrap">
-                <div class="contact-form">
-                    <h3>Demandez une soumission gratuite</h3>
-                    <p class="form-subline">Décrivez votre projet — nous répondrons dans les 24 heures.</p>
-                    <form id="contactForm" novalidate>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="fname">Votre nom</label>
-                                <input type="text" id="fname" name="name" placeholder="Prénom et nom" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="fphone">Téléphone</label>
-                                <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
-                            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Localisation</h4>
+                    <p>Québec, QC</p>
+                </div>
+            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Courriel</h4>
+                    <p>gestion@larcherconstruction.com</p>
+                </div>
+            </div>
+ → Contact detail items (phone, address, email)
+     
+                        <option value="renovation-interieure">Rénovation intérieure</option>
+                        <option value="agrandissement">Agrandissement de maison</option>
+                        <option value="sous-sol-garage">Sous-sol &amp; Garage</option>
+                        <option value="renovation-exterieure">Rénovation extérieure</option>
+                        <option value="autre">Autre / Pas encore sûr</option>
+ → Service type dropdown options in French
+     ═══════════════════════════════════════ -->
+<section class="contact-section" id="contact">
+    <div class="contact-inner">
+        <div class="contact-info">
+            <div class="section-badge">Contactez-nous</div>
+            <h2 class="title-gradient">ÉCRIVEZ-NOUS</h2>
+            <p>Remplissez le formulaire ci-dessous et nous vous répondrons rapidement avec une soumission gratuite.</p>
+            <div class="contact-details">
+                
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-3.07-8.63A2 2 0 015.18 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.13a16 16 0 006 6l1.5-1.52a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Téléphone</h4>
+                    <a href="tel:14184769921">418-476-9921</a>
+                </div>
+            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Localisation</h4>
+                    <p>Québec, QC</p>
+                </div>
+            </div>
+            <div class="contact-detail-item">
+                <div class="contact-detail-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-detail-content">
+                    <h4>Courriel</h4>
+                    <p>gestion@larcherconstruction.com</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        <div class="contact-form-wrap">
+            <div class="contact-form">
+                <h3>Demande de soumission</h3>
+                <p class="form-subline">Décrivez votre projet — nous répondons sous 24 heures.</p>
+                <form id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fname">Votre nom</label>
+                            <input type="text" id="fname" name="name" placeholder="Prénom et nom" required>
                         </div>
                         <div class="form-group">
-                            <label for="femail">Courriel</label>
-                            <input type="email" id="femail" name="email" placeholder="vous@courriel.com" required>
+                            <label for="fphone">Téléphone</label>
+                            <input type="tel" id="fphone" name="phone" placeholder="(000) 000-0000">
                         </div>
-                        <div class="form-group">
-                            <label for="fservice">Type de service</label>
-                            <select id="fservice" name="service">
-                                <option value="" disabled selected>Choisir un service...</option>
-                                <option value="renovation">Rénovation complète</option>
-                                <option value="agrandissement">Agrandissement de maison</option>
-                                <option value="cuisine">Rénovation de cuisine</option>
-                                <option value="salle-de-bain">Rénovation de salle de bain</option>
-                                <option value="sous-sol">Finition de sous-sol</option>
-                                <option value="garage">Construction de garage</option>
-                                <option value="autre">Autre projet</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="fmessage">Décrivez votre projet</label>
-                            <textarea id="fmessage" name="message" placeholder="Décrivez brièvement votre projet, votre échéancier ou vos questions..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
-                            <i class="fa-solid fa-paper-plane"></i> Envoyer la demande
-                        </button>
-                    </form>
-                    <div class="form-success" id="formSuccess">
-                        <div class="form-success-icon">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <h4>Message envoyé !</h4>
-                        <p>Merci de nous avoir contactés. Nous vous répondrons dans les 24 heures.</p>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="femail">Courriel</label>
+                        <input type="email" id="femail" name="email" placeholder="vous@courriel.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fservice">Type de service</label>
+                        <select id="fservice" name="service">
+                            <option value="" disabled selected>Choisir un service...</option>
+                            
+                        <option value="renovation-interieure">Rénovation intérieure</option>
+                        <option value="agrandissement">Agrandissement de maison</option>
+                        <option value="sous-sol-garage">Sous-sol &amp; Garage</option>
+                        <option value="renovation-exterieure">Rénovation extérieure</option>
+                        <option value="autre">Autre / Pas encore sûr</option>
+
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="fmessage">Décrivez votre projet</label>
+                        <textarea id="fmessage" name="message" placeholder="Décrivez brièvement votre projet, vos délais ou vos questions..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full demo-trigger">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        Envoyer la demande
+                    </button>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
-<!-- MAP -->
+<!-- ═══════════════════════════════════════
+     MAP
+     https://www.google.com/maps?q=Qu%C3%A9bec+QC&output=embed → Google Maps embed URL for the business's city
+     ═══════════════════════════════════════ -->
 <section class="map-section" id="map">
-    <div class="map-container">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89247.42577634356!2d-71.29!3d46.81!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cb8963f05c7281f%3A0x50a1e9c2f1d7c80!2sQu%C3%A9bec%2C%20QC!5e0!3m2!1sfr!2sca!4v1700000000000!5m2!1sfr!2sca"
-            width="100%" 
-            height="400" 
-            style="border:0;filter:grayscale(100%);" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Larcher Construction — Québec, QC">
-        </iframe>
-    </div>
+    <iframe 
+        src="https://www.google.com/maps?q=Qu%C3%A9bec+QC&output=embed"
+        width="100%" 
+        height="400" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade"
+        title="Larcher Construction — Québec, QC">
+    </iframe>
 </section>
 
-<!-- FOOTER -->
+<!-- ═══════════════════════════════════════
+     FOOTER
+     <div class="footer-logo-text">Larcher Construction</div> → Logo text or image in footer
+     Experts en rénovation et agrandissement de maison à Québec. Plus de 10 ans d'expérience au service de votre confort. → 1-2 sentences about the business in French
+      → RBQ licence number or other credential, or empty
+     
+<li><a href="#hero">Accueil</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">À propos</a></li>
+<li><a href="#contact">Contact</a></li>
+ → Navigation links
+     
+<li><a href="#services">Rénovation intérieure</a></li>
+<li><a href="#services">Agrandissement</a></li>
+<li><a href="#services">Sous-sol &amp; Garage</a></li>
+<li><a href="#services">Rénovation extérieure</a></li>
+ → Service links
+     
+<li><a href="tel:14184769921">418-476-9921</a></li>
+<li>Québec, QC</li>
+<li><a href="mailto:gestion@larcherconstruction.com">gestion@larcherconstruction.com</a></li>
+ → Contact info (business name, RBQ, phone)
+     © 2026 Larcher Construction. Tous droits réservés. → Copyright text
+     ═══════════════════════════════════════ -->
 <footer>
-    <div class="container">
+    <div class="footer-inner">
         <div class="footer-grid">
             <div class="footer-brand">
-                <div class="footer-logo">
-                    <span class="logo">Larcher <span>Construction</span></span>
-                </div>
-                <p>Entrepreneur général spécialisé en rénovation et agrandissement résidentiel à Québec.</p>
-                <div class="footer-tagline">
-                    <i class="fa-solid fa-droplet"></i>
-                    <span>Construit pour le Québec. Construit pour durer.</span>
-                </div>
+                <div class="footer-logo-text">Larcher Construction</div>
+                <p>Experts en rénovation et agrandissement de maison à Québec. Plus de 10 ans d'expérience au service de votre confort.</p>
+                <p class="rbq"></p>
             </div>
-            <div class="footer-links">
-                <h4>Services</h4>
+            <div class="footer-col">
+                <h4>Navigation</h4>
                 <ul>
-                    <li><a href="#services" class="demo-trigger">Rénovation complète</a></li>
-                    <li><a href="#services" class="demo-trigger">Agrandissement de maison</a></li>
-                    <li><a href="#services" class="demo-trigger">Rénovation de cuisine</a></li>
-                    <li><a href="#services" class="demo-trigger">Rénovation de salle de bain</a></li>
-                    <li><a href="#services" class="demo-trigger">Finition de sous-sol</a></li>
-                    <li><a href="#services" class="demo-trigger">Construction de garage</a></li>
+                    
+<li><a href="#hero">Accueil</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#about">À propos</a></li>
+<li><a href="#contact">Contact</a></li>
+
                 </ul>
             </div>
-            <div class="footer-links">
-                <h4>Liens rapides</h4>
+            <div class="footer-col">
+                <h4>Nos services</h4>
                 <ul>
-                    <li><a href="#services">Nos services</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="#realisations">Réalisations</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    
+<li><a href="#services">Rénovation intérieure</a></li>
+<li><a href="#services">Agrandissement</a></li>
+<li><a href="#services">Sous-sol &amp; Garage</a></li>
+<li><a href="#services">Rénovation extérieure</a></li>
+
                 </ul>
             </div>
-            <div class="footer-links">
+            <div class="footer-col">
                 <h4>Contact</h4>
-                <ul>
-                    <li><i class="fa-solid fa-phone"></i> (418) 476-9921</li>
-                    <li><i class="fa-solid fa-envelope"></i> gestion@larcherconstruction.com</li>
-                    <li><i class="fa-solid fa-location-dot"></i> Québec, QC</li>
-                </ul>
+                <div class="footer-contact">
+                    
+<li><a href="tel:14184769921">418-476-9921</a></li>
+<li>Québec, QC</li>
+<li><a href="mailto:gestion@larcherconstruction.com">gestion@larcherconstruction.com</a></li>
+
+                </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <span>&copy; 2026 Larcher Construction. Tous droits réservés.</span>
-            <span>Desservons Québec, QC et les environs</span>
+            <span>© 2026 Larcher Construction. Tous droits réservés.</span>
+            <span></span>
         </div>
     </div>
 </footer>
 
 <script>
+// ═══════════════════════════════════════
+// DO NOT MODIFY THIS JAVASCRIPT
+// It handles: navbar scroll, mobile menu, FAQ accordion,
+// demo modal, scroll reveal animations
+// ═══════════════════════════════════════
+
 const navbar = document.getElementById('navbar');
-const scrollCue = document.querySelector('.hero-scroll-cue');
 window.addEventListener('scroll', () => {
     navbar.classList.toggle('scrolled', window.scrollY > 60);
-    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
 });
 
 const mobileBtn = document.getElementById('mobileMenuBtn');
 const navLinks = document.getElementById('navLinks');
-mobileBtn.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('active');
-    mobileBtn.toggle('active', isOpen);
-    mobileBtn.innerHTML = isOpen
-        ? '<i class="fa-solid fa-xmark"></i>'
-        : '<i class="fa-solid fa-bars"></i>';
-});
-navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.classList.remove('active');
-        mobileBtn.classList.remove('active');
-        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
-    });
-});
-
-document.querySelectorAll('.faq-q').forEach(btn => {
-    btn.addEventListener('click', () => {
-        const item = btn.closest('.faq-item');
-        const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item.open').forEach(openItem => {
-            openItem.classList.remove('open');
-            const icon = openItem.querySelector('.faq-icon');
-            if (icon) icon.textContent = '+';
-        });
-        if (!isOpen) {
-            item.classList.add('open');
-            const icon = item.querySelector('.faq-icon');
-            if (icon) icon.textContent = '−';
-        }
-    });
-});
-
-const form = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-const demoModal = document.getElementById('demoModal');
-if (form) {
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        demoModal.classList.add('visible');
-    });
+const navOverlay = document.getElementById('navOverlay');
+function closeMenu() {
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+    mobileBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+    document.body.style.overflow = '';
 }
+function openMenu() {
+    navLinks.classList.add('active');
+    navOverlay.classList.add('active');
+    mobileBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+    document.body.style.overflow = 'hidden';
+}
+mobileBtn.addEventListener('click', () => {
+    navLinks.classList.contains('active') ? closeMenu() : openMenu();
+});
+navOverlay.addEventListener('click', closeMenu);
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
 
+const demoModal = document.getElementById('demoModal');
 const demoModalClose = document.getElementById('demoModalClose');
 document.querySelectorAll('.demo-trigger').forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -663,12 +911,17 @@ document.querySelectorAll('.demo-trigger').forEach(btn => {
         demoModal.classList.add('visible');
     });
 });
-demoModalClose.addEventListener('click', () => {
-    demoModal.classList.remove('visible');
-});
+demoModalClose.addEventListener('click', () => demoModal.classList.remove('visible'));
 demoModal.addEventListener('click', (e) => {
     if (e.target === demoModal) demoModal.classList.remove('visible');
 });
+const form = document.getElementById('contactForm');
+if (form) {
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        demoModal.classList.add('visible');
+    });
+}
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -679,21 +932,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
 
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-document.querySelectorAll('.section-header').forEach(el => {
-    el.classList.add('fade-up');
-    observer.observe(el);
-});
-
-document.querySelectorAll(
-    '.services-grid, .reasons-grid, .trust-grid, .process-track, .gallery-grid, .trust-bar-grid, .about-grid, .faq-layout, .contact-grid, .stats-grid, .area-towns, .reviews-grid, .materials-grid'
-).forEach(grid => {
-    grid.querySelectorAll(
-        '.service-card, .reason-card, .trust-card, .process-step-card, .gallery-item, .trust-bar-item, .stat-box, .faq-item, .info-item, .area-towns span, .review-card, .material-card'
-    ).forEach((card, i) => {
-        card.classList.add('fade-up');
-        card.style.transitionDelay = (i * 0.08) + 's';
+document.querySelectorAll('.services-grid, .process-grid, .gallery-grid, .stats-inner, .trust-strip-grid, .about-inner').forEach(grid => {
+    grid.querySelectorAll('.service-card, .process-step, .gallery-item, .stat-item, .trust-badge, .about-content, .about-image-wrap').forEach((card, i) => {
+        card.classList.add('reveal');
+        card.style.transitionDelay = (i * 0.1) + 's';
         observer.observe(card);
     });
 });
