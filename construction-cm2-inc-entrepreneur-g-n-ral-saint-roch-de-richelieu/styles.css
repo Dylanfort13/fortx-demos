@@ -305,7 +305,7 @@ body {
    ═══════════════════════════════════════ */
 .trust-strip {
     background: var(--black-2);
-    padding: 4rem 5%;
+    padding: 2rem 5%;
     border-bottom: 1px solid rgba(255,255,255,0.06);
 }
 .trust-strip-grid {
@@ -480,11 +480,10 @@ body {
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    transition: padding 0.45s ease, transform 0.45s ease;
+    transition: padding 0.4s ease;
 }
 .service-card:hover .service-card-content {
-    padding: 1.8rem 1.1rem;
-    transform: translateY(-24px);
+    padding: 1.4rem 1.1rem;
 }
 .service-card-number {
     font-family: var(--font-display);
@@ -518,14 +517,14 @@ body {
     line-height: 1.55;
     color: rgba(215,206,206,0.80);
     margin-bottom: 0.75rem;
-    transition: opacity 0.45s ease, transform 0.45s ease;
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease, padding 0.4s ease;
 }
 .service-card-details {
     padding: 0 1.1rem;
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.45s ease, padding 0.45s ease;
+    transition: max-height 0.4s ease, opacity 0.4s ease, padding 0.4s ease;
 }
 .service-card:hover .service-card-details {
     max-height: 300px;
@@ -533,9 +532,11 @@ body {
     padding: 0.4rem 1.1rem 0.15rem;
 }
 .service-card:hover .service-card-content p {
+    max-height: 0;
+    margin: 0;
+    padding: 0;
     opacity: 0;
-    transform: translateY(8px);
-    margin-bottom: 0.4rem;
+    overflow: hidden;
 }
 .service-card-details ul {
     list-style: none;
@@ -568,12 +569,10 @@ body {
     align-items: center;
     gap: 0.4rem;
     opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.4s ease 0.15s, transform 0.4s ease 0.15s;
+    transition: opacity 0.35s ease 0.1s;
 }
 .service-card:hover .service-card-link {
     opacity: 1;
-    transform: translateY(0);
 }
 .service-card-link svg {
     width: 12px;
