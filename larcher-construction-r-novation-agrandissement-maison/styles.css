@@ -5,7 +5,7 @@
    
    DESIGN SYSTEM — DO NOT CHANGE:
    - Fonts: Bebas Neue (display/headings, ALL CAPS) + Inter (body)
-   - Colors: #c85a17 orange accent, #090909 black bg, #d7cece silver text
+   - Colors: #D4A017 orange accent, #090909 black bg, #d7cece silver text
    - Style: Dark premium, squared buttons (5px radius), noise texture, gradient headings
    - Language: French (QC)
    - CTAs: French ("Soumission gratuite", "Appelez-nous", "Contactez-nous")
@@ -13,7 +13,7 @@
    
    THE AI SHOULD ONLY:
    1. Replace {{PLACEHOLDER}} variables with real business data
-   2. Adjust #c85a17 to match the business's brand
+   2. Adjust #D4A017 to match the business's brand
    3. Replace placeholder images with real ones
    4. Replace placeholder text with real business info
    
@@ -21,13 +21,13 @@
    - Change fonts, layout, spacing, border-radius, or any CSS structure
    - Change the design system or section ordering
    - Add new CSS classes or modify existing ones
-   - Change color scheme beyond #c85a17
+   - Change color scheme beyond #D4A017
    ═══════════════════════════════════════ */
 
 :root {
-    --orange: #c85a17;
-    --orange-dark: #a04812;
-    --orange-glow: rgba(200,90,23,0.25);
+    --orange: #D4A017;
+    --orange-dark: #A8831A;
+    --orange-glow: rgba(212,160,23,0.25);
     --black-1: #090909;
     --black-2: #111111;
     --charcoal: #1a1a1a;
@@ -480,11 +480,10 @@ body {
     flex-direction: column;
     justify-content: center;
     flex: 1;
-    transition: padding 0.3s;
-}
-.service-card:hover .service-card-content {
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    /* CRITICAL: padding stays stable on hover — no change.
+       Never add translateY, justify-content change, or padding
+       change here. Details overlay from bottom via absolute
+       positioning; p fades in place (keeps flow space). */
 }
 .service-card-number {
     font-family: var(--font-display);
@@ -492,6 +491,7 @@ body {
     line-height: 1;
     color: rgba(239,96,6,0.25);
     margin-bottom: 0.5rem;
+    transition: transform 0.4s ease;
 }
 .service-card-tag {
     align-self: flex-start;
@@ -504,6 +504,7 @@ body {
     color: var(--orange);
     border-radius: var(--radius);
     margin-bottom: 0.75rem;
+    transition: transform 0.4s ease;
 }
 .service-card-content h3 {
     font-family: var(--font-display);
@@ -512,12 +513,14 @@ body {
     color: white;
     margin-bottom: 0.4rem;
     line-height: 1.15;
+    transition: transform 0.4s ease;
 }
 .service-card-content p {
     font-size: 0.78rem;
     line-height: 1.55;
     color: rgba(215,206,206,0.80);
     margin-bottom: 0.75rem;
+    transition: opacity 0.4s ease;
 }
 .service-card-details {
     position: absolute;
@@ -528,7 +531,7 @@ body {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: all 0.5s;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
     z-index: 3;
     background: linear-gradient(to top, rgba(0,0,0,0.95) 50%, rgba(0,0,0,0.6) 80%, transparent);
 }
@@ -537,7 +540,12 @@ body {
     opacity: 1;
 }
 .service-card:hover .service-card-content p {
-    opacity: 0;
+    opacity: 0; /* fades but KEEPS layout space — essential for symmetry */
+}
+.service-card:hover .service-card-number,
+.service-card:hover .service-card-tag,
+.service-card:hover .service-card-content h3 {
+    transform: translateY(-8px);
 }
 .service-card-details ul {
     list-style: none;
@@ -570,8 +578,8 @@ body {
     align-items: center;
     gap: 0.4rem;
     opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.35s ease;
+    transform: translateY(8px);
+    transition: opacity 0.35s ease 0.1s, transform 0.35s ease 0.1s;
 }
 .service-card:hover .service-card-link {
     opacity: 1;
@@ -712,7 +720,7 @@ body {
 .stat-item:hover .stat-label { color: var(--silver); }
 .stat-value {
     font-family: var(--font-display);
-    font-size: clamp(3.5rem, 6vw, 6rem);
+    font-size: clamp(2.625rem, 4.5vw, 4.5rem);
     line-height: 1;
     margin-bottom: 0.75rem;
     background: linear-gradient(to bottom, #ffffff, rgba(255,255,255,0.5));
