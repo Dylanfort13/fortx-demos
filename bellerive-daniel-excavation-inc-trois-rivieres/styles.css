@@ -26,7 +26,7 @@
     --primary: #D84315;
     --primary-dark: #BF360C;
     --primary-light: #FF8A65;
-    --primary-glow: rgba(216, 67, 21, 0.28);
+    --primary-glow: rgba(216,67,21,0.25);
     --dark: #1A1A1A;
     --dark-2: #252527;
     --white: #ffffff;
@@ -42,7 +42,7 @@
     --shadow-lg: 0 20px 48px rgba(0,0,0,0.12);
     --font-display: 'DM Serif Display', Georgia, serif;
     --font-body: 'DM Sans', system-ui, sans-serif;
-    --texture: none;
+    --texture: url('img/texture.jpg');
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
