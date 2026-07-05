@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -709,5 +709,6 @@ document.querySelectorAll('.services-grid, .reasons-grid, .process-track, .trust
     grid.querySelectorAll('.service-card, .reason-card, .process-step-card, .trust-bar-item, .stat-box, .area-towns span').forEach((card, i) => { card.classList.add('fade-up'); card.style.transitionDelay = (i * 0.08) + 's'; observer.observe(card); });
 });
 </script>
+<script>if(new URLSearchParams(location.search).has("preview")){var e=document.getElementById("vslWelcome");if(e)e.style.display="none";}</script>
 </body>
 </html>
