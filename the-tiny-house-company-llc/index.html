@@ -647,7 +647,11 @@ window.addEventListener('scroll', () => {
         window.requestAnimationFrame(() => {
             const y = window.scrollY;
             if (y > 80) {
-                navbar.classList.toggle('hidden', y - lastScroll > 5);
+                if (y < lastScroll - 5) {
+                    navbar.classList.remove('hidden');
+                } else if (y > lastScroll + 5) {
+                    navbar.classList.add('hidden');
+                }
             } else {
                 navbar.classList.remove('hidden');
             }
