@@ -641,15 +641,22 @@
 const navbar = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
 let lastScroll = 0;
+let ticking = false;
 window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    if (y > 80) {
-        navbar.classList.toggle('hidden', y > lastScroll);
-    } else {
-        navbar.classList.remove('hidden');
+    if (!ticking) {
+        window.requestAnimationFrame(() => {
+            const y = window.scrollY;
+            if (y > 80) {
+                navbar.classList.toggle('hidden', y - lastScroll > 5);
+            } else {
+                navbar.classList.remove('hidden');
+            }
+            lastScroll = y;
+            if (scrollCue) scrollCue.style.opacity = y > 80 ? '0' : '';
+            ticking = false;
+        });
+        ticking = true;
     }
-    lastScroll = y;
-    if (scrollCue) scrollCue.style.opacity = y > 80 ? '0' : '';
 });
 
 const mobileBtn = document.getElementById('mobileMenuBtn');
