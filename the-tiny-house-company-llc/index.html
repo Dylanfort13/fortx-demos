@@ -13,36 +13,6 @@
 </head>
 <body>
 
-<!-- Demo popup modal -->
-<div class="demo-modal" id="demoModal">
-    <div class="demo-modal-content">
-        <button class="demo-modal-close" id="demoModalClose">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="demo-modal-icon">
-            <i class="fa-solid fa-globe"></i>
-        </div>
-        <h3>This is a Demo Website</h3>
-        <p>This site has been built as a free preview for The Tiny House Company LLC. It's not their official website — yet.</p>
-        <p class="demo-modal-sub">Click any button above to see how a real inquiry form would work.</p>
-    </div>
-</div>
-
-<!-- Page not built modal -->
-<div class="demo-modal" id="pageModal">
-    <div class="demo-modal-content">
-        <button class="demo-modal-close" id="pageModalClose">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="demo-modal-icon">
-            <i class="fa-solid fa-hard-hat"></i>
-        </div>
-        <h3>Page Under Construction</h3>
-        <p>This page hasn't been built yet — this is a demo preview of what your new website could look like.</p>
-        <p class="demo-modal-sub">Full pages for Gallery, Floor Plans, and more would be included in the final site.</p>
-    </div>
-</div>
-
 
 <!-- ═══════════════════════════════════════
      NAVIGATION
@@ -64,7 +34,7 @@
             <a href="tel:2084468742" class="phone-link">
                 <i class="fa-solid fa-phone"></i> (208) 446-8742
             </a>
-            <a href="tel:2084468742" class="btn btn-primary demo-trigger">Free Estimate</a>
+            <a href="tel:2084468742" class="btn btn-primary">Free Estimate</a>
         </div>
         <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
             <i class="fa-solid fa-bars"></i>
@@ -88,10 +58,10 @@
             <h1>Quality Built. <em>Honestly Priced.</em></h1>
             <p>Custom sheds, cottages, cabins, and ADUs built with real craftsmanship. From backyard storage to a full guest house — we build it right, and we build it to last.</p>
             <div class="hero-buttons">
-                <a href="tel:2084468742" class="btn btn-primary btn-lg demo-trigger">
+                <a href="tel:2084468742" class="btn btn-primary btn-lg">
                     <i class="fa-solid fa-phone"></i> <span class="btn-call-full">Call Now —</span><span class="btn-call-short">Call —</span> (208) 446-8742
                 </a>
-                <a href="#contact" class="btn btn-ghost demo-trigger">Free Estimate</a>
+                <a href="#contact" class="btn btn-ghost">Free Estimate</a>
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
@@ -236,7 +206,7 @@
             </div>
         </div>
         <div class="process-cta fade-up">
-            <a href="#contact" class="btn btn-primary btn-lg demo-trigger">Get Started</a>
+            <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
         </div>
     </div>
 </section>
@@ -275,7 +245,7 @@
                         <span>Serving Oldtown &amp; Northern Idaho</span>
                     </div>
                 </div>
-                <a href="tel:2084468742" class="btn btn-primary demo-trigger">
+                <a href="tel:2084468742" class="btn btn-primary">
                     <i class="fa-solid fa-phone"></i> Call (208) 446-8742
                 </a>
             </div>
@@ -429,7 +399,7 @@
                 <span>Hayden</span>
             </div>
             <p>We build custom sheds, cottages, and cabins throughout Northern Idaho and the surrounding region. If you have a property in the area, we'd love to talk about what's possible.</p>
-            <a href="tel:2084468742" class="btn btn-white btn-lg demo-trigger">
+            <a href="tel:2084468742" class="btn btn-white btn-lg">
                 <i class="fa-solid fa-phone"></i> <span class="btn-call-full">Call (208) 446-8742 — Free Estimate</span><span class="btn-call-short">Call (208) 446-8742</span>
             </a>
         </div>
@@ -446,7 +416,7 @@
                 <span class="section-badge"><i class="fa-solid fa-circle-question"></i>&nbsp; FAQ</span>
                 <h2>Common <span>Questions</span></h2>
                 <p>Everything you need to know before getting started. Still have questions? Reach out directly.</p>
-                <a href="tel:2084468742" class="btn btn-primary demo-trigger" style="margin-top:1.5rem;">
+                <a href="tel:2084468742" class="btn btn-primary" style="margin-top:1.5rem;">
                     <i class="fa-solid fa-phone"></i> Call Us
                 </a>
             </div>
@@ -583,7 +553,7 @@
                             <label for="fmessage">Tell Us About Your Project</label>
                             <textarea id="fmessage" name="message" placeholder="Describe what you need, your property, timeline, or any questions..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-dark btn-full btn-lg demo-trigger">
+                        <button type="submit" class="btn btn-dark btn-full btn-lg">
                             <i class="fa-solid fa-paper-plane"></i> Send Request
                         </button>
                     </form>
@@ -670,8 +640,16 @@
 <script>
 const navbar = document.getElementById('navbar');
 const scrollCue = document.querySelector('.hero-scroll-cue');
+let lastScroll = 0;
 window.addEventListener('scroll', () => {
-    if (scrollCue) scrollCue.style.opacity = window.scrollY > 80 ? '0' : '';
+    const y = window.scrollY;
+    if (y > 80) {
+        navbar.classList.toggle('hidden', y > lastScroll);
+    } else {
+        navbar.classList.remove('hidden');
+    }
+    lastScroll = y;
+    if (scrollCue) scrollCue.style.opacity = y > 80 ? '0' : '';
 });
 
 const mobileBtn = document.getElementById('mobileMenuBtn');
@@ -708,52 +686,6 @@ document.querySelectorAll('.faq-q').forEach(btn => {
             if (icon) icon.textContent = '−';
         }
     });
-});
-
-// Page not built modal
-const pageModal = document.getElementById('pageModal');
-const pageModalClose = document.getElementById('pageModalClose');
-document.querySelectorAll('.page-link').forEach(link => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        pageModal.classList.add('visible');
-        navLinks.classList.remove('active');
-        mobileBtn.removeAttribute('active');
-        mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
-        navbar.classList.remove('menu-open');
-    });
-});
-pageModalClose.addEventListener('click', () => {
-    pageModal.classList.remove('visible');
-});
-pageModal.addEventListener('click', (e) => {
-    if (e.target === pageModal) pageModal.classList.remove('visible');
-});
-
-// Contact form → demo modal
-const form = document.getElementById('contactForm');
-const formSuccess = document.getElementById('formSuccess');
-const demoModal = document.getElementById('demoModal');
-if (form) {
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        demoModal.classList.add('visible');
-    });
-}
-
-// Demo modal — all CTA buttons trigger it
-const demoModalClose = document.getElementById('demoModalClose');
-document.querySelectorAll('.demo-trigger').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        demoModal.classList.add('visible');
-    });
-});
-demoModalClose.addEventListener('click', () => {
-    demoModal.classList.remove('visible');
-});
-demoModal.addEventListener('click', (e) => {
-    if (e.target === demoModal) demoModal.classList.remove('visible');
 });
 
 // Scroll animations
